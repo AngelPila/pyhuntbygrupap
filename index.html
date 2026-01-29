@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simulador de Bomba - Retos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <span class="logo">⏱️</span>
+          <div>
+            <h1>Simulador de Bomba</h1>
+            <p>Panel de desactivación con módulos y strikes</p>
+          </div>
+        </div>
+        <button id="toggleTheme" class="ghost">Cambiar tema</button>
+      </header>
+
+      <main class="layout">
+        <section class="panel">
+          <div class="panel-header">
+            <h2>Unidad Central</h2>
+            <span class="status" id="systemStatus">Listo</span>
+          </div>
+
+          <div class="device">
+            <div class="screen">
+              <div class="screen-row">
+                <span>Tiempo restante</span>
+                <span id="timer" class="timer">05:00</span>
+              </div>
+              <div class="screen-row">
+                <span>Progreso</span>
+                <span id="progressText">0/4</span>
+              </div>
+              <div class="progress">
+                <div id="progressBar"></div>
+              </div>
+            </div>
+
+            <div class="strike-panel">
+              <span>Strikes</span>
+              <div class="strikes">
+                <span class="strike" data-strike="1"></span>
+                <span class="strike" data-strike="2"></span>
+                <span class="strike" data-strike="3"></span>
+              </div>
+              <small id="strikeText">0/3</small>
+            </div>
+
+            <div class="info-grid">
+              <div>
+                <span class="label">Serial</span>
+                <strong id="serial">KTN-8A4</strong>
+              </div>
+              <div>
+                <span class="label">Indicador</span>
+                <strong id="indicator">CLR</strong>
+              </div>
+              <div>
+                <span class="label">Puerto</span>
+                <strong id="port">RJ-45</strong>
+              </div>
+            </div>
+
+            <div class="controls">
+              <button id="startBtn" class="primary">Iniciar bomba</button>
+              <button id="resetBtn" class="ghost">Reiniciar</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="modules">
+          <div class="module" id="wiresModule">
+            <div class="module-header">
+              <h3>Módulo: Cables</h3>
+              <span class="badge" id="wiresStatus">Pendiente</span>
+            </div>
+            <p>Corta el cable correcto para desactivar el módulo.</p>
+            <div class="wires">
+              <div class="wire red" data-wire="red"></div>
+              <div class="wire blue" data-wire="blue"></div>
+              <div class="wire yellow" data-wire="yellow"></div>
+              <div class="wire white" data-wire="white"></div>
+            </div>
+            <small id="wiresHint">Pista: el cable correcto no es blanco.</small>
+          </div>
+
+          <div class="module" id="buttonModule">
+            <div class="module-header">
+              <h3>Módulo: Botón</h3>
+              <span class="badge" id="buttonStatus">Pendiente</span>
+            </div>
+            <p>Decide si presionar o mantener el botón.</p>
+            <div class="button-zone">
+              <button id="bigButton" class="big-button">ABORTAR</button>
+              <div class="strip" id="stripLight"></div>
+            </div>
+            <div class="button-actions">
+              <button class="secondary" data-button-action="press">Presionar</button>
+              <button class="secondary" data-button-action="hold">Mantener</button>
+            </div>
+            <small id="buttonHint">Si eliges mantener, libera cuando el temporizador muestre un 4.</small>
+          </div>
+
+          <div class="module" id="keypadModule">
+            <div class="module-header">
+              <h3>Módulo: Teclado</h3>
+              <span class="badge" id="keypadStatus">Pendiente</span>
+            </div>
+            <p>Presiona los símbolos en el orden correcto.</p>
+            <div class="keypad-grid">
+              <button class="symbol" data-symbol="lambda">λ</button>
+              <button class="symbol" data-symbol="psi">ψ</button>
+              <button class="symbol" data-symbol="omega">Ω</button>
+              <button class="symbol" data-symbol="star">☆</button>
+            </div>
+            <small id="keypadProgress">Orden: 0/4</small>
+          </div>
+
+          <div class="module" id="passwordModule">
+            <div class="module-header">
+              <h3>Módulo: Clave</h3>
+              <span class="badge" id="passwordStatus">Pendiente</span>
+            </div>
+            <p>Introduce la clave para neutralizar el sistema.</p>
+            <input id="passwordInput" type="text" maxlength="8" placeholder="CLAVE" />
+            <button id="passwordCheck" class="secondary">Validar</button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>Estado del sistema:</span>
+        <strong id="footerStatus">En espera</strong>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
