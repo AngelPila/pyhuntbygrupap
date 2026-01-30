@@ -151,7 +151,7 @@ Sensor ID más frecuente, dígitos invertidos.
 6. Sino → CONSTANT
 
 ### 🎯 Resultado esperado
-Formato MM:SS → 02:00 si INCREASING, 05:00 si CONSTANT, 08:00 si DECREASING.
+Formato 00:SS → 00:15 si INCREASING, 00:30 si CONSTANT, 00:45 si DECREASING.
 
 ---
 

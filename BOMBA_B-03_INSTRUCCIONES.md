@@ -1,5 +1,5 @@
 # 💣 BOMBA B-03: CÓDIGO ÍCARO
-## Nivel de Amenaza: ⭐⭐⭐⭐☆ (Avanzado)
+## Nivel de Amenaza: ⭐⭐⭐☆☆ (Intermedio)
 
 ```
 ╔════════════════════════════════════════════════════════════╗

@@ -1,5 +1,5 @@
 # 💣 BOMBA B-06: PROYECTO TITAN
-## Nivel de Amenaza: ⭐⭐⭐⭐☆ (Avanzado)
+## Nivel de Amenaza: ⭐⭐⭐☆☆ (Intermedio)
 
 ```
 ╔════════════════════════════════════════════════════════════╗

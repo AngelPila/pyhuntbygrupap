@@ -1,5 +1,5 @@
 # 💣 BOMBA B-04: PROYECTO MEDUSA
-## Nivel de Amenaza: ⭐⭐⭐☆☆ (Intermedio-Avanzado)
+## Nivel de Amenaza: ⭐⭐⭐☆☆ (Intermedio)
 
 ```
 ╔════════════════════════════════════════════════════════════╗

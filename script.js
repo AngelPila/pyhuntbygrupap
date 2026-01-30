@@ -10,7 +10,7 @@ const bombData = {
     m4: ["G"],
     m5: "4",
     m6: "101",
-    m7: "00:52",
+    m7: "00:15",
     m8: [7],
     m9: "9",
     m10: "6"
@@ -22,7 +22,7 @@ const bombData = {
     m4: ["R"],
     m5: "4",
     m6: "501",
-    m7: "01:05",
+    m7: "00:30",
     m8: [6],
     m9: "1",
     m10: "5"
@@ -34,7 +34,7 @@ const bombData = {
     m4: ["R"],
     m5: "3",
     m6: "201",
-    m7: "00:59",
+    m7: "00:45",
     m8: [6],
     m9: "9",
     m10: "4"
@@ -46,7 +46,7 @@ const bombData = {
     m4: ["G"],
     m5: "4",
     m6: "201",
-    m7: "01:17",
+    m7: "00:20",
     m8: [7],
     m9: "1",
     m10: "6"
@@ -58,7 +58,7 @@ const bombData = {
     m4: ["G"],
     m5: "3",
     m6: "501",
-    m7: "01:05",
+    m7: "00:35",
     m8: [5],
     m9: "9",
     m10: "3"
@@ -70,7 +70,7 @@ const bombData = {
     m4: ["R"],
     m5: "3",
     m6: "201",
-    m7: "01:17",
+    m7: "00:50",
     m8: [5],
     m9: "1",
     m10: "3"
@@ -82,7 +82,7 @@ const bombData = {
     m4: ["G"],
     m5: "3",
     m6: "401",
-    m7: "01:11",
+    m7: "00:25",
     m8: [9],
     m9: "1",
     m10: "7"
@@ -508,6 +508,9 @@ function showError() {
   setTimeout(() => {
     gameScreen.style.backgroundColor = '';
   }, 300);
+  
+  // Penalización: restar 10 segundos por error
+  gameState.timeRemaining = Math.max(0, gameState.timeRemaining - 10);
 }
 
 function updateProgress() {
