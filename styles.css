@@ -1913,3 +1913,169 @@ body.light {
     max-width: 80px;
   }
 }
+
+/* ============ MEMORY GAME (M11) ============ */
+.memory-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  padding: 15px;
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+}
+
+.memory-stats .stat {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 0 0 5px var(--primary-color);
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin: 15px auto;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  max-width: 1000px;
+}
+
+.memory-card {
+  aspect-ratio: 4/3;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  transition: all 0.3s;
+  position: relative;
+  transform-style: preserve-3d;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+.memory-card:hover:not(.flipped):not(.matched) {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+}
+
+.memory-card.flipped,
+.memory-card.matched {
+  background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+  border-color: var(--accent-yellow);
+  color: var(--accent-yellow);
+  cursor: default;
+}
+
+.memory-card.matched {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  opacity: 0.7;
+  animation: matchPulse 0.5s ease-in-out;
+}
+
+.memory-card.bomb {
+  background: linear-gradient(135deg, #8b0000 0%, #ff0000 100%);
+  border-color: var(--accent-red);
+  color: #fff;
+  font-size: 30px;
+  animation: bombPulse 0.5s infinite;
+}
+
+.memory-card .card-back {
+  color: var(--primary-color);
+  font-size: 24px;
+}
+
+.memory-card .card-front {
+  display: none;
+  color: var(--accent-yellow);
+  line-height: 1.2;
+}
+
+.memory-card.flipped .card-back {
+  display: none;
+}
+
+.memory-card.flipped .card-front {
+  display: block;
+}
+
+.memory-card.matched .card-front {
+  display: block;
+  color: var(--primary-color);
+}
+
+@keyframes matchPulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes bombPulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+  }
+
+  50% {
+    box-shadow: 0 0 40px rgba(255, 0, 0, 1);
+  }
+}
+
+/* Responsive for memory game */
+@media (max-width: 900px) {
+  .memory-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+
+  .memory-card {
+    font-size: 11px;
+    height: 80px;
+    aspect-ratio: auto;
+    padding: 3px;
+  }
+
+  .memory-card .card-back {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .memory-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .memory-card {
+    font-size: 9px;
+    height: 60px;
+    padding: 2px;
+  }
+
+  .memory-card .card-back {
+    font-size: 14px;
+  }
+}
+/* Memory Card Types */
+.memory-card.concept { border-color: #00ffff; }
+.memory-card.def { border-color: #ff00ff; }
+.memory-card.concept .card-front { color: #00ffff; }
+.memory-card.def .card-front { color: #ff00ff; }

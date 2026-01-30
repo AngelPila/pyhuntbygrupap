@@ -429,7 +429,8 @@ function loadBomb() {
 function initializeGame() {
   // Create module buttons
   modulesList.innerHTML = '';
-  for (let i = 1; i <= 10; i++) {
+  // Ahora son 11 módulos
+  for (let i = 1; i <= 11; i++) {
     const btn = document.createElement('button');
     btn.className = 'module-btn active';
     btn.textContent = `M${i}`;
@@ -440,7 +441,7 @@ function initializeGame() {
 
   // Initialize module states
   gameState.moduleStates = {};
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 11; i++) {
     gameState.moduleStates[i] = { solved: false, attempts: 0 };
   }
 
@@ -496,6 +497,7 @@ function initializeModule(moduleNum, moduleEl) {
     case 8: initM8(moduleEl, answers.m8); break;
     case 9: initM9(moduleEl, answers.m9); break;
     case 10: initM10(moduleEl, answers.m10); break;
+    case 11: initM11(moduleEl); break;
   }
 }
 
@@ -1057,4 +1059,180 @@ function restartGame() {
 }
 
 // ============ START ============
+// ============ MEMORY GAME (M11) ============
+const memoryPairs = [
+  { id: 1, text: 'print()', type: 'concept' },
+  { id: 1, text: 'Muestra datos.', type: 'def' },
+  { id: 2, text: 'input()', type: 'concept' },
+  { id: 2, text: 'Captura datos.', type: 'def' },
+  { id: 3, text: 'int()', type: 'concept' },
+  { id: 3, text: 'Convierte a entero.', type: 'def' },
+  { id: 5, text: 'len()', type: 'concept' },
+  { id: 5, text: 'Cuenta elementos.', type: 'def' },
+  { id: 6, text: 'if / else', type: 'concept' },
+  { id: 6, text: 'Condicionales.', type: 'def' },
+  { id: 7, text: 'while', type: 'concept' },
+  { id: 7, text: 'Bucle condicional.', type: 'def' },
+  { id: 8, text: 'for', type: 'concept' },
+  { id: 8, text: 'Bucle de secuencia.', type: 'def' },
+  { id: 9, text: 'list.append()', type: 'concept' },
+  { id: 9, text: 'Agrega al final.', type: 'def' },
+  { id: 11, text: 'def', type: 'concept' },
+  { id: 11, text: 'Define función.', type: 'def' },
+  { id: 13, text: 'import pandas', type: 'concept' },
+  { id: 13, text: 'Importa librería.', type: 'def' },
+  { id: 14, text: 'pd.read_csv()', type: 'concept' },
+  { id: 14, text: 'Lee archivo CSV.', type: 'def' },
+  { id: 15, text: 'df.head()', type: 'concept' },
+  { id: 15, text: 'Primeras 5 filas.', type: 'def' },
+  { id: 16, text: 'df.describe()', type: 'concept' },
+  { id: 16, text: 'Estadísticas.', type: 'def' },
+  { id: 18, text: 'DataFrame', type: 'concept' },
+  { id: 18, text: 'Tabla de datos.', type: 'def' },
+  { id: 19, text: 'df.iloc[]', type: 'concept' },
+  { id: 19, text: 'Selección por índice.', type: 'def' },
+  { id: 23, text: 'df.groupby()', type: 'concept' },
+  { id: 23, text: 'Agrupa datos.', type: 'def' },
+  { id: 24, text: 'df.sort_values()', type: 'concept' },
+  { id: 24, text: 'Ordena datos.', type: 'def' },
+  { id: 25, text: 'str()', type: 'concept' },
+  { id: 25, text: 'Convierte a texto.', type: 'def' }
+];
+
+let memoryGameState = {
+  cards: [],
+  flippedCards: [],
+  matchedPairs: 0,
+  attempts: 0,
+  gameActive: false,
+  lockBoard: false
+};
+
+function initM11(el) {
+  const grid = el.querySelector('.memory-grid');
+  const pairsFoundEl = el.querySelector('#pairsFound');
+  const attemptsEl = el.querySelector('#attempts');
+  const resetBtn = el.querySelector('#resetMemoryBtn');
+
+  if (!grid) return;
+
+  function startGame() {
+    // Shuffle and create cards
+    const shuffled = [...memoryPairs].sort(() => Math.random() - 0.5);
+    memoryGameState.cards = shuffled;
+    memoryGameState.flippedCards = [];
+    memoryGameState.matchedPairs = 0;
+    memoryGameState.attempts = 0;
+    memoryGameState.gameActive = true;
+    memoryGameState.lockBoard = false;
+
+    // Update stats
+    pairsFoundEl.textContent = '0';
+    attemptsEl.textContent = '0';
+
+    // Clear grid
+    grid.innerHTML = '';
+
+    // Create cards
+    shuffled.forEach((card, index) => {
+      const cardEl = document.createElement('div');
+      cardEl.className = `memory-card ${card.type}`; // Add type class
+      cardEl.dataset.index = index;
+      cardEl.dataset.id = card.id;
+
+      const backEl = document.createElement('div');
+      backEl.className = 'card-back';
+      backEl.textContent = '?';
+
+      const frontEl = document.createElement('div');
+      frontEl.className = 'card-front';
+      frontEl.textContent = card.text;
+
+      cardEl.appendChild(backEl);
+      cardEl.appendChild(frontEl);
+
+      cardEl.onclick = () => flipCard(index, el);
+
+      grid.appendChild(cardEl);
+    });
+  }
+
+  // Reset button
+  resetBtn.onclick = startGame;
+
+  // Start immediately
+  startGame();
+}
+
+function flipCard(index, moduleEl) {
+  if (!memoryGameState.gameActive) return;
+  if (memoryGameState.lockBoard) return;
+
+  const card = memoryGameState.cards[index];
+  const cardEl = moduleEl.querySelector(`.memory-card[data-index="${index}"]`);
+
+  // Can't flip if already flipped or matched
+  if (cardEl.classList.contains('flipped') || cardEl.classList.contains('matched')) return;
+
+
+
+  // Flip the card
+  cardEl.classList.add('flipped');
+  memoryGameState.flippedCards.push({ index, id: card.id, element: cardEl });
+
+  // Check for match when 2 cards are flipped
+  if (memoryGameState.flippedCards.length === 2) {
+    memoryGameState.lockBoard = true; // Lock board
+    memoryGameState.attempts++;
+    moduleEl.querySelector('#attempts').textContent = memoryGameState.attempts;
+
+    const [card1, card2] = memoryGameState.flippedCards;
+
+    if (card1.id === card2.id) {
+      // Match!
+      setTimeout(() => {
+        card1.element.classList.add('matched');
+        card2.element.classList.add('matched');
+        memoryGameState.matchedPairs++;
+        moduleEl.querySelector('#pairsFound').textContent = memoryGameState.matchedPairs;
+        memoryGameState.flippedCards = [];
+        memoryGameState.lockBoard = false; // Unlock
+
+        // Check if all pairs are matched
+        if (memoryGameState.matchedPairs === 18) {
+          setTimeout(() => {
+            completeModule();
+          }, 500);
+        }
+      }, 500);
+    } else {
+      // No match - flip back
+      setTimeout(() => {
+        card1.element.classList.remove('flipped');
+        card2.element.classList.remove('flipped');
+        memoryGameState.flippedCards = [];
+        memoryGameState.lockBoard = false; // Unlock
+      }, 1000);
+    }
+  }
+}
+
+// ============ START ============
+function init() {
+  // Initialize intro screen
+  initIntroScreen();
+
+  // Initialize other screens but don't show them yet
+
+  passwordBtn.addEventListener('click', loadBomb);
+  passwordInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') loadBomb();
+  });
+
+  document.getElementById('restartBtn').addEventListener('click', restartGame);
+  document.getElementById('restartBtn2').addEventListener('click', restartGame);
+
+
+}
+
 document.addEventListener('DOMContentLoaded', init);
