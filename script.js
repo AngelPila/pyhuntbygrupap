@@ -832,6 +832,9 @@ function showError() {
   setTimeout(() => {
     gameScreen.style.backgroundColor = '';
   }, 300);
+  
+  // Penalización: restar 10 segundos por error
+  gameState.timeRemaining = Math.max(0, gameState.timeRemaining - 10);
 }
 
 function updateProgress() {
