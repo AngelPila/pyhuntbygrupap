@@ -4,8 +4,8 @@
 // ============ BOMB DATA - BASED ON PANDAS ANALYSIS ============
 const bombData = {
   "B-01": {
-    m1: [1, 1, 1, 1],
-    m2: "2046",
+    m1: [1, 0, 1, 1],
+    m2: "7826",
     m3: [
       {
         question: "¿Qué tipo de dato es '42' en Python?",
@@ -26,20 +26,20 @@ const bombData = {
     m4: ["G"],
     m5: "4",
     m6: "101",
-    m7: "00:52",
-    m8: ["Pichincha", "Guayas", "Azuay", "Manabí", "Loja", "El Oro", "Esmeraldas"],
-    m9: "9",
+    m7: "00:04",
+    m8: ["Imbabura", "Pichincha", "Cotopaxi", "Manabí"],
+    m9: "37",
     m10: {
-      code1: "14",
-      code2: "24",
-      code3: "G1",
-      code4: "579",
-      code5: "9"
+      code1: "43",
+      code2: "38",
+      code3: "G36",
+      code4: "394",
+      code5: "30"
     }
   },
   "B-02": {
-    m1: [1, 1, 1, 1],
-    m2: "2123",
+    m1: [1, 0, 1, 1],
+    m2: "1026",
     m3: [
       {
         question: "¿Qué estructura de datos es mutable?",
@@ -60,20 +60,20 @@ const bombData = {
     m4: ["R"],
     m5: "4",
     m6: "501",
-    m7: "01:05",
-    m8: ["Guayas", "Manabí", "Los Ríos", "Cotopaxi", "Tungurahua", "Chimborazo"],
-    m9: "1",
+    m7: "00:07",
+    m8: ["Imbabura", "Sucumbíos", "Orellana", "Santa Elena"],
+    m9: "35",
     m10: {
-      code1: "11",
-      code2: "44",
-      code3: "R5",
-      code4: "652",
-      code5: "1"
+      code1: "46",
+      code2: "37",
+      code3: "R45",
+      code4: "236",
+      code5: "32"
     }
   },
   "B-03": {
-    m1: [1, 1, 1, 1],
-    m2: "2080",
+    m1: [0, 1, 1, 1],
+    m2: "1926",
     m3: [
       {
         question: "¿Cuál es el resultado de: 10 // 3?",
@@ -94,20 +94,20 @@ const bombData = {
     m4: ["R"],
     m5: "3",
     m6: "201",
-    m7: "00:59",
-    m8: ["Esmeraldas", "Manabí", "Santo Domingo", "Pichincha", "Imbabura", "Carchi"],
-    m9: "9",
+    m7: "00:06",
+    m8: ["Imbabura", "Cañar", "Loja", "Carchi"],
+    m9: "43",
     m10: {
-      code1: "13",
-      code2: "03",
-      code3: "R2",
-      code4: "624",
-      code5: "9"
+      code1: "47",
+      code2: "38",
+      code3: "R25",
+      code4: "408",
+      code5: "32"
     }
   },
   "B-04": {
-    m1: [1, 1, 1, 1],
-    m2: "2094",
+    m1: [0, 0, 0, 1],
+    m2: "8826",
     m3: [
       {
         question: "¿Qué palabra clave define una función?",
@@ -128,20 +128,20 @@ const bombData = {
     m4: ["G"],
     m5: "4",
     m6: "201",
-    m7: "01:17",
-    m8: ["Sucumbíos", "Napo", "Orellana", "Pastaza", "Morona Santiago", "Zamora Chinchipe", "Loja"],
-    m9: "1",
+    m7: "00:07",
+    m8: ["Pichincha", "Chimborazo", "Esmeraldas", "El Oro"],
+    m9: "45",
     m10: {
-      code1: "14",
-      code2: "44",
-      code3: "G2",
-      code4: "716",
-      code5: "1"
+      code1: "39",
+      code2: "37",
+      code3: "G38",
+      code4: "277",
+      code5: "22"
     }
   },
   "B-05": {
-    m1: [1, 1, 1, 1],
-    m2: "2114",
+    m1: [1, 0, 1, 0],
+    m2: "4926",
     m3: [
       {
         question: "¿Qué método agrega al final de una lista?",
@@ -162,20 +162,20 @@ const bombData = {
     m4: ["G"],
     m5: "3",
     m6: "501",
-    m7: "01:05",
-    m8: ["Santa Elena", "Guayas", "Los Ríos", "Manabí", "Esmeraldas"],
-    m9: "9",
+    m7: "00:06",
+    m8: ["Azuay", "Pichincha", "Guayas", "Tungurahua"],
+    m9: "44",
     m10: {
-      code1: "13",
-      code2: "43",
-      code3: "G5",
-      code4: "559",
-      code5: "9"
+      code1: "40",
+      code2: "49",
+      code3: "G38",
+      code4: "969",
+      code5: "39"
     }
   },
   "B-06": {
-    m1: [1, 1, 1, 1],
-    m2: "2107",
+    m1: [1, 1, 1, 0],
+    m2: "6626",
     m3: [
       {
         question: "¿Cuál es el índice del primer elemento?",
@@ -196,20 +196,20 @@ const bombData = {
     m4: ["R"],
     m5: "3",
     m6: "201",
-    m7: "01:17",
-    m8: ["Azuay", "Cañar", "Chimborazo", "Bolívar", "Tungurahua"],
-    m9: "1",
+    m7: "00:06",
+    m8: ["Pichincha", "Cotopaxi", "Bolívar", "Morona Santiago"],
+    m9: "38",
     m10: {
-      code1: "10",
-      code2: "03",
-      code3: "R2",
-      code4: "711",
-      code5: "1"
+      code1: "25",
+      code2: "37",
+      code3: "R48",
+      code4: "831",
+      code5: "30"
     }
   },
   "B-07": {
-    m1: [1, 1, 1, 1],
-    m2: "2118",
+    m1: [1, 1, 1, 0],
+    m2: "4426",
     m3: [
       {
         question: "¿Qué operador es exponenciación?",
@@ -230,15 +230,15 @@ const bombData = {
     m4: ["G"],
     m5: "3",
     m6: "401",
-    m7: "01:11",
-    m8: ["Carchi", "Imbabura", "Pichincha", "Cotopaxi", "Tungurahua", "Chimborazo", "Bolívar", "Cañar", "Azuay"],
-    m9: "1",
+    m7: "00:08",
+    m8: ["Santa Elena", "Los Ríos", "Zamora Chinchipe", "Orellana"],
+    m9: "36",
     m10: {
-      code1: "13",
-      code2: "33",
-      code3: "G4",
-      code4: "619",
-      code5: "1"
+      code1: "31",
+      code2: "41",
+      code3: "G27",
+      code4: "533",
+      code5: "32"
     }
   }
 };
