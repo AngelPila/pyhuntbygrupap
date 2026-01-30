@@ -1965,8 +1965,9 @@ body.light {
 }
 
 .memory-card:hover:not(.flipped):not(.matched) {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+  /* Eliminado transform scale para evitar zoom */
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
+  border-color: #fff;
 }
 
 .memory-card.flipped,
@@ -1980,8 +1981,9 @@ body.light {
 .memory-card.matched {
   border-color: var(--primary-color);
   color: var(--primary-color);
-  opacity: 0.7;
-  animation: matchPulse 0.5s ease-in-out;
+  opacity: 0.8;
+  /* Eliminado scale animation */
+  animation: matchGlow 0.5s ease-in-out;
 }
 
 .memory-card.bomb {
@@ -1990,6 +1992,7 @@ body.light {
   color: #fff;
   font-size: 30px;
   animation: bombPulse 0.5s infinite;
+  /* Este ya no se usa pero no estorba */
 }
 
 .memory-card .card-back {
@@ -2016,15 +2019,15 @@ body.light {
   color: var(--primary-color);
 }
 
-@keyframes matchPulse {
+@keyframes matchGlow {
 
   0%,
   100% {
-    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
   }
 
   50% {
-    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.8);
   }
 }
 
