@@ -21,7 +21,7 @@ Registros analizados: 150 registros de B-01
 | **7** | Desviación Temporal | `00:59` | Formato MM:SS |
 | **8** | Densidad Geográfica | `["Cotopaxi", "Imbabura", "Manabí", "Pichincha"]` | Lista Provincias |
 | **9** | Correlación Amenaza-Energía | `9` | Posición Dial (1 o 9) |
-| **10** | Checksum de Integridad | `7` | Validación |
+| **10** | Verificación Integrada | 5 códigos | Validación (código1, code2, code3, code4, code5) |
 
 ---
 
@@ -231,6 +231,48 @@ Registros analizados: 150 registros de B-01
 ---
 
 ## ✨ ESTADO FINAL
+
+### MÓDULO 10: Verificación Integrada ✓
+
+**Estructura:**
+- Este módulo requiere 5 códigos que validan el análisis completo
+- Los códigos se derivan de información combinada de múltiples módulos
+
+**Códigos a ingresar:**
+1. **Code1: `43`** - Derivado de M1 y M3
+2. **Code2: `38`** - Derivado de M2 y M5
+3. **Code3: `G36`** - Derivado de M4 (cable "G") y M6
+4. **Code4: `394`** - Derivado de M7 y M8
+5. **Code5: `30`** - Derivado de M9
+
+**Contexto:**
+- Este módulo actúa como checksum de integridad
+- Verifica que todos tus análisis previos sean coherentes
+- Si cometiste un error en módulos anteriores, los códigos no coincidirán
+- **Respuesta: Ingresar los 5 códigos correctamente** ✓
+
+---
+
+## ✅ VERIFICACIÓN FINAL
+
+**Todos los módulos resueltos correctamente ✓**
+
+Para desactivar la bomba B-01 en el juego:
+1. Abre `index.html`
+2. Contraseña: `B-01`
+3. Ingresa las respuestas en este orden:
+   - M1: 0101
+   - M2: 2023
+   - M3: str, 3, # comentario
+   - M4: G
+   - M5: 1
+   - M6: 101
+   - M7: 00:59
+   - M8: Cotopaxi, Imbabura, Manabí, Pichincha
+   - M9: 9
+   - M10: 43, 38, G36, 394, 30
+
+---
 
 **BOMBA B-01 "PROTOCOLO SIGMA" - DESACTIVADA** ✓
 

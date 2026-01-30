@@ -75,111 +75,96 @@ Este módulo evalúa tus conocimientos fundamentales sobre el lenguaje Python. N
 
 ---
 
-## 🧩 MÓDULO 4: Identificación Crítica
+## 🧩 MÓDULO 4: Panel de Cables
 
-El sistema necesita identificar un elemento crítico de los datos. Este elemento aparece en los registros y su identificación es fundamental para el análisis.
+El sistema de seguridad tiene tres cables que controlan diferentes funciones. Debes identificar cuál cable tiene la mayor energía acumulada y cortarlo para desactivar la bomba.
 
-**El proceso:**
-1. Analiza los registros de B-01
-2. Identifica el elemento más relevante en un campo específico
-3. Proporciona su identificador único
-
-**Ayuda técnica:**
-- El resultado es una única letra o código
-- Busca en la columna correspondiente qué valor dominan los registros
+**Cómo resolver:**
+- En la interfaz verás 3 cables: ROJO (R), VERDE (G), AZUL (B)
+- Haz clic en el cable con mayor energía acumulada
+- Para B-01, la respuesta correcta es: **VERDE (G)**
 
 ---
 
-## 🧩 MÓDULO 5: Agentes de Alto Riesgo
+## 🧩 MÓDULO 5: Panel de Agentes
 
-Múltiples agentes operan en el sitio. Solo algunos están en zonas donde la energía es suficientemente peligrosa. El módulo necesita saber cuántos agentes **distintos** están expuestos a ese peligro.
+Hay múltiples agentes operando en el sitio. Solo aquellos en zonas de alto riesgo (Energía > 50) tienen acceso a sistemas críticos. El módulo necesita contar cuántos agentes **únicos** están en esas zonas de alto riesgo.
 
-**El proceso:**
-1. Identifica la zona de alto riesgo según los niveles de energía
-2. Filtra los registros que están en esa zona
-3. Cuenta cuántos agentes únicos operan en esa zona filtrada
-4. Normaliza el resultado a un rango de 0 a 3
-
-**Nota:**
-- Debes escribir solo el resultado final normalizado
+**Cómo resolver:**
+- Filtra registros donde Energía > 50
+- Cuenta los agentes únicos en esa zona
+- Normaliza el resultado a un rango de 0 a 3
+- Para B-01, la respuesta correcta es: **1**
 
 ---
 
-## 🧩 MÓDULO 6: Sensor Invertido
+## 🧩 MÓDULO 6: Teclado Inverso
 
-Un sensor es utilizado mucho más que los demás. Este sensor tiene un código que necesita ser invertido para acceder a un subsistema oculto. El reflejo de ese código es la clave de acceso.
+Un sensor específico es el más frecuente en los datos. Su código numérico debe ser invertido para acceder al subsistema de seguridad.
 
-**El proceso:**
-1. Encuentra cuál sensor es el más usado
-2. Toma el identificador numérico de ese sensor
-3. Invierte el orden de sus dígitos
-
-**Ayuda técnica:**
-- La inversión crea un nuevo número (ej: 301 → 103)
-- Algunos números son palíndromos
+**Cómo resolver:**
+1. Encuentra el sensor más usado
+2. Invierte el orden de sus dígitos
+3. Ingresa el código invertido
+- Para B-01, la respuesta correcta es: **101**
 
 ---
 
-## 🧩 MÓDULO 7: Desviación Temporal
+## 🧩 MÓDULO 7: Sincronización Temporal
 
-Los eventos de la bomba no ocurren a intervalos perfectos. Hay variaciones en los tiempos entre mediciones. El sistema necesita cuantificar cuánta variación temporal existe en todo el conjunto de eventos.
+Los eventos ocurren en diferentes momentos. El sistema necesita cuantificar cuánta variabilidad existe en los tiempos entre mediciones.
 
-**El proceso:**
-1. Convierte todos los timestamps a un formato que permita cálculos numéricos
-2. Calcula la variabilidad estadística de esos tiempos
-3. Convierte el resultado a un formato de tiempo legible (minutos y segundos)
-
-**Ayuda técnica:**
-- El resultado final debe expresarse como MM:SS con 2 dígitos cada uno
+**Cómo resolver:**
+1. Extrae todos los timestamps de los registros de B-01
+2. Calcula la desviación estándar de esos tiempos
+3. Convierte el resultado a formato MM:SS (minutos y segundos)
+- Para B-01, la respuesta correcta es: **00:59**
 
 ---
 
-## 🧩 MÓDULO 8: Densidad Geográfica
+## 🧩 MÓDULO 8: Ruta Geográfica
 
-La bomba B-01 está desplegada en múltiples provincias. El sistema necesita conocer exactamente cuáles provincias están involucradas para entender el alcance geográfico de la operación.
+La bomba B-01 está desplegada en múltiples provincias. El sistema debe conocer el alcance geográfico exacto.
 
-**El proceso:**
-1. Identifica todas las provincias únicas donde hay registros de B-01
-2. Extrae la lista completa de esas provincias
-3. Ordénalas alfabéticamente
-4. Ingresa la lista en el formato requerido por el sistema (lista JSON o texto separado por comas)
-
-**Ayuda técnica:**
-- Busca valores únicos en la columna `Provincia`
-- El resultado es una lista de strings
-- Mantén los nombres exactos de las provincias del dataset
+**Cómo resolver:**
+1. Identifica todas las provincias únicas en los registros de B-01
+2. Selecciona las provincias en la interfaz
+- Para B-01, las provincias correctas son: **Cotopaxi, Imbabura, Manabí, Pichincha**
 
 ---
 
-## 🧩 MÓDULO 9: Correlación Amenaza-Energía
+## 🧩 MÓDULO 9: Indicador de Dial
 
-En sistemas complejos, las variables a menudo se relacionan entre sí. Existe una relación entre el nivel de amenaza de la bomba y la energía que está usando. El dial físico necesita saber qué tipo de relación existe para establecer el equilibrio correcto.
+Un dial físico debe posicionarse según la relación entre amenaza y energía. La correlación entre estas variables determina hacia dónde apunta el dial.
 
-**El proceso:**
-1. Analiza cómo se relacionan amenaza y energía en los datos de B-01
-2. Calcula la correlación de Pearson entre estas dos variables
-3. Según el signo de la correlación, posiciona el dial
-
-**Interfaz del juego - Cómo ingresar:**
-- El dial en la interfaz tiene dos posiciones: **1** (izquierda) y **9** (derecha)
-- Si la correlación es **positiva** (ambas variables crecen juntas) → coloca el dial en **9**
-- Si la correlación es **negativa** (una crece mientras la otra decrece) → coloca el dial en **1**
-- Usa el mouse para hacer clic en la posición deseada del dial
+**Cómo resolver:**
+1. Calcula la correlación de Pearson entre Nivel_Amenaza y Energia
+2. Según el signo:
+   - Correlación POSITIVA → Dial en posición **9**
+   - Correlación NEGATIVA → Dial en posición **1**
+- Para B-01, la respuesta correcta es: **9** (correlación positiva)
 
 ---
 
-## 🧩 MÓDULO 10: Checksum de Integridad
+## 🧩 MÓDULO 10: Verificación Integrada
 
-Este es el módulo de validación final. Combina información de tres módulos anteriores para verificar que todo tu análisis es coherente. Si cometiste un error en alguno de esos módulos, el checksum lo detectará.
+Este es el módulo final que integra información de múltiples módulos anteriores. Requiere 5 códigos derivados del análisis completo.
 
-**El proceso:**
-1. Extrae valores específicos de tres módulos anteriores
-2. Combina esos valores según una fórmula
-3. Normaliza el resultado a un dígito final (0–9)
+**Cómo resolver - Ingresa los 5 códigos:**
+1. **Code1:** 43 (Derivado de M1 y M3)
+2. **Code2:** 38 (Derivado de M2 y M5)
+3. **Code3:** G36 (Cable G de M4 + Sensor de M6)
+4. **Code4:** 394 (Derivado de M7 y M8)
+5. **Code5:** 30 (Derivado de M9)
 
-**Lo que necesitas saber:**
-- El checksum es como una firma digital que confirma consistencia
-- Si algo está mal en módulos previos, el checksum cambiará
+**Para B-01, los códigos correctos son:**
+- Code1: **43**
+- Code2: **38**
+- Code3: **G36**
+- Code4: **394**
+- Code5: **30**
+
+---
 
 ---
 

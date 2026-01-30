@@ -144,6 +144,7 @@
         <div id="template-m1" class="module">
             <h2>MÓDULO 1: CARGA DE SUMA VECTORIAL</h2>
             <p class="module-description">Suma total acumulada: Si > 50 → código 1111. Sino → binario de 4 bits</p>
+            <p class="module-penalty">Penalización por error: -1:30</p>
             <div class="switches-container">
                 <label class="switch-toggle">
                     <input type="checkbox" class="switch-input" data-index="0">
@@ -173,6 +174,7 @@
         <div id="template-m2" class="module">
             <h2>MÓDULO 2: RUEDA TEMPORAL</h2>
             <p class="module-description">Promedio ponderado: últimos 2 dígitos + año fundación (2026)</p>
+            <p class="module-penalty">Penalización por error: -1:30</p>
             <div class="year-wheel-container">
                 <input type="range" id="yearSlider" class="year-slider" min="1990" max="2030" value="2010">
                 <div class="year-display" id="yearDisplay">2010</div>
@@ -184,6 +186,7 @@
         <div id="template-m3" class="module">
             <h2>MÓDULO 3: CONOCIMIENTO PYTHON</h2>
             <p class="module-description">Responde correctamente las 3 preguntas de Python</p>
+            <p class="module-penalty">Penalización por error: -1:30 por pregunta</p>
             <div class="question-progress" id="questionProgress">Pregunta 1 de 3</div>
             <div class="python-question">
                 <p id="questionText" class="question-text">Cargando pregunta...</p>
@@ -202,16 +205,17 @@
             <h2>MÓDULO 4: PANEL DE CABLES</h2>
             <p class="module-description">Identifica dominancia energética: Corta el cable con mayor energía acumulada
             </p>
+            <p class="module-penalty">Penalización por error: -7:30</p>
             <div class="cables-container">
-                <div class="cable red-cable" data-color="RED">
+                <div class="cable red-cable" data-color="R">
                     <div class="cable-visual"></div>
                     <span>ROJO</span>
                 </div>
-                <div class="cable green-cable" data-color="GREEN">
+                <div class="cable green-cable" data-color="G">
                     <div class="cable-visual"></div>
                     <span>VERDE</span>
                 </div>
-                <div class="cable blue-cable" data-color="BLUE">
+                <div class="cable blue-cable" data-color="B">
                     <div class="cable-visual"></div>
                     <span>AZUL</span>
                 </div>
@@ -223,6 +227,7 @@
         <div id="template-m5" class="module">
             <h2>MÓDULO 5: PANEL DE AGENTES</h2>
             <p class="module-description">Agentes únicos con energía > 50 (ingresar el número)</p>
+            <p class="module-penalty">Penalización por error: -5:00</p>
             <input type="text" class="special-input" placeholder="0" maxlength="1">
             <div class="symbol-keyboard">
                 <button class="symbol-btn" data-symbol="0">0</button>
@@ -237,6 +242,7 @@
         <div id="template-m6" class="module">
             <h2>MÓDULO 6: TECLADO INVERSO</h2>
             <p class="module-description">Sensor más activo (Moda) invertido: Ingresa el ID invertido</p>
+            <p class="module-penalty">Penalización por error: -5:00</p>
             <input type="text" class="numpad-input" placeholder="000" maxlength="3" readonly>
             <div class="numpad-grid">
                 <button class="numpad-btn" data-num="7">7</button>
@@ -258,6 +264,7 @@
         <div id="template-m7" class="module">
             <h2>MÓDULO 7: SINCRONIZACIÓN</h2>
             <p class="module-description">Delta de tiempo: Desviación estándar redondeada a 2 decimales</p>
+            <p class="module-penalty">Penalización por error: -0:30 por reinicio</p>
             <div class="chronometer-display" id="chronometerDisplay">00:00</div>
             <button class="btn-main stop-btn">STOP</button>
             <p class="chrono-hint">Presiona STOP al tiempo exacto</p>
@@ -268,6 +275,7 @@
             <h2>MÓDULO 8: RUTA DE EVACUACIÓN</h2>
             <p class="module-description">Selecciona las provincias en el ORDEN EXACTO de la ruta de evacuación
                 establecida</p>
+            <p class="module-penalty">Penalización por error: -4:00</p>
             <svg class="ecuador-map" viewBox="0 0 500 650" xmlns="http://www.w3.org/2000/svg">
                 <!-- COSTA -->
                 <!-- Esmeraldas -->
@@ -410,6 +418,7 @@
         <div id="template-m9" class="module">
             <h2>MÓDULO 9: DIAL DE PRESIÓN</h2>
             <p class="module-description">Correlación: Si > 0 → 9 | Si < 0 → 1 | Si ≈ 0 → 5</p>
+            <p class="module-penalty">Penalización por error: -5:00</p>
                     <div class="dial-container">
                         <div class="dial-display" id="dialDisplay">0</div>
                         <input type="range" class="dial-slider" min="0" max="9" value="0">
@@ -422,29 +431,30 @@
             <h2>MÓDULO 10: VERIFICACIÓN INTEGRADA</h2>
             <p class="module-description">Resuelve el código de desactivación usando datos de todos los módulos
                 anteriores</p>
+            <p class="module-penalty">Penalización por error: -1:00</p>
             <div class="verification-container">
                 <div class="code-display">
                     <p class="code-label">CÓDIGO A INGRESAR:</p>
                     <div class="code-blocks">
                         <div class="code-block" id="codeBlock1">
                             <span class="block-label">M1-M3</span>
-                            <input type="text" class="code-input" data-block="1" placeholder="?" maxlength="2">
+                            <input type="text" class="code-input" data-block="1" placeholder="?" maxlength="3">
                         </div>
                         <div class="code-block" id="codeBlock2">
                             <span class="block-label">M2-M5</span>
-                            <input type="text" class="code-input" data-block="2" placeholder="?" maxlength="2">
+                            <input type="text" class="code-input" data-block="2" placeholder="?" maxlength="3">
                         </div>
                         <div class="code-block" id="codeBlock3">
                             <span class="block-label">M4-M6</span>
-                            <input type="text" class="code-input" data-block="3" placeholder="?" maxlength="2">
+                            <input type="text" class="code-input" data-block="3" placeholder="?" maxlength="4">
                         </div>
                         <div class="code-block" id="codeBlock4">
                             <span class="block-label">M7-M8</span>
-                            <input type="text" class="code-input" data-block="4" placeholder="?" maxlength="2">
+                            <input type="text" class="code-input" data-block="4" placeholder="?" maxlength="4">
                         </div>
                         <div class="code-block" id="codeBlock5">
                             <span class="block-label">M9</span>
-                            <input type="text" class="code-input" data-block="5" placeholder="?" maxlength="1">
+                            <input type="text" class="code-input" data-block="5" placeholder="?" maxlength="3">
                         </div>
                     </div>
                 </div>
@@ -470,6 +480,7 @@
         <div id="template-m11" class="module">
             <h2>MÓDULO 11: MEMORIA DE FUNCIONES</h2>
             <p class="module-description">Empareja cada función con su concepto (18 pares).</p>
+            <p class="module-penalty">Penalización por error: no resta</p>
             <div class="memory-stats">
                 <div class="stat">Pares encontrados: <span id="pairsFound">0</span>/18</div>
                 <div class="stat">Intentos: <span id="attempts">0</span></div>

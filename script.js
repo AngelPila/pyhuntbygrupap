@@ -2,10 +2,34 @@
 // Retos basados en Análisis de Datos con Pandas
 
 // ============ BOMB DATA - BASED ON PANDAS ANALYSIS ============
+// ESTRUCTURA DE CADA BOMBA:
+// {
+//   m1: [0/1, 0/1, 0/1, 0/1]                    // Módulo 1: 4 interruptores (respuestas binarias)
+//   m2: "XXXX"                                   // Módulo 2: Año/Sensor (4 dígitos)
+//   m3: [                                        // Módulo 3: Preguntas (3 preguntas de opción múltiple)
+//     { question: "?", options: [...], answer: "X" },
+//     { question: "?", options: [...], answer: "X" },
+//     { question: "?", options: [...], answer: "X" }
+//   ],
+//   m4: ["G" | "R" | "B"]                        // Módulo 4: Cable (G=Green, R=Red, B=Blue)
+//   m5: "X"                                      // Módulo 5: Número de agentes (0-3)
+//   m6: "XXX"                                    // Módulo 6: Código numérico invertido (3 dígitos)
+//   m7: "XX:XX"                                  // Módulo 7: Tiempo (MM:SS)
+//   m8: ["X", "X", "X", "X"]                     // Módulo 8: Provincias (orden correcto)
+//   m9: "XX"                                     // Módulo 9: Número (2 dígitos)
+//   m10: {                                       // Módulo 10: Código integrado (5 valores)
+//     code1: "XX",   // Códigos de 1-4 caracteres
+//     code2: "XX",   // Códigos de 1-4 caracteres
+//     code3: "XXX",  // Códigos de 1-4 caracteres
+//     code4: "XXX",  // Códigos de 1-4 caracteres
+//     code5: "XX"    // Códigos de 1-4 caracteres
+//   }
+// }
+
 const bombData = {
   "B-01": {
     m1: [0, 1, 0, 1],
-    m2: "2023",
+    m2: "2006",
     m3: [
       {
         question: "¿Qué tipo de dato es \"hola\" en Python?",
@@ -29,7 +53,13 @@ const bombData = {
     m7: "00:59",
     m8: ["Cotopaxi", "Imbabura", "Manabí", "Pichincha"],
     m9: "9",
-    m10: "7"
+    m10: {
+      code1: "43",
+      code2: "38",
+      code3: "G36",
+      code4: "394",
+      code5: "30"
+    }
   },
   "B-02": {
     m1: [1, 0, 1, 1],
@@ -242,10 +272,27 @@ let gameState = {
   currentBomb: null,
   currentModule: 0,
   modulesCompleted: [],
-  timeRemaining: 1200, // 20 minutes in seconds
+  timeRemaining: 3600, // 60 minutes
   gameStarted: false,
   gameLost: false,
   moduleStates: {}
+
+};
+
+// ============ PENALTY SYSTEM ============
+// Penalty time in seconds for errors in each module
+const modulePenalties = {
+  0: 90,    // M1: -1 minuto y 30 segundos
+  1: 90,    // M2: -1:30
+  2: 90,    // M3: -1:30 por cada pregunta
+  3: 450,   // M4: -7:30
+  4: 300,   // M5: -5:00
+  5: 300,   // M6: -5 MINUTOS
+  6: 30,    // M7: -30 SEGUNDOS POR CADA REINICIO
+  7: 240,   // M8: -4 MINUTOS
+  8: 300,   // M9: -5 MINUTOS
+  9: 60,    // M10: -1 MINUTO
+  10: 0     // M11: NO RESTA
 };
 
 // ============ DOM ELEMENTS ============
@@ -271,27 +318,27 @@ const moduleTemplates = document.getElementById('moduleTemplates');
 // ============ INTRO SCREEN ============
 const storyBlocks = [
   {
-    title: "⚠️ ALERTA CRÍTICA ⚠️",
+    title: "ALERTA CRÍTICA",
     content: `Una organización criminal ha plantado una BOMBA DIGITAL en la infraestructura crítica de la ciudad.
 
-El dispositivo contiene 10 MÓDULOS DE SEGURIDAD avanzados que deben ser desactivados en tiempo real.`
+El dispositivo contiene 11 MÓDULOS DE SEGURIDAD avanzados que deben ser desactivados en tiempo real.`
   },
   {
-    title: "🎯 TU MISIÓN",
+    title: "TU MISIÓN",
     content: `5 EQUIPOS de élite han sido desplegados simultáneamente.
 
-Tu equipo debe desactivar los 10 módulos de la bomba utilizando análisis de datos y razonamiento lógico.
+Tu equipo debe desactivar los 11 módulos de la bomba utilizando análisis de datos y razonamiento lógico.
 
 Solo el equipo más rápido y preciso salvará la ciudad.`
   },
   {
-    title: "⏱️ TIEMPO LÍMITE",
-    content: `Tienes exactamente 40:00 MINUTOS para completar la misión.
+    title: "TIEMPO LÍMITE",
+    content: `Tienes exactamente 60:00 MINUTOS para completar la misión.
 
 Cada segundo cuenta. La bomba se detonará si el tiempo expira.`
   },
   {
-    title: "⚡ ADVERTENCIA ⚡",
+    title: "ADVERTENCIA",
     content: `• Cada módulo requiere una respuesta EXACTA
 • Los errores consumen tiempo valioso
 • La bomba se detonará si el tiempo expira
@@ -406,7 +453,7 @@ function loadBomb() {
   const pwd = passwordInput.value.toUpperCase();
 
   if (!bombData[pwd]) {
-    passwordError.textContent = '❌ CONTRASEÑA INVÁLIDA';
+    passwordError.textContent = 'CONTRASEÑA INVÁLIDA';
     passwordError.style.animation = 'none';
     setTimeout(() => passwordError.style.animation = 'blink 0.5s infinite', 10);
     return;
@@ -415,7 +462,7 @@ function loadBomb() {
   gameState.currentBomb = pwd;
   gameState.currentModule = 0;
   gameState.modulesCompleted = [];
-  gameState.timeRemaining = 2400; // 40 minutes in seconds (changed from 1200)
+  gameState.timeRemaining = 3600; // 60 minutes in seconds
   gameState.gameStarted = true;
   gameState.gameLost = false;
 
@@ -869,15 +916,23 @@ function initM10(el, correctCode) {
     5: ''
   };
 
+  // Setup input listeners for all 5 code blocks
   codeInputs.forEach(input => {
     input.addEventListener('input', (e) => {
       const block = e.target.dataset.block;
       userCode[block] = e.target.value.toUpperCase();
     });
+
+    // Allow Enter key to validate
+    input.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        validateBtn.click();
+      }
+    });
   });
 
   validateBtn.addEventListener('click', () => {
-    // Validar que todos los campos estén llenos
+    // Validate that all fields are filled
     let allFilled = true;
     for (let i = 1; i <= 5; i++) {
       if (userCode[i] === '') {
@@ -891,24 +946,28 @@ function initM10(el, correctCode) {
       return;
     }
 
-    // Verificar que el código sea correcto
+    // Check if the code is correct by comparing each code block
     let isCorrect = true;
     for (let i = 1; i <= 5; i++) {
-      if (userCode[i] !== correctCode[`code${i}`]) {
+      const expectedCode = correctCode[`code${i}`];
+      if (userCode[i] !== expectedCode) {
         isCorrect = false;
         break;
       }
     }
 
     if (isCorrect) {
+      // Mark all inputs as correct
       codeInputs.forEach(input => {
         input.classList.add('correct');
       });
       completeModule();
     } else {
+      // Show error and reset inputs
       showError();
       codeInputs.forEach(input => {
         input.value = '';
+        input.classList.remove('correct');
         userCode[input.dataset.block] = '';
       });
     }
@@ -953,8 +1012,18 @@ function showError() {
     gameScreen.style.backgroundColor = '';
   }, 300);
 
-  // Penalización: restar 10 segundos por error
-  gameState.timeRemaining = Math.max(0, gameState.timeRemaining - 10);
+  // Penalización: restar tiempo según el módulo actual
+  const moduleIndex = gameState.currentModule;
+  const penalty = modulePenalties[moduleIndex] || 0;
+  gameState.timeRemaining = Math.max(0, gameState.timeRemaining - penalty);
+  
+  // Show penalty message
+  if (penalty > 0) {
+    const mins = Math.floor(penalty / 60);
+    const secs = penalty % 60;
+    const penaltyText = mins > 0 ? `${mins}:${String(secs).padStart(2, '0')}` : `${secs}s`;
+    console.log(`Error en M${moduleIndex + 1}: -${penaltyText}`);
+  }
 }
 
 function updateProgress() {
@@ -1035,7 +1104,7 @@ function restartGame() {
     currentBomb: null,
     currentModule: 0,
     modulesCompleted: [],
-    timeRemaining: 2400, // 40 minutes
+    timeRemaining: 3600, // 60 minutes
     gameStarted: false,
     gameLost: false,
     moduleStates: {}
