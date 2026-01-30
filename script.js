@@ -233,6 +233,7 @@ let gameState = {
 };
 
 // ============ DOM ELEMENTS ============
+const introScreen = document.getElementById('introScreen');
 const passwordScreen = document.getElementById('passwordScreen');
 const gameScreen = document.getElementById('gameScreen');
 const victoryScreen = document.getElementById('victoryScreen');
@@ -251,8 +252,131 @@ const statusIndicator = document.querySelector('.status-indicator');
 
 const moduleTemplates = document.getElementById('moduleTemplates');
 
+// ============ INTRO SCREEN ============
+const storyBlocks = [
+  {
+    title: "⚠️ ALERTA CRÍTICA ⚠️",
+    content: `Una organización criminal ha plantado una BOMBA DIGITAL en la infraestructura crítica de la ciudad.
+
+El dispositivo contiene 10 MÓDULOS DE SEGURIDAD avanzados que deben ser desactivados en tiempo real.`
+  },
+  {
+    title: "🎯 TU MISIÓN",
+    content: `5 EQUIPOS de élite han sido desplegados simultáneamente.
+
+Tu equipo debe desactivar los 10 módulos de la bomba utilizando análisis de datos y razonamiento lógico.
+
+Solo el equipo más rápido y preciso salvará la ciudad.`
+  },
+  {
+    title: "⏱️ TIEMPO LÍMITE",
+    content: `Tienes exactamente 40:00 MINUTOS para completar la misión.
+
+Cada segundo cuenta. La bomba se detonará si el tiempo expira.`
+  },
+  {
+    title: "⚡ ADVERTENCIA ⚡",
+    content: `• Cada módulo requiere una respuesta EXACTA
+• Los errores consumen tiempo valioso
+• La bomba se detonará si el tiempo expira
+• La precisión es más importante que la velocidad
+
+═══════════════════════════════════════════════════════
+
+¿ESTÁS LISTO PARA SALVAR LA CIUDAD?`
+  }
+];
+
+let currentBlockIndex = 0;
+let isTyping = false;
+
+function initIntroScreen() {
+  const narrativeBlock = document.getElementById('narrativeBlock');
+  const nextBlockBtn = document.getElementById('nextBlockBtn');
+  const startMissionBtn = document.getElementById('startMissionBtn');
+
+  // Reset
+  currentBlockIndex = 0;
+  narrativeBlock.innerHTML = '';
+  nextBlockBtn.style.display = 'none';
+  startMissionBtn.style.display = 'none';
+
+  // Show first block
+  showBlock(0);
+
+  // Handle NEXT button (using onclick to avoid duplicates)
+  nextBlockBtn.onclick = () => {
+    if (!isTyping && currentBlockIndex < storyBlocks.length - 1) {
+      currentBlockIndex++;
+      showBlock(currentBlockIndex);
+    }
+  };
+
+  // Handle start mission button (using onclick to avoid duplicates)
+  startMissionBtn.onclick = () => {
+    introScreen.classList.remove('active');
+    passwordScreen.classList.add('active');
+  };
+}
+
+function showBlock(index) {
+  const narrativeBlock = document.getElementById('narrativeBlock');
+  const nextBlockBtn = document.getElementById('nextBlockBtn');
+  const startMissionBtn = document.getElementById('startMissionBtn');
+
+  const block = storyBlocks[index];
+
+  // Clear previous content
+  narrativeBlock.innerHTML = '';
+  nextBlockBtn.style.display = 'none';
+  startMissionBtn.style.display = 'none';
+
+  // Create block structure
+  const titleEl = document.createElement('div');
+  titleEl.className = 'block-title';
+  titleEl.textContent = block.title;
+
+  const contentEl = document.createElement('div');
+  contentEl.className = 'block-content';
+
+  narrativeBlock.appendChild(titleEl);
+  narrativeBlock.appendChild(contentEl);
+
+  // Type the content
+  typeBlockContent(contentEl, block.content, () => {
+    // After typing is complete
+    if (index < storyBlocks.length - 1) {
+      nextBlockBtn.style.display = 'inline-block';
+    } else {
+      startMissionBtn.style.display = 'inline-block';
+    }
+  });
+}
+
+function typeBlockContent(element, text, callback) {
+  isTyping = true;
+  let charIndex = 0;
+  const typingSpeed = 15; // milliseconds per character
+
+  function typeChar() {
+    if (charIndex < text.length) {
+      element.textContent = text.substring(0, charIndex + 1);
+      charIndex++;
+      setTimeout(typeChar, typingSpeed);
+    } else {
+      isTyping = false;
+      if (callback) callback();
+    }
+  }
+
+  typeChar();
+}
+
 // ============ INITIALIZATION ============
 function init() {
+  // Initialize intro screen
+  initIntroScreen();
+
   passwordBtn.addEventListener('click', loadBomb);
   passwordInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') loadBomb();
@@ -264,7 +388,7 @@ function init() {
 
 function loadBomb() {
   const pwd = passwordInput.value.toUpperCase();
-  
+
   if (!bombData[pwd]) {
     passwordError.textContent = '❌ CONTRASEÑA INVÁLIDA';
     passwordError.style.animation = 'none';
@@ -275,7 +399,7 @@ function loadBomb() {
   gameState.currentBomb = pwd;
   gameState.currentModule = 0;
   gameState.modulesCompleted = [];
-  gameState.timeRemaining = 1200;
+  gameState.timeRemaining = 2400; // 40 minutes in seconds (changed from 1200)
   gameState.gameStarted = true;
   gameState.gameLost = false;
 
@@ -311,7 +435,7 @@ function switchModule(index) {
   if (gameState.modulesCompleted.includes(index)) return;
 
   gameState.currentModule = index;
-  
+
   // Update buttons
   document.querySelectorAll('.module-btn').forEach((btn, i) => {
     btn.classList.remove('active');
@@ -328,12 +452,12 @@ function switchModule(index) {
 function loadModule(index) {
   const templateId = `template-m${index + 1}`;
   const template = document.getElementById(templateId);
-  
+
   if (!template) return;
 
   const moduleClone = template.cloneNode(true);
   moduleClone.id = '';
-  
+
   moduleContent.innerHTML = '';
   moduleContent.appendChild(moduleClone);
 
@@ -397,7 +521,7 @@ function initM3(el, questionsData) {
   const optionBtns = el.querySelectorAll('.option-btn');
   const validateBtn = el.querySelector('.btn-validate');
   const progressIndicator = el.querySelector('#questionProgress');
-  
+
   let currentQuestionIndex = 0;
   let selectedAnswer = null;
   let correctAnswers = 0;
@@ -433,7 +557,7 @@ function initM3(el, questionsData) {
     }
 
     const currentQuestion = questionsData[currentQuestionIndex];
-    
+
     if (selectedAnswer === currentQuestion.answer) {
       correctAnswers++;
       optionBtns.forEach(btn => {
@@ -446,7 +570,7 @@ function initM3(el, questionsData) {
       // Avanzar a la siguiente pregunta o completar el módulo
       setTimeout(() => {
         currentQuestionIndex++;
-        
+
         if (currentQuestionIndex < questionsData.length) {
           loadQuestion();
         } else {
@@ -522,7 +646,7 @@ function initM6(el, correctSequence) {
   numpadBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const num = btn.dataset.num;
-      
+
       if (num === 'DEL') {
         numpadValue = numpadValue.slice(0, -1);
       } else if (num === 'OK') {
@@ -537,7 +661,7 @@ function initM6(el, correctSequence) {
           numpadValue += num;
         }
       }
-      
+
       input.value = numpadValue;
     });
   });
@@ -562,7 +686,7 @@ function initM7(el, correctTime) {
       chronometerInterval = setInterval(() => {
         chronometerValue++;
         updateDisplay();
-        
+
         if (chronometerValue > 3599) {
           clearInterval(chronometerInterval);
         }
@@ -571,7 +695,7 @@ function initM7(el, correctTime) {
       clearInterval(chronometerInterval);
       const [targetMins, targetSecs] = correctTime.split(':').map(Number);
       const targetVal = targetMins * 60 + targetSecs;
-      
+
       if (chronometerValue >= targetVal - 2 && chronometerValue <= targetVal + 2) {
         completeModule();
       } else {
@@ -596,16 +720,16 @@ function initM8(el, correctSequence) {
   provinces.forEach(province => {
     province.addEventListener('click', () => {
       const provinceName = province.dataset.province;
-      
+
       // Si ya está seleccionada, quitarla
       if (province.classList.contains('priority-selected')) {
         const priorityNumber = parseInt(province.dataset.priorityNumber);
         province.classList.remove('priority-selected');
         province.removeAttribute('data-priority-number');
-        
+
         // Remover del array
         priorityOrder = priorityOrder.filter(p => p.name !== provinceName);
-        
+
         // Actualizar números de prioridad
         priorityOrder.forEach((p, index) => {
           const elem = Array.from(provinces).find(pr => pr.dataset.province === p.name);
@@ -614,7 +738,7 @@ function initM8(el, correctSequence) {
             p.priority = index + 1;
           }
         });
-        
+
         clickCounter = priorityOrder.length + 1;
       } else {
         // Agregar nueva prioridad
@@ -623,7 +747,7 @@ function initM8(el, correctSequence) {
         priorityOrder.push({ name: provinceName, priority: clickCounter });
         clickCounter++;
       }
-      
+
       updatePriorityDisplay();
     });
   });
@@ -776,16 +900,16 @@ function initM10(el, correctCode) {
 // ============ MODULE COMPLETION ============
 function completeModule() {
   const moduleIndex = gameState.currentModule;
-  
+
   if (!gameState.modulesCompleted.includes(moduleIndex)) {
     gameState.modulesCompleted.push(moduleIndex);
-    
+
     // Update button
     document.querySelector(`[data-module="${moduleIndex}"]`).classList.add('completed');
-    
+
     // Update progress
     updateProgress();
-    
+
     // Check victory
     if (gameState.modulesCompleted.length === 10) {
       victory();
@@ -810,7 +934,7 @@ function showError() {
   setTimeout(() => {
     gameScreen.style.backgroundColor = '';
   }, 300);
-  
+
   // Penalización: restar 10 segundos por error
   gameState.timeRemaining = Math.max(0, gameState.timeRemaining - 10);
 }
@@ -862,9 +986,9 @@ function victory() {
 
   const mins = Math.floor(gameState.timeRemaining / 60);
   const secs = gameState.timeRemaining % 60;
-  document.getElementById('victoryTime').textContent = 
+  document.getElementById('victoryTime').textContent =
     `Tiempo Restante: ${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
-  
+
   const code = generateVictoryCode();
   document.getElementById('victoryCode').textContent = `CÓDIGO: ${code}`;
 }
@@ -880,11 +1004,11 @@ function generateVictoryCode() {
   const bomb = gameState.currentBomb;
   const completed = gameState.modulesCompleted.length;
   const time = gameState.timeRemaining;
-  
+
   const code1 = bomb.toUpperCase();
   const code2 = String(completed).padStart(2, '0');
   const code3 = String(time % 10000).padStart(4, '0');
-  
+
   return `${code1}-${code2}${code3}`;
 }
 
@@ -893,7 +1017,7 @@ function restartGame() {
     currentBomb: null,
     currentModule: 0,
     modulesCompleted: [],
-    timeRemaining: 1200,
+    timeRemaining: 2400, // 40 minutes
     gameStarted: false,
     gameLost: false,
     moduleStates: {}
@@ -901,14 +1025,19 @@ function restartGame() {
 
   passwordInput.value = '';
   passwordError.textContent = '';
-  
-  passwordScreen.classList.add('active');
+
+  // Return to intro screen
+  introScreen.classList.add('active');
+  passwordScreen.classList.remove('active');
   gameScreen.classList.remove('active');
   victoryScreen.classList.remove('active');
   failureScreen.classList.remove('active');
 
   timer.classList.remove('danger');
   statusIndicator.classList.remove('danger');
+
+  // Reinitialize intro screen
+  initIntroScreen();
 }
 
 // ============ START ============
