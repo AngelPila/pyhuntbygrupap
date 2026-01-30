@@ -1960,6 +1960,8 @@ body.light {
   position: relative;
   transform-style: preserve-3d;
   box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
 .memory-card:hover:not(.flipped):not(.matched) {
@@ -2074,8 +2076,20 @@ body.light {
     font-size: 14px;
   }
 }
+
 /* Memory Card Types */
-.memory-card.concept { border-color: #00ffff; }
-.memory-card.def { border-color: #ff00ff; }
-.memory-card.concept .card-front { color: #00ffff; }
-.memory-card.def .card-front { color: #ff00ff; }
+.memory-card.concept {
+  border-color: #00ffff;
+}
+
+.memory-card.def {
+  border-color: #ff00ff;
+}
+
+.memory-card.concept .card-front {
+  color: #00ffff;
+}
+
+.memory-card.def .card-front {
+  color: #ff00ff;
+}
