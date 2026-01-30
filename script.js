@@ -4,8 +4,9 @@
 // ============ BOMB DATA - BASED ON PANDAS ANALYSIS ============
 const bombData = {
   "B-01": {
-    m1: [1, 0, 1, 1],
-    m2: "7826",
+    m1: [1, 0, 0, 1],
+    //de 1990 - 2030 (corregir)
+    m2: "2023",
     m3: [
       {
         question: "¿Qué tipo de dato es '42' en Python?",
@@ -23,10 +24,10 @@ const bombData = {
         answer: "# comentario"
       }
     ],
-    m4: ["G"],
-    m5: "4",
+    m4: ["G"], //REVISAR
+    m5: "1",
     m6: "101",
-    m7: "00:04",
+    m7: "00:59",
     m8: ["Imbabura", "Pichincha", "Cotopaxi", "Manabí"],
     m9: "37",
     m10: {
