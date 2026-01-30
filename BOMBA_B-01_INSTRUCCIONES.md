@@ -14,324 +14,180 @@
 
 ## 📋 INFORMACIÓN DE INTELIGENCIA
 
-Has sido asignado para desactivar la **Bomba B-01**, conocida como "Protocolo Sigma". Esta bomba contiene **10 módulos interconectados** que deben ser desactivados en cualquier orden antes de que expire el cronómetro.
+Objetivo: desactivar la **Bomba B-01**. Hay **10 módulos** y se resuelven en cualquier orden.
 
-**DATOS DISPONIBLES:** `dataset_bombas_completo.csv`
-
-⚠️ **ADVERTENCIA:** El dataset contiene información de **todas las bombas**. Debes filtrar únicamente los datos correspondientes a **B-01**.
+**Dataset:** `dataset_bombas_completo.csv` (filtra solo `ID_Bomba == 'B-01'`).
 
 ---
 
-## 🔍 MISIÓN: RESOLVER 10 MÓDULOS
+## 📊 PASO 0: Preparación
 
-### 📊 PASO 0: Preparación
+Necesitas cargar el dataset completo y filtrar solo los datos de la Bomba B-01. Este es un paso esencial para que todos tus análisis posteriores sean correctos.
 
-```python
-import pandas as pd
-
-# Cargar dataset completo
-df_completo = pd.read_csv('dataset_bombas_completo.csv')
-
-# PASO CRÍTICO: Filtrar SOLO datos de B-01
-df = df_completo[df_completo['ID_Bomba'] == 'B-01'].copy()
-
-print(f"Total de registros para B-01: {len(df)}")
-```
-
-**🎯 Pregunta de reflexión:** ¿Por qué es importante hacer `.copy()` después del filtrado?
+**Nota:** asegúrate de trabajar con una copia de los datos filtrados para evitar problemas al modificar columnas.
 
 ---
 
 ## 🧩 MÓDULO 1: Sistema de Interruptores Binarios
 
-### Descripción del Módulo
-Cuatro interruptores que deben configurarse según el **nivel de amenaza acumulada**.
+Este módulo controla un panel de 4 interruptores. El nivel de amenaza acumulada determina la configuración binaria del sistema.
 
-### 🎯 Tu Misión
-1. Calcula la **suma total** de `Nivel_Amenaza` para todos los registros de B-01
-2. Aplica la siguiente lógica:
-   - Si la suma es **mayor a 50**: activa los 4 interruptores (código: `1111`)
-   - Si la suma es **50 o menor**: convierte la suma a binario de 4 bits
+**El proceso:**
+1. Suma todos los niveles de amenaza de B-01
+2. Aplica módulo 16 para obtener un valor entre 0 y 15
+3. Convierte ese valor a código binario de 4 dígitos
 
-### 💡 Pistas
-- Usa `.sum()` para agregar valores
-- Python tiene una función `bin()` para convertir a binario
-- Recuerda: necesitas exactamente 4 dígitos binarios
-
-### ❓ Desafío Adicional
-¿Qué porcentaje del total de amenaza global (todas las bombas) representa B-01?
-
-### ✅ Validación
-Tu código debe activar los 4 interruptores en el juego.
+**Ayuda técnica:**
+- La operación `valor % 16` genera números entre 0 y 15
+- Para convertir a binario de 4 dígitos usa `bin()` y `zfill(4)`
 
 ---
 
 ## 🧩 MÓDULO 2: Cálculo de Energía Ponderada
 
-### Descripción del Módulo
-Un display numérico de 4 dígitos que requiere un cálculo de promedio ponderado.
+Este display de 4 dígitos mide la "intensidad energética" del sistema. No es simplemente el promedio de energía, sino cómo interactúan la energía y la frecuencia juntas. El sistema genera un valor potencialmente grande (porque multiplica dos variables), y luego lo normaliza a un rango manejable que el hardware puede procesar (1990–2030).
 
-### 🎯 Tu Misión
-1. Calcula el **promedio ponderado** de energía y frecuencia: `(Energia × Frecuencia).mean()`
-2. Toma los **últimos 2 dígitos** del resultado (parte entera)
-3. Suma **2026** a esos 2 dígitos
-4. El resultado es el código de 4 dígitos
+**El proceso:**
+1. Considera cómo la energía y la frecuencia se multiplican e interactúan en cada registro
+2. Calcula el promedio de esa interacción
+3. Usa la operación módulo 40 para "comprimir" el resultado a un rango pequeño (0–39)
+4. Suma 1990 para desplazarlo al rango final donde cabe en el display
 
-### 💡 Pistas
-- El promedio ponderado refleja la "intensidad energética" de la bomba
-- Usa `int()` para convertir a entero antes de extraer dígitos
-- Puedes usar slicing de strings: `str(numero)[-2:]`
-
-### ❓ Desafío Adicional
-¿Cuál es la diferencia entre el promedio ponderado de B-01 vs el promedio simple de energía?
-
-### 🔢 Ejemplo
-Si el promedio ponderado es `8546.7`:
-- Últimos 2 dígitos: `46`
-- Código final: `46 + 2026 = 2072`
+**Ayuda técnica:**
+- El módulo 40 genera valores entre 0 y 39
+- Después sumas 1990 para obtener valores entre 1990 y 2029
 
 ---
 
-## 🧩 MÓDULO 3: Análisis de Estabilidad de Frecuencia
+## 🧩 MÓDULO 3: Preguntas Teóricas sobre Python
 
-### Descripción del Módulo
-Un selector de dos estados que determina la estabilidad del sistema.
+Este módulo evalúa tus conocimientos fundamentales sobre el lenguaje Python. Necesitarás responder correctamente 3 preguntas de opción múltiple que cubren conceptos básicos como tipos de datos, funciones incorporadas y convenciones de sintaxis.
 
-### 🎯 Tu Misión
-1. Calcula el **rango** de frecuencias: `max(Frecuencia) - min(Frecuencia)`
-2. Determina el estado:
-   - Rango **> 200**: Sistema **UNSTABLE**
-   - Rango **≤ 200**: Sistema **STABLE**
+**El proceso:**
+1. Responde sobre clasificación de tipos de datos en Python
+2. Predice el resultado de funciones incorporadas
+3. Reconoce la sintaxis correcta para comentarios
 
-### 💡 Pistas
-- Un rango grande indica alta variabilidad = sistema inestable
-- Usa `.max()` y `.min()` en la columna de frecuencias
-
-### ❓ Desafío Adicional
-Crea un histograma de las frecuencias. ¿Observas algún patrón o distribución especial?
-
-### 📊 Contexto Técnico
-El rango mide la dispersión absoluta de los datos, indicando cuán volátil es el sistema.
+**Ayuda técnica:**
+- Pregunta 1: Considera cómo Python clasifica valores entre comillas
+- Pregunta 2: Piensa en qué devuelve la función len() cuando se aplica a una lista
+- Pregunta 3: Recuerda que Python usa un símbolo específico para iniciar comentarios
 
 ---
 
-## 🧩 MÓDULO 4: Identificación de Cable Dominante
+## 🧩 MÓDULO 4: Identificación Crítica
 
-### Descripción del Módulo
-Tres cables (Rojo, Verde, Azul) conectados al detonador. Debes cortar el correcto.
+El sistema necesita identificar un elemento crítico de los datos. Este elemento aparece en los registros y su identificación es fundamental para el análisis.
 
-### 🎯 Tu Misión
-1. Agrupa los datos por `Hex_Cable` (R/G/B)
-2. Suma la `Energia` total de cada cable
-3. Identifica el cable con **mayor energía acumulada**
-4. Ese es el cable dominante que debes "cortar" (seleccionar en el juego)
+**El proceso:**
+1. Analiza los registros de B-01
+2. Identifica el elemento más relevante en un campo específico
+3. Proporciona su identificador único
 
-### 💡 Pistas
-- Usa `.groupby('Hex_Cable')['Energia'].sum()`
-- Encuentra el índice del valor máximo con `.idxmax()`
-- R = Rojo 🔴, G = Verde 🟢, B = Azul 🔵
-
-### ❓ Desafío Adicional
-¿Cuál es el cable con **menor** energía? ¿Cuál sería el riesgo de cortarlo accidentalmente?
-
-### ⚠️ Advertencia
-Seleccionar el cable incorrecto resultará en detonación inmediata.
+**Ayuda técnica:**
+- El resultado es una única letra o código
+- Busca en la columna correspondiente qué valor dominan los registros
 
 ---
 
-## 🧩 MÓDULO 5: Conteo de Agentes de Alto Riesgo
+## 🧩 MÓDULO 5: Agentes de Alto Riesgo
 
-### Descripción del Módulo
-Un teclado numérico que requiere saber cuántos agentes operan en zona de peligro.
+Múltiples agentes operan en el sitio. Solo algunos están en zonas donde la energía es suficientemente peligrosa. El módulo necesita saber cuántos agentes **distintos** están expuestos a ese peligro.
 
-### 🎯 Tu Misión
-1. Filtra registros donde `Energia > 50` (zona de alto riesgo)
-2. Cuenta cuántos **agentes únicos** aparecen en ese subconjunto
-3. Ingresa ese número en el módulo
+**El proceso:**
+1. Identifica la zona de alto riesgo según los niveles de energía
+2. Filtra los registros que están en esa zona
+3. Cuenta cuántos agentes únicos operan en esa zona filtrada
+4. Normaliza el resultado a un rango de 0 a 3
 
-### 💡 Pistas
-- Primero filtra: `df[df['Energia'] > 50]`
-- Luego cuenta únicos: `.nunique()` en la columna `Agente`
-- No confundas "registros totales" con "agentes únicos"
-
-### ❓ Desafío Adicional
-¿Cuál es el agente que aparece más frecuentemente en zonas de alto riesgo?
-
-### 🎯 Reflexión
-¿Por qué es importante contar agentes **únicos** en lugar del total de registros?
+**Nota:**
+- Debes escribir solo el resultado final normalizado
 
 ---
 
-## 🧩 MÓDULO 6: Código de Sensor Invertido
+## 🧩 MÓDULO 6: Sensor Invertido
 
-### Descripción del Módulo
-Un display que muestra el sensor más utilizado, pero necesita ser "reflejado".
+Un sensor es utilizado mucho más que los demás. Este sensor tiene un código que necesita ser invertido para acceder a un subsistema oculto. El reflejo de ese código es la clave de acceso.
 
-### 🎯 Tu Misión
-1. Encuentra el sensor más frecuente (moda estadística) en `Sensor_ID`
-2. **Invierte** los dígitos del ID (ejemplo: `201` → `102`, `101` → `101`)
-3. Ingresa el número invertido
+**El proceso:**
+1. Encuentra cuál sensor es el más usado
+2. Toma el identificador numérico de ese sensor
+3. Invierte el orden de sus dígitos
 
-### 💡 Pistas
-- La moda se calcula con `.mode()[0]`
-- Para invertir: convierte a string, usa slicing `[::-1]`, reconvierte a int
-- Algunos números son **palíndromos** (igual invertidos)
-
-### ❓ Desafío Adicional
-¿Qué porcentaje de los registros usan el sensor más frecuente? ¿Es una moda fuerte o débil?
-
-### 🔢 Ejemplo
-Si el sensor más frecuente es `301`:
-- Invertido: `103`
+**Ayuda técnica:**
+- La inversión crea un nuevo número (ej: 301 → 103)
+- Algunos números son palíndromos
 
 ---
 
 ## 🧩 MÓDULO 7: Desviación Temporal
 
-### Descripción del Módulo
-Un cronómetro que muestra la variabilidad temporal del sistema.
+Los eventos de la bomba no ocurren a intervalos perfectos. Hay variaciones en los tiempos entre mediciones. El sistema necesita cuantificar cuánta variación temporal existe en todo el conjunto de eventos.
 
-### 🎯 Tu Misión
-1. Convierte la columna `Timestamp` a formato datetime
-2. Transforma cada timestamp a segundos (Unix timestamp)
-3. Calcula la **desviación estándar** de esos valores
-4. Convierte el resultado a formato `MM:SS`
+**El proceso:**
+1. Convierte todos los timestamps a un formato que permita cálculos numéricos
+2. Calcula la variabilidad estadística de esos tiempos
+3. Convierte el resultado a un formato de tiempo legible (minutos y segundos)
 
-### 💡 Pistas
-- Usa `pd.to_datetime()` para convertir timestamps
-- Método `.timestamp()` convierte datetime a segundos
-- Divide por 60 para obtener minutos, usa `%` para segundos
-
-### ❓ Desafío Adicional
-¿Cuál es el timestamp más temprano y más tardío? ¿Cuál es el span temporal total?
-
-### 📊 Ejemplo de Conversión
-Si `std = 75.3` segundos:
-- Minutos: `75 // 60 = 1`
-- Segundos: `75 % 60 = 15`
-- Formato: `01:15`
+**Ayuda técnica:**
+- El resultado final debe expresarse como MM:SS con 2 dígitos cada uno
 
 ---
 
 ## 🧩 MÓDULO 8: Densidad Geográfica
 
-### Descripción del Módulo
-Un selector numérico basado en análisis geográfico.
+La bomba B-01 está desplegada en múltiples provincias. El sistema necesita conocer exactamente cuáles provincias están involucradas para entender el alcance geográfico de la operación.
 
-### 🎯 Tu Misión
-1. Encuentra la ciudad más frecuente en la columna `Ciudad`
-2. Cuenta el **número de letras** en el nombre de esa ciudad
-3. Selecciona ese número en el módulo
+**El proceso:**
+1. Identifica todas las provincias únicas donde hay registros de B-01
+2. Extrae la lista completa de esas provincias
+3. Ordénalas alfabéticamente
+4. Ingresa la lista en el formato requerido por el sistema (lista JSON o texto separado por comas)
 
-### 💡 Pistas
-- Usa `.value_counts().idxmax()` para encontrar el valor más frecuente
-- La función `len()` cuenta caracteres
-- No cuentes espacios si el nombre tiene varias palabras
-
-### ❓ Desafío Adicional
-Crea un ranking de las top 3 ciudades más frecuentes. ¿Hay alguna que domine claramente?
-
-### 🌍 Nota
-Las ciudades reflejan las ubicaciones geográficas de los sensores de la bomba.
+**Ayuda técnica:**
+- Busca valores únicos en la columna `Provincia`
+- El resultado es una lista de strings
+- Mantén los nombres exactos de las provincias del dataset
 
 ---
 
-## 🧩 MÓDULO 9: Correlación de Amenaza-Energía
+## 🧩 MÓDULO 9: Correlación Amenaza-Energía
 
-### Descripción del Módulo
-Un dial rotatorio con posiciones del 1 al 9 basado en análisis estadístico.
+En sistemas complejos, las variables a menudo se relacionan entre sí. Existe una relación entre el nivel de amenaza de la bomba y la energía que está usando. El dial físico necesita saber qué tipo de relación existe para establecer el equilibrio correcto.
 
-### 🎯 Tu Misión
-1. Calcula la **correlación de Pearson** entre `Nivel_Amenaza` y `Energia`
-2. Determina la posición del dial:
-   - Correlación **positiva** (> 0): posición **9**
-   - Correlación **negativa** (< 0): posición **1**
+**El proceso:**
+1. Analiza cómo se relacionan amenaza y energía en los datos de B-01
+2. Calcula la correlación de Pearson entre estas dos variables
+3. Según el signo de la correlación, posiciona el dial
 
-### 💡 Pistas
-- Usa `.corr()` para calcular correlación
-- Sintaxis: `df['Col1'].corr(df['Col2'])`
-- El signo de la correlación es lo importante, no la magnitud
-
-### ❓ Desafío Adicional
-¿Cuál es el valor exacto de correlación? ¿Es fuerte (cerca de -1 o 1) o débil (cerca de 0)?
-
-### 📊 Interpretación
-- Correlación positiva: a mayor amenaza, mayor energía
-- Correlación negativa: a mayor amenaza, menor energía
+**Interfaz del juego - Cómo ingresar:**
+- El dial en la interfaz tiene dos posiciones: **1** (izquierda) y **9** (derecha)
+- Si la correlación es **positiva** (ambas variables crecen juntas) → coloca el dial en **9**
+- Si la correlación es **negativa** (una crece mientras la otra decrece) → coloca el dial en **1**
+- Usa el mouse para hacer clic en la posición deseada del dial
 
 ---
 
 ## 🧩 MÓDULO 10: Checksum de Integridad
 
-### Descripción del Módulo
-Un verificador final que valida la consistencia de tus respuestas previas.
+Este es el módulo de validación final. Combina información de tres módulos anteriores para verificar que todo tu análisis es coherente. Si cometiste un error en alguno de esos módulos, el checksum lo detectará.
 
-### 🎯 Tu Misión
-1. Toma el número de **interruptores activos** de M1 (cuántos '1' en el código binario)
-2. Suma el **número de agentes** de M5
-3. Suma el **número de letras** de M8
-4. Calcula: `(M1_bits + M5_valor + M8_valor) % 10`
-5. El resultado (último dígito) es el checksum
+**El proceso:**
+1. Extrae valores específicos de tres módulos anteriores
+2. Combina esos valores según una fórmula
+3. Normaliza el resultado a un dígito final (0–9)
 
-### 💡 Pistas
-- Si M1 es "1111", hay 4 bits activos
-- El operador `%` da el residuo de la división
-- Este módulo valida la consistencia interna de tu análisis
-
-### ❓ Desafío Adicional
-¿Qué pasaría si cambiara uno solo de los valores anteriores? ¿Cómo cambia el checksum?
-
-### 🔢 Ejemplo
-- M1: `1111` → 4 bits activos
-- M5: `5` agentes
-- M8: `7` letras
-- Checksum: `(4 + 5 + 7) % 10 = 16 % 10 = 6`
+**Lo que necesitas saber:**
+- El checksum es como una firma digital que confirma consistencia
+- Si algo está mal en módulos previos, el checksum cambiará
 
 ---
 
-## 🎯 LISTA DE VERIFICACIÓN FINAL
+## 🚀 DESACTIVAR
 
-Antes de intentar desactivar la bomba, verifica:
-
-- [ ] Filtraste correctamente los datos de B-01
-- [ ] Usaste `.copy()` para evitar warnings
-- [ ] Verificaste cada cálculo dos veces
-- [ ] Entiendes **por qué** cada respuesta es correcta, no solo el "qué"
-- [ ] Tienes las 10 respuestas anotadas
-- [ ] Convertiste los valores al formato correcto (binario, MM:SS, etc.)
-
----
-
-## 🚀 CÓMO DESACTIVAR LA BOMBA
-
-1. Abre `index.html` en tu navegador
-2. Ingresa contraseña: **B-01**
-3. Resuelve los 10 módulos con tus respuestas calculadas
-4. **¡Desactiva la bomba antes de 20:00!**
-
----
-
-## 💡 CONSEJOS DE ESTRATEGIA
-
-1. **Explora primero:** Usa `df.head()`, `df.info()`, `df.describe()`
-2. **Valida el filtrado:** Asegúrate de tener ~150 registros de B-01
-3. **Documenta:** Anota cada paso de tu análisis
-4. **Verifica tipos:** Usa `df.dtypes` para confirmar tipos de datos
-5. **Piensa críticamente:** ¿Tiene sentido tu respuesta en el contexto?
-
----
-
-## 📚 RECURSOS ÚTILES
-
-- **Pandas Filtering:** `df[df['columna'] == valor]`
-- **Agregaciones:** `.sum()`, `.mean()`, `.max()`, `.min()`
-- **Conteos:** `.nunique()`, `.value_counts()`
-- **Estadística:** `.std()`, `.corr()`, `.mode()`
-- **GroupBy:** `.groupby('columna')['otra'].operación()`
-
----
-
-**¡Buena suerte, Agente! La ciudad cuenta contigo. 💣🔧**
+1. Abre `index.html`.
+2. Contraseña: **B-01**.
+3. Ingresa los 10 resultados.
 
 ---
 
