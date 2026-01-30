@@ -4,14 +4,30 @@
 // ============ BOMB DATA - BASED ON PANDAS ANALYSIS ============
 const bombData = {
   "B-01": {
-    m1: [1, 0, 0, 1],
+    m1: [0, 1, 0, 1],
     m2: "2023",
-    m3: "STABLE",
+    m3: [
+      {
+        question: "¿Qué tipo de dato es \"hola\" en Python?",
+        options: ["str", "int", "float", "bool"],
+        answer: "str"
+      },
+      {
+        question: "¿Qué devuelve len([1, 2, 3])?",
+        options: ["1", "2", "3", "[1,2,3]"],
+        answer: "3"
+      },
+      {
+        question: "¿Cómo se escribe un comentario en Python?",
+        options: ["// comentario", "/* comentario */", "# comentario", "-- comentario"],
+        answer: "# comentario"
+      }
+    ],
     m4: ["G"],
     m5: "1",
     m6: "101",
     m7: "00:59",
-    m8: "4",
+    m8: ["Cotopaxi", "Imbabura", "Manabí", "Pichincha"],
     m9: "9",
     m10: "7"
   },

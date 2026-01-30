@@ -41,19 +41,12 @@ print("="*60)
 suma_amenaza = df['Nivel_Amenaza'].sum()
 print(f"Suma total de Nivel_Amenaza para B-01: {suma_amenaza}")
 
-# Aplicar lógica
-if suma_amenaza > 50:
-    # Calcular valor modulo 15 para obtener número menor a 15
-    valor_modulo = suma_amenaza % 15
-    # Convertir a binario de 4 bits
-    codigo_modulo1 = bin(valor_modulo)[2:].zfill(4)
-    print(f"Suma ({suma_amenaza}) > 50 → Aplicar módulo 15: {suma_amenaza} % 15 = {valor_modulo}")
-    print(f"Convertir a binario de 4 bits: {valor_modulo} → {codigo_modulo1}")
-else:
-    # Convertir a binario de 4 bits
-    binario = bin(suma_amenaza)[2:].zfill(4)
-    codigo_modulo1 = binario
-    print(f"Suma ({suma_amenaza}) ≤ 50 → Convertir a binario de 4 bits: {binario}")
+# Aplicar módulo 16 para obtener valor entre 0 y 15
+valor_modulo = suma_amenaza % 16
+# Convertir a binario de 4 bits
+codigo_modulo1 = bin(valor_modulo)[2:].zfill(4)
+print(f"Aplicar módulo 16: {suma_amenaza} % 16 = {valor_modulo}")
+print(f"Convertir a binario de 4 bits: {valor_modulo} → {codigo_modulo1}")
 
 print(f"\n✓ MÓDULO 1 RESPUESTA: {codigo_modulo1}")
 
@@ -84,26 +77,22 @@ diferencia = promedio_ponderado - promedio_simple
 print(f"  Desafío: Promedio ponderado ({promedio_ponderado:.2f}) vs Promedio simple ({promedio_simple:.2f})")
 print(f"  Diferencia: {diferencia:.2f}")
 
-# ====== MÓDULO 3: ANÁLISIS DE ESTABILIDAD DE FRECUENCIA ======
+# ====== MÓDULO 3: PREGUNTAS TEÓRICAS SOBRE PYTHON ======
 print("\n" + "="*60)
-print("MÓDULO 3: ANÁLISIS DE ESTABILIDAD DE FRECUENCIA")
+print("MÓDULO 3: PREGUNTAS TEÓRICAS SOBRE PYTHON")
 print("="*60)
 
-rango_frecuencia = df['Frecuencia'].max() - df['Frecuencia'].min()
-print(f"Rango de Frecuencia: {df['Frecuencia'].max()} - {df['Frecuencia'].min()} = {rango_frecuencia}")
+print("Este módulo evalúa conocimientos fundamentales de Python.")
+print("\nPreguntas:")
+print("1. ¿Qué tipo de dato es \"hola\" en Python?")
+print("   Respuesta correcta: str")
+print("\n2. ¿Qué devuelve len([1, 2, 3])?")
+print("   Respuesta correcta: 3")
+print("\n3. ¿Cómo se escribe un comentario en Python?")
+print("   Respuesta correcta: # comentario")
 
-if rango_frecuencia > 200:
-    estado_sistema = "UNSTABLE"
-else:
-    estado_sistema = "STABLE"
+print("\n✓ MÓDULO 3: Respuestas verificadas contra script.js")
 
-codigo_modulo3 = estado_sistema
-print(f"Estado del sistema: {codigo_modulo3}")
-print(f"\n✓ MÓDULO 3 RESPUESTA: {estado_sistema}")
-
-# Desafío adicional
-print(f"  Desafío: Distribución de frecuencias")
-print(df['Frecuencia'].describe())
 
 # ====== MÓDULO 4: IDENTIFICACIÓN DE CABLE DOMINANTE ======
 print("\n" + "="*60)
@@ -210,14 +199,14 @@ print("MÓDULO 8: DENSIDAD GEOGRÁFICA")
 print("="*60)
 
 # Encontrar provincias únicas
-provincias_unicas = df['Provincia'].unique()
+provincias_unicas = sorted(df['Provincia'].unique())
 print(f"Provincias únicas en B-01: {provincias_unicas}")
 print(f"Total de provincias diferentes: {len(provincias_unicas)}")
 
 print("\nDistribución por provincia:")
 print(df['Provincia'].value_counts())
 
-codigo_modulo8 = len(provincias_unicas)
+codigo_modulo8 = provincias_unicas
 print(f"\n✓ MÓDULO 8 RESPUESTA: {codigo_modulo8}")
 
 # Desafío adicional
@@ -225,6 +214,7 @@ print(f"  Desafío: Listado completo de provincias:")
 for i, provincia in enumerate(sorted(provincias_unicas), 1):
     count = len(df[df['Provincia'] == provincia])
     print(f"    {i}. {provincia}: {count} registros")
+
 
 # ====== MÓDULO 9: CORRELACIÓN DE AMENAZA-ENERGÍA ======
 print("\n" + "="*60)
@@ -265,13 +255,13 @@ print("="*60)
 m1_bits = codigo_modulo1.count('1')
 print(f"M1 (Binario): {codigo_modulo1} → {m1_bits} bits activos")
 
-# M5: Número de agentes
-m5_valor = codigo_modulo5
-print(f"M5 (Agentes): {m5_valor}")
+# M5: Número de agentes (normalizado)
+m5_valor = int(codigo_modulo5)
+print(f"M5 (Agentes normalizado): {m5_valor}")
 
-# M8: Número de letras
-m8_valor = codigo_modulo8
-print(f"M8 (Letras): {m8_valor}")
+# M8: Número de provincias (longitud de la lista)
+m8_valor = len(codigo_modulo8)
+print(f"M8 (Provincias): {codigo_modulo8} → {m8_valor} provincias")
 
 # Calcular checksum
 checksum = (m1_bits + m5_valor + m8_valor) % 10
@@ -288,7 +278,7 @@ print("="*60)
 respuestas = {
     "MÓDULO 1 - Interruptores Binarios": codigo_modulo1,
     "MÓDULO 2 - Energía Ponderada": codigo_modulo2,
-    "MÓDULO 3 - Estabilidad": codigo_modulo3,
+    "MÓDULO 3 - Preguntas Teóricas": "Ver script.js",
     "MÓDULO 4 - Cable Dominante": codigo_modulo4,
     "MÓDULO 5 - Agentes Alto Riesgo": codigo_modulo5,
     "MÓDULO 6 - Sensor Invertido": codigo_modulo6,

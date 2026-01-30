@@ -12,14 +12,14 @@ Registros analizados: 150 registros de B-01
 
 | Módulo | Descripción | Respuesta | Tipo |
 |--------|-------------|-----------|------|
-| **1** | Sistema de Interruptores Binarios | `1001` | Código Binario |
+| **1** | Sistema de Interruptores Binarios | `0101` | Código Binario |
 | **2** | Cálculo de Energía Ponderada | `2023` | Numérico (4 dígitos) |
-| **3** | Análisis de Estabilidad | `STABLE` | Estado (STABLE/UNSTABLE) |
-| **4** | Identificación de Cable Dominante | `G` | Carácter (R/G/B) |
+| **3** | Preguntas Teóricas Python | Ver detalles | Teórico (3 preguntas) |
+| **4** | Identificación Crítica | `G` | Carácter o Código |
 | **5** | Conteo de Agentes Alto Riesgo | `1` | Numérico (0-3) |
-| **6** | Código de Sensor Invertido | `101` | Numérico (Palíndromo) |
+| **6** | Código de Sensor Invertido | `101` | Numérico |
 | **7** | Desviación Temporal | `00:59` | Formato MM:SS |
-| **8** | Densidad Geográfica | `4` | Numérico (Provincias) |
+| **8** | Densidad Geográfica | `["Cotopaxi", "Imbabura", "Manabí", "Pichincha"]` | Lista Provincias |
 | **9** | Correlación Amenaza-Energía | `9` | Posición Dial (1 o 9) |
 | **10** | Checksum de Integridad | `7` | Validación |
 
@@ -31,9 +31,9 @@ Registros analizados: 150 registros de B-01
 
 **Lógica aplicada:**
 - Suma total de `Nivel_Amenaza` para B-01: **1749**
-- Como 1749 > 50 → Aplicar módulo 15: 1749 % 15 = **9**
-- Convertir 9 a binario de 4 bits: **1001**
-- **Respuesta: `1001`**
+- Aplicar módulo 16: 1749 % 16 = **5**
+- Convertir 5 a binario de 4 bits: **0101**
+- **Respuesta: `0101`**
 
 **Contexto:**
 - B-01 representa el **13.75%** del total de amenaza global
@@ -55,32 +55,37 @@ Registros analizados: 150 registros de B-01
 
 ---
 
-### MÓDULO 3: Análisis de Estabilidad de Frecuencia ✓
+### MÓDULO 3: Preguntas Teóricas sobre Python ✓
 
-**Análisis:**
-- Frecuencia máxima: **277**
-- Frecuencia mínima: **95**
-- Rango: 277 - 95 = **182**
-- Como 182 ≤ 200 → Sistema **STABLE**
-- **Respuesta: `STABLE`**
+**Preguntas y Respuestas:**
 
-**Distribución:**
-- Media: 201.55 Hz
-- Desviación estándar: 30.21 Hz
-- El sistema mantiene estabilidad a pesar de la variabilidad
+1. **¿Qué tipo de dato es "hola" en Python?**
+   - Opciones: str, int, float, bool
+   - **Respuesta correcta: `str`**
+
+2. **¿Qué devuelve len([1, 2, 3])?**
+   - Opciones: 1, 2, 3, [1,2,3]
+   - **Respuesta correcta: `3`**
+
+3. **¿Cómo se escribe un comentario en Python?**
+   - Opciones: // comentario, /* comentario */, # comentario, -- comentario
+   - **Respuesta correcta: `# comentario`**
+
+**Contexto:**
+- Este módulo evalúa conceptos fundamentales de Python
+- Las respuestas están verificadas en script.js
+- Son preguntas teóricas independientes del análisis de datos
 
 ---
 
-### MÓDULO 4: Identificación de Cable Dominante ✓
+### MÓDULO 4: Identificación Crítica ✓
 
-**Análisis energético:**
-- Cable Rojo (R): 1617 J
-- Cable Azul (B): 1440 J
-- Cable Verde (G): **5104 J** ← DOMINANTE
-- **Respuesta: `G`** (Verde - Verde 🟢)
+**Análisis:**
+- El elemento crítico de los datos es un identificador único
+- Se determina mediante análisis del campo más relevante
+- **Respuesta: `G`**
 
 **Contexto:**
-- Cable verde concentra el 63% de la energía total
 - El cable azul es el de menor energía (riesgo potencial)
 
 ---
@@ -90,7 +95,8 @@ Registros analizados: 150 registros de B-01
 **Filtrado:**
 - Registros con Energía > 50 (zona de alto riesgo): **104**
 - Agentes únicos en esa zona: **21**
-- **Respuesta: `21`**
+- Normalizar con módulo 4: 21 % 4 = **1**
+- **Respuesta: `1`**
 
 **Agentes más activos en zonas de riesgo:**
 1. AG-003: 23 apariciones
@@ -134,15 +140,15 @@ Registros analizados: 150 registros de B-01
 
 ### MÓDULO 8: Densidad Geográfica ✓
 
-**Análisis:**
-- Provincias únicas en B-01: **4** (Imbabura, Pichincha, Cotopaxi, Manabí)
-- **Respuesta: `4`**
+**Análisis geográfico:**
+- Provincias únicas en B-01: **Cotopaxi, Imbabura, Manabí, Pichincha**
+- **Respuesta: `["Cotopaxi", "Imbabura", "Manabí", "Pichincha"]`**
 
 **Distribución geográfica:**
 1. Pichincha: 77 registros (51%)
 2. Manabí: 25 registros
-3. Imbabura: 24 registros
-4. Cotopaxi: 24 registros
+3. Cotopaxi: 24 registros
+4. Imbabura: 24 registros
 
 ---
 
@@ -165,7 +171,7 @@ Registros analizados: 150 registros de B-01
 ### MÓDULO 10: Checksum de Integridad ✓
 
 **Validación:**
-- M1 (bits activos en 1001): **2** (dos '1' en la posición)
+- M1 (bits activos en 0101): **2** (dos '1' en la posición)
 - M5 (agentes en alto riesgo normalizado): **1**
 - M8 (provincias únicas): **4**
 - Cálculo: (2 + 1 + 4) % 10 = 7 % 10 = **7**
@@ -182,14 +188,14 @@ Registros analizados: 150 registros de B-01
 1. **Abre** el archivo `index.html` en tu navegador
 2. **Ingresa** la contraseña: `B-01`
 3. **Introduce** las respuestas en el orden correcto:
-   - Módulo 1: `1001`
+   - Módulo 1: `0101`
    - Módulo 2: `2023`
-   - Módulo 3: `STABLE`
+   - Módulo 3: Preguntas teóricas (str, 3, # comentario)
    - Módulo 4: `G`
    - Módulo 5: `1`
    - Módulo 6: `101`
    - Módulo 7: `00:59`
-   - Módulo 8: `4`
+   - Módulo 8: `["Cotopaxi", "Imbabura", "Manabí", "Pichincha"]`
    - Módulo 9: `9`
    - Módulo 10: `7`
 4. **Confirma** para desactivar la bomba

@@ -30,17 +30,16 @@ Necesitas cargar el dataset completo y filtrar solo los datos de la Bomba B-01. 
 
 ## 🧩 MÓDULO 1: Sistema de Interruptores Binarios
 
-Este módulo controla un panel de 4 interruptores. La amenaza acumulada en B-01 determina cuál debe ser la configuración del sistema. 
+Este módulo controla un panel de 4 interruptores. El nivel de amenaza acumulada determina la configuración binaria del sistema.
 
-**Lógica del módulo:**
-- Si el nivel total de amenaza es **mayor a 50**: el sistema entra en modo crítico y necesitas reducir ese número usando operación módulo 15, luego convertir el resultado a binario.
-- Si el nivel total de amenaza es **50 o menor**: conviertes directamente ese número a binario.
+**El proceso:**
+1. Suma todos los niveles de amenaza de B-01
+2. Aplica módulo 16 para obtener un valor entre 0 y 15
+3. Convierte ese valor a código binario de 4 dígitos
 
-En ambos casos, el resultado final debe ser un código de exactamente **4 dígitos binarios**.
-
-**Ayudas técnicas:**
-- Para conversión a binario: usa `bin()` y `zfill(4)` para asegurar exactamente 4 dígitos
-- Operación módulo: `valor % 15` genera un número entre 0 y 14
+**Ayuda técnica:**
+- La operación `valor % 16` genera números entre 0 y 15
+- Para convertir a binario de 4 dígitos usa `bin()` y `zfill(4)`
 
 ---
 
@@ -60,48 +59,49 @@ Este display de 4 dígitos mide la "intensidad energética" del sistema. No es s
 
 ---
 
-## 🧩 MÓDULO 3: Estabilidad de Frecuencia
+## 🧩 MÓDULO 3: Preguntas Teóricas sobre Python
 
-La bomba opera en un rango de frecuencias. Cuando esa variación es pequeña, el sistema está bajo control y funciona de forma estable. Si la variación es muy grande, indica que hay fluctuaciones peligrosas. El tipo de respuesta (STABLE o UNSTABLE) determina cómo el sistema puede operar.
+Este módulo evalúa tus conocimientos fundamentales sobre el lenguaje Python. Necesitarás responder correctamente 3 preguntas de opción múltiple que cubren conceptos básicos como tipos de datos, funciones incorporadas y convenciones de sintaxis.
 
 **El proceso:**
-1. Analiza la variabilidad de las frecuencias registradas
-2. Mide cuánto varían entre sus valores extremos
-3. Compara esa variación con un umbral crítico
+1. Responde sobre clasificación de tipos de datos en Python
+2. Predice el resultado de funciones incorporadas
+3. Reconoce la sintaxis correcta para comentarios
 
 **Ayuda técnica:**
-- Umbral crítico: 200 Hz
-- Si variación > 200 → UNSTABLE; si ≤ 200 → STABLE
+- Pregunta 1: Considera cómo Python clasifica valores entre comillas
+- Pregunta 2: Piensa en qué devuelve la función len() cuando se aplica a una lista
+- Pregunta 3: Recuerda que Python usa un símbolo específico para iniciar comentarios
 
 ---
 
-## 🧩 MÓDULO 4: Cable Dominante
+## 🧩 MÓDULO 4: Identificación Crítica
 
-Tres cables conducen energía hacia el detonador. Uno de ellos concentra la mayor parte de la carga energética y es el más crítico. El juego necesita saber cuál cable domina el flujo energético total.
+El sistema necesita identificar un elemento crítico de los datos. Este elemento aparece en los registros y su identificación es fundamental para el análisis.
 
 **El proceso:**
-1. Agrupa todos los registros por el tipo de cable
-2. Suma la energía total acumulada por cada cable
-3. Identifica cuál cable tiene la mayor energía acumulada
+1. Analiza los registros de B-01
+2. Identifica el elemento más relevante en un campo específico
+3. Proporciona su identificador único
 
 **Ayuda técnica:**
-- Los cables se identifican como: R (Rojo), G (Verde), B (Azul)
-- El resultado es una única letra
+- El resultado es una única letra o código
+- Busca en la columna correspondiente qué valor dominan los registros
 
 ---
 
 ## 🧩 MÓDULO 5: Agentes de Alto Riesgo
 
-Múltiples agentes operan en el sitio. Solo algunos están en zonas donde la energía es suficientemente peligrosa. El módulo necesita saber cuántos agentes **distintos** están expuestos a ese peligro. Esto es importante porque distingue entre pocos agentes con muchos registros versus muchos agentes distintos en riesgo.
+Múltiples agentes operan en el sitio. Solo algunos están en zonas donde la energía es suficientemente peligrosa. El módulo necesita saber cuántos agentes **distintos** están expuestos a ese peligro.
 
 **El proceso:**
-1. Identifica cuál es la zona de alto riesgo según los niveles de energía
+1. Identifica la zona de alto riesgo según los niveles de energía
 2. Filtra los registros que están en esa zona
 3. Cuenta cuántos agentes únicos operan en esa zona filtrada
-4. Normaliza el resultado a un rango específico
+4. Normaliza el resultado a un rango de 0 a 3
 
-**Ayuda técnica:**
-- El resultado final debe estar entre 0 y 3
+**Nota:**
+- Debes escribir solo el resultado final normalizado
 
 ---
 
@@ -115,14 +115,14 @@ Un sensor es utilizado mucho más que los demás. Este sensor tiene un código q
 3. Invierte el orden de sus dígitos
 
 **Ayuda técnica:**
-- La inversión crea un nuevo número: 301 → 103, 101 → 101 (palíndromo)
-- Algunos números se leen igual al revés
+- La inversión crea un nuevo número (ej: 301 → 103)
+- Algunos números son palíndromos
 
 ---
 
 ## 🧩 MÓDULO 7: Desviación Temporal
 
-Los eventos de la bomba no ocurren a intervalos perfectos. Hay variaciones en los tiempos entre mediciones. El sistema necesita cuantificar cuánta variación temporal existe en todo el conjunto de eventos. Esta variabilidad indica cuán dispersos están los eventos en el tiempo.
+Los eventos de la bomba no ocurren a intervalos perfectos. Hay variaciones en los tiempos entre mediciones. El sistema necesita cuantificar cuánta variación temporal existe en todo el conjunto de eventos.
 
 **El proceso:**
 1. Convierte todos los timestamps a un formato que permita cálculos numéricos
@@ -130,36 +130,41 @@ Los eventos de la bomba no ocurren a intervalos perfectos. Hay variaciones en lo
 3. Convierte el resultado a un formato de tiempo legible (minutos y segundos)
 
 **Ayuda técnica:**
-- El resultado final debe expresarse como MM:SS con 2 dígitos cada uno (ej. 00:59)
+- El resultado final debe expresarse como MM:SS con 2 dígitos cada uno
 
 ---
 
 ## 🧩 MÓDULO 8: Densidad Geográfica
 
-La bomba B-01 está desplegada en múltiples provincias. Cada provincia es un sector geográfico distinto. El número de provincias involucradas refleja cuán disperso está el sistema geográficamente.
+La bomba B-01 está desplegada en múltiples provincias. El sistema necesita conocer exactamente cuáles provincias están involucradas para entender el alcance geográfico de la operación.
 
 **El proceso:**
-1. Identifica todas las provincias donde hay registros de B-01
-2. Cuenta cuántas provincias **distintas** hay
-3. Ese número es la respuesta
+1. Identifica todas las provincias únicas donde hay registros de B-01
+2. Extrae la lista completa de esas provincias
+3. Ordénalas alfabéticamente
+4. Ingresa la lista en el formato requerido por el sistema (lista JSON o texto separado por comas)
 
-**Nota importante:**
-- Cuenta provincias diferentes, no el total de registros
+**Ayuda técnica:**
+- Busca valores únicos en la columna `Provincia`
+- El resultado es una lista de strings
+- Mantén los nombres exactos de las provincias del dataset
 
 ---
 
 ## 🧩 MÓDULO 9: Correlación Amenaza-Energía
 
-En sistemas complejos, las variables a menudo se relacionan entre sí. Existe una relación entre el nivel de amenaza de la bomba y la energía que está usando. Si ambas suben y bajan juntas, la relación es directa. Si una crece mientras la otra decrece, la relación es inversa. El dial necesita saber qué tipo de relación existe.
+En sistemas complejos, las variables a menudo se relacionan entre sí. Existe una relación entre el nivel de amenaza de la bomba y la energía que está usando. El dial físico necesita saber qué tipo de relación existe para establecer el equilibrio correcto.
 
 **El proceso:**
-1. Analiza cómo se relacionan amenaza y energía en los datos
-2. Determina si la relación es directa (positiva) o inversa (negativa)
-3. Usa esa información para establecer la posición del dial
+1. Analiza cómo se relacionan amenaza y energía en los datos de B-01
+2. Calcula la correlación de Pearson entre estas dos variables
+3. Según el signo de la correlación, posiciona el dial
 
-**Ayuda técnica:**
-- Solo importa el tipo de relación (signo), no la fuerza de la correlación
-- Relación positiva → posición 9; negativa → posición 1
+**Interfaz del juego - Cómo ingresar:**
+- El dial en la interfaz tiene dos posiciones: **1** (izquierda) y **9** (derecha)
+- Si la correlación es **positiva** (ambas variables crecen juntas) → coloca el dial en **9**
+- Si la correlación es **negativa** (una crece mientras la otra decrece) → coloca el dial en **1**
+- Usa el mouse para hacer clic en la posición deseada del dial
 
 ---
 
