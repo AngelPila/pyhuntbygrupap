@@ -573,7 +573,13 @@ function initM2(el, correctYear) {
   });
 
   validateBtn.addEventListener('click', () => {
-    if (slider.value === correctYear) {
+    // Para B-01, acepta tanto 2006 como 2023
+    const validYears = ['2006', '2023'];
+    const currentBomb = gameState.currentBomb;
+    
+    if (currentBomb === 'B-01' && validYears.includes(slider.value)) {
+      completeModule();
+    } else if (slider.value === correctYear) {
       completeModule();
     } else {
       showError();
