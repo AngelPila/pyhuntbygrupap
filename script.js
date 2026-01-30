@@ -6,86 +6,240 @@ const bombData = {
   "B-01": {
     m1: [1, 1, 1, 1],
     m2: "2046",
-    m3: "STABLE",
+    m3: [
+      {
+        question: "¿Qué tipo de dato es '42' en Python?",
+        options: ["str", "int", "float", "bool"],
+        answer: "int"
+      },
+      {
+        question: "¿Qué devuelve len([1, 2, 3])?",
+        options: ["1", "2", "3", "[1,2,3]"],
+        answer: "3"
+      },
+      {
+        question: "¿Cómo se escribe un comentario en Python?",
+        options: ["// comentario", "/* comentario */", "# comentario", "-- comentario"],
+        answer: "# comentario"
+      }
+    ],
     m4: ["G"],
     m5: "4",
     m6: "101",
     m7: "00:52",
-    m8: [7],
+    m8: ["Pichincha", "Guayas", "Azuay", "Manabí", "Loja", "El Oro", "Esmeraldas"],
     m9: "9",
-    m10: "6"
+    m10: {
+      code1: "14",
+      code2: "24",
+      code3: "G1",
+      code4: "579",
+      code5: "9"
+    }
   },
   "B-02": {
     m1: [1, 1, 1, 1],
     m2: "2123",
-    m3: "STABLE",
+    m3: [
+      {
+        question: "¿Qué estructura de datos es mutable?",
+        options: ["tuple", "list", "str", "int"],
+        answer: "list"
+      },
+      {
+        question: "¿Qué palabra reservada crea un bucle?",
+        options: ["loop", "repeat", "for", "iterate"],
+        answer: "for"
+      },
+      {
+        question: "¿Cómo se accede al último elemento de una lista?",
+        options: ["lista[0]", "lista[-1]", "lista.last()", "lista[end]"],
+        answer: "lista[-1]"
+      }
+    ],
     m4: ["R"],
     m5: "4",
     m6: "501",
     m7: "01:05",
-    m8: [6],
+    m8: ["Guayas", "Manabí", "Los Ríos", "Cotopaxi", "Tungurahua", "Chimborazo"],
     m9: "1",
-    m10: "5"
+    m10: {
+      code1: "11",
+      code2: "44",
+      code3: "R5",
+      code4: "652",
+      code5: "1"
+    }
   },
   "B-03": {
     m1: [1, 1, 1, 1],
     m2: "2080",
-    m3: "STABLE",
+    m3: [
+      {
+        question: "¿Cuál es el resultado de: 10 // 3?",
+        options: ["3.33", "3", "4", "10"],
+        answer: "3"
+      },
+      {
+        question: "¿Qué devuelve type('hola')?",
+        options: ["<class 'int'>", "<class 'str'>", "<class 'char'>", "string"],
+        answer: "<class 'str'>"
+      },
+      {
+        question: "¿Qué operador compara igualdad en Python?",
+        options: ["=", "==", "===", "eq"],
+        answer: "=="
+      }
+    ],
     m4: ["R"],
     m5: "3",
     m6: "201",
     m7: "00:59",
-    m8: [6],
+    m8: ["Esmeraldas", "Manabí", "Santo Domingo", "Pichincha", "Imbabura", "Carchi"],
     m9: "9",
-    m10: "4"
+    m10: {
+      code1: "13",
+      code2: "03",
+      code3: "R2",
+      code4: "624",
+      code5: "9"
+    }
   },
   "B-04": {
     m1: [1, 1, 1, 1],
     m2: "2094",
-    m3: "UNSTABLE",
+    m3: [
+      {
+        question: "¿Qué palabra clave define una función?",
+        options: ["function", "def", "func", "define"],
+        answer: "def"
+      },
+      {
+        question: "¿Cómo se importa un módulo llamado 'math'?",
+        options: ["include math", "import math", "using math", "require math"],
+        answer: "import math"
+      },
+      {
+        question: "¿Qué es None en Python?",
+        options: ["Un error", "Un número", "Ausencia de valor", "Una cadena"],
+        answer: "Ausencia de valor"
+      }
+    ],
     m4: ["G"],
     m5: "4",
     m6: "201",
     m7: "01:17",
-    m8: [7],
+    m8: ["Sucumbíos", "Napo", "Orellana", "Pastaza", "Morona Santiago", "Zamora Chinchipe", "Loja"],
     m9: "1",
-    m10: "6"
+    m10: {
+      code1: "14",
+      code2: "44",
+      code3: "G2",
+      code4: "716",
+      code5: "1"
+    }
   },
   "B-05": {
     m1: [1, 1, 1, 1],
     m2: "2114",
-    m3: "STABLE",
+    m3: [
+      {
+        question: "¿Qué método agrega al final de una lista?",
+        options: ["add()", "append()", "insert()", "push()"],
+        answer: "append()"
+      },
+      {
+        question: "¿Qué método elimina espacios de una cadena?",
+        options: ["trim()", "strip()", "remove()", "clean()"],
+        answer: "strip()"
+      },
+      {
+        question: "¿Qué devuelve 'Hola'.lower()?",
+        options: ["HOLA", "hola", "HoLa", "Hola"],
+        answer: "hola"
+      }
+    ],
     m4: ["G"],
     m5: "3",
     m6: "501",
     m7: "01:05",
-    m8: [5],
+    m8: ["Santa Elena", "Guayas", "Los Ríos", "Manabí", "Esmeraldas"],
     m9: "9",
-    m10: "3"
+    m10: {
+      code1: "13",
+      code2: "43",
+      code3: "G5",
+      code4: "559",
+      code5: "9"
+    }
   },
   "B-06": {
     m1: [1, 1, 1, 1],
     m2: "2107",
-    m3: "UNSTABLE",
+    m3: [
+      {
+        question: "¿Cuál es el índice del primer elemento?",
+        options: ["1", "0", "-1", "null"],
+        answer: "0"
+      },
+      {
+        question: "¿Qué crea un diccionario vacío?",
+        options: ["[]", "()", "{}", "dict"],
+        answer: "{}"
+      },
+      {
+        question: "¿Cuál es el resultado de: 5 % 2?",
+        options: ["2", "2.5", "1", "0"],
+        answer: "1"
+      }
+    ],
     m4: ["R"],
     m5: "3",
     m6: "201",
     m7: "01:17",
-    m8: [5],
+    m8: ["Azuay", "Cañar", "Chimborazo", "Bolívar", "Tungurahua"],
     m9: "1",
-    m10: "3"
+    m10: {
+      code1: "10",
+      code2: "03",
+      code3: "R2",
+      code4: "711",
+      code5: "1"
+    }
   },
   "B-07": {
     m1: [1, 1, 1, 1],
     m2: "2118",
-    m3: "STABLE",
+    m3: [
+      {
+        question: "¿Qué operador es exponenciación?",
+        options: ["^", "**", "exp", "pow"],
+        answer: "**"
+      },
+      {
+        question: "¿Qué palabra rompe un bucle?",
+        options: ["stop", "exit", "break", "end"],
+        answer: "break"
+      },
+      {
+        question: "¿Qué devuelve bool(0)?",
+        options: ["True", "False", "0", "None"],
+        answer: "False"
+      }
+    ],
     m4: ["G"],
     m5: "3",
     m6: "401",
     m7: "01:11",
-    m8: [9],
+    m8: ["Carchi", "Imbabura", "Pichincha", "Cotopaxi", "Tungurahua", "Chimborazo", "Bolívar", "Cañar", "Azuay"],
     m9: "1",
-    m10: "7"
+    m10: {
+      code1: "13",
+      code2: "33",
+      code3: "G4",
+      code4: "619",
+      code5: "1"
+    }
   }
 };
 
@@ -260,31 +414,77 @@ function initM2(el, correctYear) {
   });
 }
 
-function initM3(el, correctStability) {
-  const circleBtn = el.querySelector('.circle-btn');
-  const triangleBtn = el.querySelector('.triangle-btn');
+function initM3(el, questionsData) {
+  const questionText = el.querySelector('#questionText');
+  const optionBtns = el.querySelectorAll('.option-btn');
   const validateBtn = el.querySelector('.btn-validate');
-  let selected = null;
+  const progressIndicator = el.querySelector('#questionProgress');
+  
+  let currentQuestionIndex = 0;
+  let selectedAnswer = null;
+  let correctAnswers = 0;
 
-  circleBtn.addEventListener('click', () => {
-    selected = "STABLE";
-    circleBtn.classList.add('active');
-    triangleBtn.classList.remove('active');
-  });
+  function loadQuestion() {
+    const currentQuestion = questionsData[currentQuestionIndex];
+    questionText.textContent = currentQuestion.question;
+    progressIndicator.textContent = `Pregunta ${currentQuestionIndex + 1} de ${questionsData.length}`;
 
-  triangleBtn.addEventListener('click', () => {
-    selected = "UNSTABLE";
-    triangleBtn.classList.add('active');
-    circleBtn.classList.remove('active');
-  });
+    // Limpiar selección anterior
+    optionBtns.forEach(btn => {
+      btn.classList.remove('selected', 'correct', 'disabled');
+    });
+    selectedAnswer = null;
+
+    // Cargar opciones
+    optionBtns.forEach((btn, index) => {
+      btn.textContent = currentQuestion.options[index];
+      btn.onclick = () => {
+        if (!btn.classList.contains('disabled')) {
+          selectedAnswer = currentQuestion.options[index];
+          optionBtns.forEach(b => b.classList.remove('selected'));
+          btn.classList.add('selected');
+        }
+      };
+    });
+  }
 
   validateBtn.addEventListener('click', () => {
-    if (selected === correctStability) {
-      completeModule();
+    if (!selectedAnswer) {
+      showError();
+      return;
+    }
+
+    const currentQuestion = questionsData[currentQuestionIndex];
+    
+    if (selectedAnswer === currentQuestion.answer) {
+      correctAnswers++;
+      optionBtns.forEach(btn => {
+        if (btn.textContent === currentQuestion.answer) {
+          btn.classList.add('correct');
+        }
+        btn.classList.add('disabled');
+      });
+
+      // Avanzar a la siguiente pregunta o completar el módulo
+      setTimeout(() => {
+        currentQuestionIndex++;
+        
+        if (currentQuestionIndex < questionsData.length) {
+          loadQuestion();
+        } else {
+          // Todas las preguntas respondidas correctamente
+          completeModule();
+        }
+      }, 800);
     } else {
       showError();
+      optionBtns.forEach(btn => btn.classList.remove('selected'));
+      selectedAnswer = null;
     }
   });
+
+  // Cargar la primera pregunta
+  loadQuestion();
 }
 
 function initM4(el, correctCables) {
@@ -407,34 +607,115 @@ function initM7(el, correctTime) {
 }
 
 function initM8(el, correctSequence) {
-  const nodes = el.querySelectorAll('.map-node');
-  const sequenceDisplay = el.querySelector('#mapSequence');
+  const provinces = el.querySelectorAll('.province');
+  const prioritySequenceDisplay = el.querySelector('#prioritySequence');
+  const priorityCountDisplay = el.querySelector('#priorityCount');
   const validateBtn = el.querySelector('.btn-validate');
-  let nodeSequence = [];
+  const resetBtn = el.querySelector('.btn-reset');
+  let priorityOrder = [];
+  let clickCounter = 1;
 
-  nodes.forEach(node => {
-    node.addEventListener('click', () => {
-      const nodeNum = parseInt(node.dataset.node);
+  provinces.forEach(province => {
+    province.addEventListener('click', () => {
+      const provinceName = province.dataset.province;
       
-      if (!node.classList.contains('completed')) {
-        node.classList.add('selected');
-        nodeSequence.push(nodeNum);
-        sequenceDisplay.textContent = nodeSequence.map(n => `${n}`).join('-');
+      // Si ya está seleccionada, quitarla
+      if (province.classList.contains('priority-selected')) {
+        const priorityNumber = parseInt(province.dataset.priorityNumber);
+        province.classList.remove('priority-selected');
+        province.removeAttribute('data-priority-number');
         
-        setTimeout(() => node.classList.remove('selected'), 300);
+        // Remover del array
+        priorityOrder = priorityOrder.filter(p => p.name !== provinceName);
+        
+        // Actualizar números de prioridad
+        priorityOrder.forEach((p, index) => {
+          const elem = Array.from(provinces).find(pr => pr.dataset.province === p.name);
+          if (elem) {
+            elem.dataset.priorityNumber = index + 1;
+            p.priority = index + 1;
+          }
+        });
+        
+        clickCounter = priorityOrder.length + 1;
+      } else {
+        // Agregar nueva prioridad
+        province.classList.add('priority-selected');
+        province.dataset.priorityNumber = clickCounter;
+        priorityOrder.push({ name: provinceName, priority: clickCounter });
+        clickCounter++;
       }
+      
+      updatePriorityDisplay();
     });
   });
 
+  function updatePriorityDisplay() {
+    if (priorityOrder.length === 0) {
+      prioritySequenceDisplay.textContent = 'Ninguno';
+      priorityCountDisplay.textContent = '0';
+    } else {
+      const sequence = priorityOrder
+        .sort((a, b) => a.priority - b.priority)
+        .map(p => `${p.priority}:${p.name}`)
+        .join(' → ');
+      prioritySequenceDisplay.textContent = sequence;
+      priorityCountDisplay.textContent = priorityOrder.length.toString();
+    }
+  }
+
+  resetBtn.addEventListener('click', () => {
+    provinces.forEach(p => {
+      p.classList.remove('priority-selected');
+      p.removeAttribute('data-priority-number');
+    });
+    priorityOrder = [];
+    clickCounter = 1;
+    updatePriorityDisplay();
+  });
+
   validateBtn.addEventListener('click', () => {
-    // For this version, check if first clicked node matches the number
-    if (nodeSequence.length > 0 && nodeSequence[0] === correctSequence[0]) {
-      nodes.forEach(n => n.classList.add('completed'));
+    // Validar que la secuencia sea correcta
+    if (priorityOrder.length === 0) {
+      showError();
+      return;
+    }
+
+    // Verificar que el número de provincias coincida
+    if (priorityOrder.length !== correctSequence.length) {
+      showError();
+      return;
+    }
+
+    // Obtener la secuencia ingresada ordenada por prioridad
+    const userSequence = priorityOrder
+      .sort((a, b) => a.priority - b.priority)
+      .map(p => p.name);
+
+    // Verificar que cada provincia coincida en orden
+    let isCorrect = true;
+    for (let i = 0; i < correctSequence.length; i++) {
+      if (userSequence[i] !== correctSequence[i]) {
+        isCorrect = false;
+        break;
+      }
+    }
+
+    if (isCorrect) {
+      provinces.forEach(p => p.classList.add('completed'));
       completeModule();
     } else {
       showError();
-      nodeSequence = [];
-      sequenceDisplay.textContent = '--';
+      // Opcional: resetear después de error
+      setTimeout(() => {
+        provinces.forEach(p => {
+          p.classList.remove('priority-selected');
+          p.removeAttribute('data-priority-number');
+        });
+        priorityOrder = [];
+        clickCounter = 1;
+        updatePriorityDisplay();
+      }, 500);
     }
   });
 }
@@ -457,16 +738,59 @@ function initM9(el, correctNumber) {
   });
 }
 
-function initM10(el, correctDigit) {
-  const input = el.querySelector('.final-input');
-  const confirmBtn = el.querySelector('.final-confirm-btn');
+function initM10(el, correctCode) {
+  const codeInputs = el.querySelectorAll('.code-input');
+  const validateBtn = el.querySelector('.btn-validate');
+  let userCode = {
+    1: '',
+    2: '',
+    3: '',
+    4: '',
+    5: ''
+  };
 
-  confirmBtn.addEventListener('click', () => {
-    if (input.value === correctDigit) {
+  codeInputs.forEach(input => {
+    input.addEventListener('input', (e) => {
+      const block = e.target.dataset.block;
+      userCode[block] = e.target.value.toUpperCase();
+    });
+  });
+
+  validateBtn.addEventListener('click', () => {
+    // Validar que todos los campos estén llenos
+    let allFilled = true;
+    for (let i = 1; i <= 5; i++) {
+      if (userCode[i] === '') {
+        allFilled = false;
+        break;
+      }
+    }
+
+    if (!allFilled) {
+      showError();
+      return;
+    }
+
+    // Verificar que el código sea correcto
+    let isCorrect = true;
+    for (let i = 1; i <= 5; i++) {
+      if (userCode[i] !== correctCode[`code${i}`]) {
+        isCorrect = false;
+        break;
+      }
+    }
+
+    if (isCorrect) {
+      codeInputs.forEach(input => {
+        input.classList.add('correct');
+      });
       completeModule();
     } else {
       showError();
-      input.value = '';
+      codeInputs.forEach(input => {
+        input.value = '';
+        userCode[input.dataset.block] = '';
+      });
     }
   });
 }
