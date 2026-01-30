@@ -1,0 +1,1051 @@
+ID_Bomba,Nivel_Amenaza,Energia,Frecuencia,Hex_Cable,Agente,Sensor_ID,Timestamp,Provincia,Sector,Prioridad,Estado
+B-03,18,65,198,G,AG-009,901,2026-01-15 09:58:56,Imbabura,Sur,Crítica,Verificado
+B-05,12,65,111,G,AG-018,501,2026-01-15 10:01:08,Azuay,Centro,Crítica,Pendiente
+B-04,14,47,280,B,AG-987,401,2026-01-15 10:00:22,Pichincha,Este,Media,Inactivo
+B-03,15,60,182,R,AG-009,201,2026-01-15 10:02:38,Cañar,Norte,Media,Inactivo
+B-01,10,52,226,R,AG-716,301,2026-01-15 09:59:33,Imbabura,Este,Alta,Verificado
+B-03,13,42,203,R,AG-378,201,2026-01-15 10:00:55,Imbabura,Oeste,Crítica,Inactivo
+B-02,14,44,158,R,AG-738,601,2026-01-15 10:00:25,Imbabura,Oeste,Crítica,Verificado
+B-03,19,70,185,R,AG-011,501,2026-01-15 09:59:38,Imbabura,Sur,Media,Inactivo
+B-01,11,47,245,G,AG-341,101,2026-01-15 10:00:52,Imbabura,Norte,Alta,Inactivo
+B-05,12,56,181,G,AG-016,501,2026-01-15 10:01:15,Pichincha,Centro,Crítica,Activo
+B-04,19,41,300,G,AG-840,401,2026-01-15 10:00:18,Pichincha,Centro,Crítica,Pendiente
+B-05,6,43,193,R,AG-722,901,2026-01-15 09:58:57,Guayas,Centro,Crítica,Activo
+B-02,10,56,234,B,AG-008,901,2026-01-15 10:00:46,Imbabura,Norte,Crítica,Activo
+B-04,20,35,255,G,AG-678,201,2026-01-15 09:58:12,Pichincha,Centro,Media,Inactivo
+B-03,8,41,204,R,AG-467,301,2026-01-15 09:59:47,Loja,Sur,Baja,Activo
+B-07,12,44,136,R,AG-328,501,2026-01-15 10:00:22,Santa Elena,Centro,Media,Pendiente
+B-05,13,55,146,B,AG-018,801,2026-01-15 09:58:54,Azuay,Centro,Crítica,Inactivo
+B-04,15,41,258,G,AG-329,301,2026-01-15 10:00:20,Pichincha,Oeste,Media,Activo
+B-06,11,53,242,R,AG-339,801,2026-01-15 10:00:08,Pichincha,Sur,Crítica,Activo
+B-05,11,50,184,B,AG-567,601,2026-01-15 10:00:58,Pichincha,Norte,Alta,Inactivo
+B-02,14,43,167,B,AG-808,901,2026-01-15 10:00:51,Sucumbíos,Oeste,Media,Pendiente
+B-06,18,41,258,R,AG-730,201,2026-01-15 10:01:27,Cotopaxi,Norte,Media,Verificado
+B-07,12,47,172,G,AG-966,601,2026-01-15 09:59:16,Santa Elena,Centro,Media,Activo
+B-06,10,63,288,B,AG-019,901,2026-01-15 09:57:45,Bolívar,Sur,Baja,Activo
+B-04,15,41,225,R,AG-829,201,2026-01-15 09:56:32,Pichincha,Este,Baja,Pendiente
+B-01,12,54,235,R,AG-002,401,2026-01-15 10:00:15,Pichincha,Centro,Baja,Pendiente
+B-02,11,59,155,R,AG-008,201,2026-01-15 09:59:15,Sucumbíos,Oeste,Crítica,Pendiente
+B-01,11,47,277,R,AG-314,901,2026-01-15 10:00:03,Cotopaxi,Centro,Alta,Activo
+B-03,9,37,215,B,AG-896,201,2026-01-15 10:00:24,Imbabura,Oeste,Baja,Activo
+B-02,11,59,166,R,AG-223,801,2026-01-15 10:00:15,Imbabura,Este,Crítica,Inactivo
+B-01,17,66,189,G,AG-003,101,2026-01-15 09:59:33,Cotopaxi,Oeste,Media,Verificado
+B-03,5,41,218,R,AG-528,701,2026-01-15 10:00:03,Loja,Sur,Alta,Pendiente
+B-04,15,44,252,R,AG-145,901,2026-01-15 09:59:21,Pichincha,Oeste,Alta,Inactivo
+B-06,13,54,240,R,AG-021,401,2026-01-15 10:00:56,Pichincha,Sur,Crítica,Activo
+B-01,14,58,238,G,AG-786,701,2026-01-15 10:00:06,Pichincha,Este,Alta,Inactivo
+B-05,11,59,182,G,AG-017,601,2026-01-15 10:00:58,Tungurahua,Norte,Crítica,Activo
+B-04,14,39,300,G,AG-322,101,2026-01-15 09:58:16,Chimborazo,Norte,Baja,Verificado
+B-03,19,62,244,G,AG-370,201,2026-01-15 10:00:52,Imbabura,Centro,Alta,Verificado
+B-07,5,53,159,G,AG-023,601,2026-01-15 09:59:52,Santa Elena,Sur,Crítica,Inactivo
+B-03,7,44,173,R,AG-382,201,2026-01-15 09:59:04,Imbabura,Oeste,Alta,Activo
+B-06,12,54,213,R,AG-020,901,2026-01-15 10:02:46,Pichincha,Norte,Crítica,Activo
+B-05,10,56,122,R,AG-523,701,2026-01-15 10:00:05,Pichincha,Oeste,Media,Verificado
+B-05,7,57,135,G,AG-556,501,2026-01-15 09:59:29,Tungurahua,Norte,Crítica,Pendiente
+B-05,10,54,135,G,AG-017,501,2026-01-15 10:00:09,Tungurahua,Este,Crítica,Activo
+B-01,12,54,183,B,AG-002,901,2026-01-15 10:00:23,Pichincha,Este,Alta,Inactivo
+B-02,13,48,177,B,AG-278,501,2026-01-15 10:00:47,Orellana,Oeste,Alta,Pendiente
+B-01,14,56,202,G,AG-002,401,2026-01-15 09:59:33,Pichincha,Oeste,Baja,Pendiente
+B-04,12,55,247,G,AG-014,201,2026-01-15 09:58:26,Chimborazo,Norte,Media,Activo
+B-07,9,55,125,G,AG-180,401,2026-01-15 10:00:00,Los Ríos,Este,Crítica,Activo
+B-07,5,55,155,G,AG-024,501,2026-01-15 10:00:12,Santa Elena,Norte,Alta,Pendiente
+B-07,14,30,172,B,AG-365,101,2026-01-15 10:01:06,Santa Elena,Oeste,Baja,Activo
+B-03,13,52,169,B,AG-011,201,2026-01-15 09:59:34,Imbabura,Sur,Crítica,Inactivo
+B-05,13,50,163,G,AG-915,501,2026-01-15 10:03:28,Azuay,Este,Crítica,Pendiente
+B-06,13,50,220,R,AG-531,201,2026-01-15 09:59:54,Cotopaxi,Oeste,Media,Verificado
+B-03,14,55,179,B,AG-011,901,2026-01-15 10:00:24,Imbabura,Este,Crítica,Inactivo
+B-05,12,63,158,G,AG-016,901,2026-01-15 10:02:27,Guayas,Centro,Alta,Activo
+B-01,9,46,156,G,AG-177,101,2026-01-15 09:59:49,Pichincha,Sur,Alta,Pendiente
+B-02,13,54,214,R,AG-006,501,2026-01-15 09:59:00,Orellana,Sur,Baja,Inactivo
+B-04,9,70,275,G,AG-015,201,2026-01-15 10:00:35,Pichincha,Norte,Media,Pendiente
+B-07,5,60,161,R,AG-024,401,2026-01-15 10:00:16,Santa Elena,Centro,Alta,Pendiente
+B-06,14,46,225,B,AG-849,401,2026-01-15 10:00:58,Pichincha,Centro,Baja,Verificado
+B-03,20,62,253,R,AG-010,201,2026-01-15 09:59:44,Loja,Oeste,Baja,Pendiente
+B-04,13,47,239,G,AG-222,901,2026-01-15 10:00:48,Pichincha,Centro,Baja,Inactivo
+B-05,14,60,141,R,AG-017,701,2026-01-15 09:59:46,Pichincha,Centro,Baja,Inactivo
+B-01,16,63,190,R,AG-002,101,2026-01-15 10:00:40,Pichincha,Este,Baja,Inactivo
+B-06,11,50,216,R,AG-760,201,2026-01-15 09:59:23,Cotopaxi,Sur,Baja,Pendiente
+B-05,11,61,197,G,AG-018,501,2026-01-15 09:58:24,Azuay,Centro,Alta,Pendiente
+B-07,15,30,152,G,AG-827,201,2026-01-15 09:59:37,Los Ríos,Oeste,Alta,Activo
+B-07,8,52,137,G,AG-022,101,2026-01-15 10:01:36,Santa Elena,Norte,Media,Inactivo
+B-04,13,40,226,G,AG-185,301,2026-01-15 10:01:15,Chimborazo,Oeste,Media,Pendiente
+B-05,12,54,170,B,AG-869,301,2026-01-15 10:02:20,Pichincha,Este,Alta,Inactivo
+B-06,15,43,203,R,AG-274,201,2026-01-15 10:02:43,Cotopaxi,Este,Media,Pendiente
+B-03,5,37,198,R,AG-377,501,2026-01-15 09:56:23,Cañar,Sur,Alta,Pendiente
+B-06,16,42,300,R,AG-775,201,2026-01-15 09:57:10,Pichincha,Norte,Baja,Activo
+B-04,11,57,300,B,AG-264,201,2026-01-15 09:58:50,Esmeraldas,Centro,Alta,Activo
+B-03,5,37,168,G,AG-819,701,2026-01-15 09:58:59,Imbabura,Sur,Crítica,Verificado
+B-07,6,57,199,G,AG-022,401,2026-01-15 10:00:24,Zamora Chinchipe,Norte,Crítica,Activo
+B-02,17,49,162,R,AG-857,401,2026-01-15 09:57:23,Imbabura,Oeste,Alta,Inactivo
+B-07,7,57,176,R,AG-024,901,2026-01-15 10:01:55,Orellana,Norte,Media,Inactivo
+B-04,18,36,249,G,AG-330,301,2026-01-15 09:59:43,Pichincha,Este,Crítica,Verificado
+B-01,13,56,199,G,AG-001,201,2026-01-15 09:59:27,Pichincha,Oeste,Alta,Activo
+B-06,9,58,228,R,AG-019,201,2026-01-15 10:01:22,Pichincha,Centro,Media,Activo
+B-03,15,52,207,R,AG-010,601,2026-01-15 09:59:35,Imbabura,Este,Media,Pendiente
+B-02,15,45,172,R,AG-332,501,2026-01-15 09:57:30,Imbabura,Este,Alta,Pendiente
+B-03,9,33,197,B,AG-257,201,2026-01-15 10:01:49,Imbabura,Norte,Media,Inactivo
+B-02,14,56,171,R,AG-008,501,2026-01-15 10:00:31,Imbabura,Este,Media,Pendiente
+B-07,10,43,99,G,AG-948,401,2026-01-15 09:59:59,Santa Elena,Sur,Baja,Activo
+B-07,8,52,113,G,AG-022,401,2026-01-15 10:00:08,Los Ríos,Centro,Alta,Inactivo
+B-02,11,50,146,R,AG-593,501,2026-01-15 09:58:57,Orellana,Centro,Media,Pendiente
+B-01,13,62,224,G,AG-003,501,2026-01-15 10:00:30,Pichincha,Este,Alta,Inactivo
+B-01,16,63,177,G,AG-004,101,2026-01-15 10:00:00,Pichincha,Centro,Baja,Activo
+B-05,8,54,192,B,AG-662,501,2026-01-15 09:58:37,Pichincha,Norte,Baja,Pendiente
+B-01,17,69,192,G,AG-004,201,2026-01-15 09:58:28,Manabí,Oeste,Crítica,Inactivo
+B-02,12,54,240,R,AG-935,501,2026-01-15 10:00:06,Santa Elena,Este,Alta,Pendiente
+B-04,16,41,261,R,AG-688,901,2026-01-15 09:59:04,Chimborazo,Centro,Media,Verificado
+B-06,15,50,245,R,AG-159,401,2026-01-15 10:00:43,Morona Santiago,Centro,Media,Pendiente
+B-05,10,58,185,G,AG-016,501,2026-01-15 09:58:45,Pichincha,Centro,Media,Pendiente
+B-04,15,49,205,G,AG-871,201,2026-01-15 10:02:20,Chimborazo,Centro,Baja,Activo
+B-02,14,47,183,B,AG-780,201,2026-01-15 09:58:50,Santa Elena,Este,Alta,Verificado
+B-04,13,53,233,R,AG-014,201,2026-01-15 09:58:56,Pichincha,Norte,Baja,Activo
+B-01,18,63,226,R,AG-004,101,2026-01-15 10:00:11,Pichincha,Oeste,Alta,Verificado
+B-01,13,57,235,G,AG-001,401,2026-01-15 10:00:31,Manabí,Norte,Alta,Verificado
+B-05,13,63,131,G,AG-016,201,2026-01-15 10:00:30,Pichincha,Este,Media,Activo
+B-04,20,37,269,G,AG-354,801,2026-01-15 09:57:48,Pichincha,Oeste,Crítica,Activo
+B-01,6,47,200,R,AG-761,101,2026-01-15 10:00:07,Pichincha,Oeste,Media,Pendiente
+B-01,13,70,217,G,AG-004,801,2026-01-15 10:01:08,Pichincha,Sur,Crítica,Pendiente
+B-07,17,36,132,G,AG-923,401,2026-01-15 09:58:05,Zamora Chinchipe,Norte,Crítica,Inactivo
+B-01,16,66,200,G,AG-001,601,2026-01-15 10:01:34,Pichincha,Oeste,Media,Pendiente
+B-01,12,59,244,G,AG-939,701,2026-01-15 10:01:31,Manabí,Este,Baja,Pendiente
+B-04,11,50,276,B,AG-214,101,2026-01-15 10:00:24,El Oro,Este,Baja,Pendiente
+B-07,13,43,150,G,AG-995,201,2026-01-15 10:00:04,Los Ríos,Este,Media,Activo
+B-07,5,55,211,G,AG-022,401,2026-01-15 09:59:56,Los Ríos,Sur,Media,Inactivo
+B-01,5,46,223,G,AG-875,101,2026-01-15 09:58:54,Cotopaxi,Oeste,Media,Inactivo
+B-02,12,48,199,R,AG-208,701,2026-01-15 09:59:39,Santa Elena,Sur,Baja,Activo
+B-05,9,51,163,R,AG-016,301,2026-01-15 10:00:58,Pichincha,Centro,Crítica,Activo
+B-06,6,70,251,R,AG-747,801,2026-01-15 09:57:18,Morona Santiago,Norte,Baja,Activo
+B-06,15,47,222,R,AG-152,201,2026-01-15 10:01:17,Morona Santiago,Sur,Alta,Pendiente
+B-06,8,64,264,R,AG-021,201,2026-01-15 09:59:40,Bolívar,Sur,Crítica,Pendiente
+B-06,10,51,249,R,AG-019,201,2026-01-15 10:01:58,Pichincha,Centro,Alta,Verificado
+B-07,11,49,165,B,AG-446,401,2026-01-15 10:00:46,Santa Elena,Norte,Crítica,Pendiente
+B-03,9,47,200,R,AG-867,601,2026-01-15 09:59:01,Imbabura,Centro,Alta,Inactivo
+B-04,13,41,259,R,AG-632,201,2026-01-15 09:57:46,Chimborazo,Oeste,Crítica,Inactivo
+B-05,12,60,189,B,AG-017,201,2026-01-15 10:02:03,Pichincha,Norte,Crítica,Inactivo
+B-06,12,53,265,G,AG-021,401,2026-01-15 10:00:27,Pichincha,Oeste,Baja,Inactivo
+B-02,12,52,221,R,AG-007,901,2026-01-15 10:00:04,Imbabura,Oeste,Media,Pendiente
+B-07,13,43,194,G,AG-723,101,2026-01-15 10:01:09,Los Ríos,Norte,Media,Pendiente
+B-01,11,47,238,R,AG-680,501,2026-01-15 10:00:27,Pichincha,Centro,Crítica,Pendiente
+B-02,15,41,222,R,AG-265,501,2026-01-15 10:00:52,Imbabura,Sur,Baja,Verificado
+B-01,10,52,219,G,AG-002,801,2026-01-15 09:59:06,Pichincha,Centro,Crítica,Verificado
+B-06,10,51,280,R,AG-019,601,2026-01-15 09:59:25,Pichincha,Este,Crítica,Verificado
+B-02,14,44,231,G,AG-891,701,2026-01-15 10:00:08,Imbabura,Este,Alta,Pendiente
+B-01,10,60,233,G,AG-001,101,2026-01-15 10:01:43,Pichincha,Este,Baja,Inactivo
+B-07,9,49,154,R,AG-487,701,2026-01-15 10:03:04,Los Ríos,Centro,Alta,Pendiente
+B-02,14,53,185,R,AG-008,501,2026-01-15 09:59:38,Imbabura,Norte,Crítica,Verificado
+B-05,9,48,167,G,AG-937,801,2026-01-15 10:00:12,Pichincha,Sur,Baja,Activo
+B-02,15,49,205,B,AG-725,501,2026-01-15 09:59:28,Santa Elena,Centro,Crítica,Verificado
+B-07,14,44,199,R,AG-360,401,2026-01-15 09:59:59,Orellana,Oeste,Baja,Pendiente
+B-06,12,43,257,G,AG-455,901,2026-01-15 09:59:30,Bolívar,Este,Media,Inactivo
+B-01,14,63,176,R,AG-548,101,2026-01-15 09:58:41,Pichincha,Sur,Crítica,Inactivo
+B-06,10,63,276,B,AG-020,201,2026-01-15 09:58:23,Bolívar,Norte,Alta,Verificado
+B-02,13,45,178,R,AG-507,501,2026-01-15 10:01:00,Imbabura,Oeste,Baja,Pendiente
+B-01,17,67,206,G,AG-002,101,2026-01-15 10:00:26,Pichincha,Norte,Media,Pendiente
+B-02,14,46,197,G,AG-613,301,2026-01-15 10:01:15,Sucumbíos,Este,Media,Verificado
+B-01,9,48,201,G,AG-760,101,2026-01-15 10:01:05,Cotopaxi,Oeste,Alta,Activo
+B-07,7,57,176,G,AG-704,401,2026-01-15 09:57:52,Santa Elena,Centro,Media,Pendiente
+B-01,11,44,167,R,AG-212,501,2026-01-15 09:59:01,Pichincha,Centro,Crítica,Activo
+B-04,14,46,282,B,AG-199,401,2026-01-15 09:59:28,Pichincha,Este,Alta,Activo
+B-03,16,63,157,R,AG-009,201,2026-01-15 09:58:37,Loja,Oeste,Crítica,Verificado
+B-07,8,52,168,B,AG-023,301,2026-01-15 10:00:27,Santa Elena,Centro,Media,Pendiente
+B-06,15,46,217,B,AG-538,301,2026-01-15 10:01:18,Pichincha,Este,Baja,Activo
+B-04,12,48,235,G,AG-705,201,2026-01-15 09:57:54,Pichincha,Sur,Crítica,Activo
+B-03,13,57,190,G,AG-656,801,2026-01-15 09:58:18,Carchi,Sur,Alta,Activo
+B-02,16,32,115,G,AG-599,501,2026-01-15 10:00:22,Santa Elena,Este,Baja,Verificado
+B-07,11,42,127,G,AG-112,501,2026-01-15 10:02:11,Santa Elena,Oeste,Media,Inactivo
+B-03,9,34,196,R,AG-242,701,2026-01-15 10:01:51,Cañar,Norte,Alta,Verificado
+B-06,11,49,254,R,AG-936,301,2026-01-15 10:02:06,Morona Santiago,Oeste,Baja,Inactivo
+B-04,12,49,238,R,AG-969,801,2026-01-15 09:59:41,Pichincha,Norte,Media,Verificado
+B-05,12,57,174,B,AG-017,301,2026-01-15 09:59:57,Pichincha,Centro,Baja,Pendiente
+B-05,13,57,179,B,AG-017,901,2026-01-15 10:00:07,Guayas,Centro,Baja,Activo
+B-04,14,45,229,G,AG-297,801,2026-01-15 10:01:38,Pichincha,Sur,Alta,Inactivo
+B-04,9,53,244,B,AG-012,601,2026-01-15 09:57:24,Chimborazo,Centro,Crítica,Verificado
+B-04,15,39,213,B,AG-716,201,2026-01-15 10:00:27,Chimborazo,Oeste,Alta,Activo
+B-01,12,51,204,G,AG-746,101,2026-01-15 09:59:58,Pichincha,Oeste,Alta,Verificado
+B-03,13,45,208,R,AG-465,201,2026-01-15 09:59:05,Imbabura,Oeste,Crítica,Pendiente
+B-02,13,43,212,R,AG-592,501,2026-01-15 10:00:13,Sucumbíos,Centro,Media,Pendiente
+B-04,15,51,245,G,AG-013,601,2026-01-15 09:59:40,Pichincha,Oeste,Baja,Pendiente
+B-06,11,43,295,R,AG-488,701,2026-01-15 09:58:58,Bolívar,Centro,Crítica,Verificado
+B-03,18,60,172,R,AG-009,901,2026-01-15 09:59:33,Loja,Norte,Alta,Pendiente
+B-04,9,60,257,G,AG-015,201,2026-01-15 09:59:13,Pichincha,Sur,Alta,Activo
+B-06,13,52,256,R,AG-021,701,2026-01-15 09:57:59,Bolívar,Centro,Media,Verificado
+B-04,12,53,241,G,AG-015,201,2026-01-15 10:01:47,Pichincha,Sur,Crítica,Verificado
+B-03,17,57,151,R,AG-011,701,2026-01-15 09:58:40,Carchi,Norte,Crítica,Activo
+B-07,15,35,147,G,AG-554,401,2026-01-15 10:01:05,Zamora Chinchipe,Sur,Media,Inactivo
+B-04,14,52,215,G,AG-012,201,2026-01-15 09:59:37,Pichincha,Sur,Crítica,Activo
+B-04,13,42,300,R,AG-701,801,2026-01-15 09:58:25,Chimborazo,Este,Alta,Inactivo
+B-04,11,55,198,G,AG-013,801,2026-01-15 09:59:13,Pichincha,Centro,Alta,Pendiente
+B-03,10,54,217,B,AG-489,101,2026-01-15 10:00:02,Cañar,Oeste,Crítica,Pendiente
+B-07,5,55,186,G,AG-024,301,2026-01-15 10:01:40,Santa Elena,Este,Media,Activo
+B-07,10,51,213,G,AG-023,401,2026-01-15 10:00:54,Santa Elena,Oeste,Media,Activo
+B-02,11,51,123,R,AG-007,501,2026-01-15 09:59:06,Imbabura,Este,Alta,Verificado
+B-05,13,70,178,G,AG-940,501,2026-01-15 10:00:52,Pichincha,Oeste,Alta,Activo
+B-05,9,53,111,B,AG-016,601,2026-01-15 10:01:21,Pichincha,Norte,Alta,Verificado
+B-05,10,58,189,G,AG-017,101,2026-01-15 10:00:09,Pichincha,Norte,Alta,Activo
+B-07,10,53,146,G,AG-022,601,2026-01-15 09:59:31,Orellana,Sur,Crítica,Activo
+B-07,13,43,177,G,AG-519,401,2026-01-15 10:00:14,Orellana,Norte,Crítica,Activo
+B-03,20,64,153,R,AG-011,201,2026-01-15 10:00:42,Cañar,Norte,Alta,Verificado
+B-01,17,63,209,G,AG-001,701,2026-01-15 09:59:56,Manabí,Este,Crítica,Activo
+B-06,8,54,285,R,AG-213,801,2026-01-15 10:00:21,Pichincha,Oeste,Crítica,Inactivo
+B-01,12,59,199,G,AG-293,901,2026-01-15 10:00:27,Pichincha,Centro,Crítica,Activo
+B-01,12,57,204,G,AG-003,101,2026-01-15 09:58:20,Pichincha,Sur,Media,Verificado
+B-03,20,67,157,R,AG-454,201,2026-01-15 10:00:18,Imbabura,Oeste,Alta,Activo
+B-01,15,60,188,G,AG-004,501,2026-01-15 09:58:43,Manabí,Norte,Crítica,Pendiente
+B-01,12,53,195,G,AG-004,801,2026-01-15 10:00:31,Pichincha,Sur,Baja,Activo
+B-07,20,30,165,B,AG-384,701,2026-01-15 10:00:05,Zamora Chinchipe,Norte,Alta,Inactivo
+B-01,7,47,231,G,AG-171,101,2026-01-15 10:01:32,Pichincha,Este,Baja,Inactivo
+B-02,11,54,213,G,AG-007,601,2026-01-15 10:00:41,Sucumbíos,Sur,Crítica,Pendiente
+B-03,15,57,182,B,AG-010,101,2026-01-15 10:00:09,Loja,Norte,Media,Activo
+B-02,16,38,200,R,AG-532,901,2026-01-15 10:01:29,Imbabura,Centro,Alta,Pendiente
+B-03,14,52,104,R,AG-009,201,2026-01-15 10:00:01,Carchi,Este,Media,Pendiente
+B-03,19,70,212,R,AG-009,201,2026-01-15 10:01:55,Imbabura,Sur,Crítica,Activo
+B-03,12,55,212,R,AG-010,201,2026-01-15 10:01:33,Imbabura,Centro,Media,Pendiente
+B-07,5,56,186,B,AG-024,701,2026-01-15 09:59:50,Santa Elena,Oeste,Alta,Inactivo
+B-07,10,47,175,G,AG-450,401,2026-01-15 10:00:11,Santa Elena,Norte,Baja,Inactivo
+B-03,17,61,160,R,AG-010,501,2026-01-15 09:59:40,Loja,Este,Crítica,Activo
+B-03,8,50,110,R,AG-580,201,2026-01-15 09:59:39,Carchi,Sur,Crítica,Inactivo
+B-05,12,57,150,R,AG-017,801,2026-01-15 09:59:08,Pichincha,Sur,Media,Verificado
+B-04,14,44,138,R,AG-975,201,2026-01-15 10:02:29,Pichincha,Oeste,Baja,Verificado
+B-03,9,37,220,B,AG-685,201,2026-01-15 10:00:50,Imbabura,Centro,Alta,Pendiente
+B-05,9,50,118,B,AG-571,801,2026-01-15 09:58:24,Pichincha,Norte,Crítica,Pendiente
+B-02,12,54,201,R,AG-008,601,2026-01-15 10:01:04,Santa Elena,Norte,Alta,Verificado
+B-04,14,41,284,G,AG-607,101,2026-01-15 10:00:17,Esmeraldas,Centro,Media,Verificado
+B-07,7,54,117,G,AG-022,301,2026-01-15 10:00:30,Santa Elena,Norte,Baja,Activo
+B-04,14,48,208,G,AG-128,101,2026-01-15 09:56:35,El Oro,Este,Alta,Activo
+B-03,13,51,180,R,AG-011,101,2026-01-15 10:00:23,Loja,Norte,Media,Activo
+B-05,7,48,187,R,AG-667,601,2026-01-15 09:58:48,Pichincha,Sur,Crítica,Inactivo
+B-01,14,60,224,G,AG-004,101,2026-01-15 09:58:18,Pichincha,Norte,Baja,Pendiente
+B-05,10,58,164,G,AG-018,501,2026-01-15 09:58:14,Guayas,Norte,Alta,Pendiente
+B-06,10,51,196,B,AG-020,201,2026-01-15 10:01:47,Pichincha,Oeste,Baja,Inactivo
+B-01,13,62,202,G,AG-003,101,2026-01-15 09:58:31,Cotopaxi,Norte,Crítica,Pendiente
+B-07,9,45,126,G,AG-768,601,2026-01-15 09:59:04,Santa Elena,Este,Crítica,Inactivo
+B-04,15,47,300,G,AG-522,701,2026-01-15 09:59:20,Chimborazo,Oeste,Crítica,Activo
+B-05,12,54,175,R,AG-018,101,2026-01-15 09:59:09,Pichincha,Oeste,Crítica,Activo
+B-07,14,37,211,R,AG-871,401,2026-01-15 10:00:50,Zamora Chinchipe,Este,Baja,Pendiente
+B-04,10,59,257,G,AG-015,501,2026-01-15 10:01:07,Pichincha,Sur,Baja,Activo
+B-03,14,54,186,R,AG-149,201,2026-01-15 09:59:41,Imbabura,Centro,Media,Inactivo
+B-07,5,53,151,R,AG-022,201,2026-01-15 10:00:43,Los Ríos,Sur,Baja,Verificado
+B-05,10,52,216,G,AG-736,301,2026-01-15 10:01:05,Pichincha,Norte,Alta,Inactivo
+B-04,15,34,232,G,AG-824,201,2026-01-15 10:01:33,El Oro,Este,Baja,Verificado
+B-03,16,61,216,R,AG-011,201,2026-01-15 09:59:28,Imbabura,Este,Alta,Verificado
+B-03,11,46,266,G,AG-119,901,2026-01-15 09:59:19,Imbabura,Oeste,Baja,Pendiente
+B-03,18,65,185,R,AG-010,201,2026-01-15 09:58:44,Carchi,Este,Media,Pendiente
+B-03,8,44,216,G,AG-343,301,2026-01-15 09:58:24,Cañar,Centro,Crítica,Inactivo
+B-07,8,52,125,G,AG-703,601,2026-01-15 09:59:20,Orellana,Oeste,Crítica,Verificado
+B-03,15,59,162,R,AG-009,301,2026-01-15 10:00:32,Carchi,Oeste,Media,Pendiente
+B-02,14,48,131,R,AG-317,501,2026-01-15 10:00:12,Imbabura,Oeste,Media,Activo
+B-05,11,60,169,R,AG-016,701,2026-01-15 10:01:20,Pichincha,Centro,Crítica,Verificado
+B-01,13,66,240,G,AG-004,401,2026-01-15 10:00:27,Manabí,Oeste,Alta,Activo
+B-04,17,40,198,G,AG-607,901,2026-01-15 10:00:28,Pichincha,Sur,Media,Pendiente
+B-03,14,50,206,R,AG-393,401,2026-01-15 09:58:26,Carchi,Sur,Crítica,Pendiente
+B-05,10,60,203,G,AG-016,601,2026-01-15 10:00:19,Guayas,Oeste,Crítica,Verificado
+B-06,13,45,300,R,AG-537,601,2026-01-15 10:02:46,Pichincha,Centro,Crítica,Inactivo
+B-07,5,60,185,G,AG-022,201,2026-01-15 10:01:58,Los Ríos,Norte,Media,Pendiente
+B-05,8,50,233,B,AG-345,501,2026-01-15 10:01:14,Azuay,Norte,Alta,Verificado
+B-02,14,50,139,R,AG-866,901,2026-01-15 09:59:36,Orellana,Sur,Crítica,Pendiente
+B-03,13,41,206,R,AG-576,201,2026-01-15 09:59:25,Cañar,Sur,Alta,Inactivo
+B-06,19,38,260,B,AG-943,301,2026-01-15 10:01:10,Pichincha,Sur,Media,Activo
+B-03,11,52,188,G,AG-010,801,2026-01-15 09:58:29,Imbabura,Sur,Crítica,Pendiente
+B-02,14,56,148,R,AG-006,901,2026-01-15 10:00:18,Santa Elena,Este,Media,Pendiente
+B-07,8,54,189,G,AG-022,301,2026-01-15 09:59:41,Santa Elena,Oeste,Baja,Verificado
+B-02,15,48,201,G,AG-648,501,2026-01-15 10:00:38,Santa Elena,Norte,Crítica,Pendiente
+B-05,9,55,196,G,AG-016,801,2026-01-15 09:58:51,Tungurahua,Oeste,Media,Verificado
+B-02,13,53,180,R,AG-007,501,2026-01-15 10:00:29,Santa Elena,Norte,Alta,Inactivo
+B-05,8,50,119,B,AG-544,501,2026-01-15 10:00:07,Guayas,Norte,Media,Pendiente
+B-04,12,47,246,G,AG-709,401,2026-01-15 09:59:29,Chimborazo,Sur,Baja,Pendiente
+B-02,11,65,174,R,AG-006,901,2026-01-15 09:58:25,Santa Elena,Centro,Media,Activo
+B-06,14,56,271,R,AG-021,301,2026-01-15 10:00:13,Cotopaxi,Este,Media,Pendiente
+B-01,13,57,216,G,AG-002,801,2026-01-15 09:59:05,Imbabura,Oeste,Crítica,Verificado
+B-03,14,48,187,R,AG-346,301,2026-01-15 09:58:05,Cañar,Centro,Crítica,Inactivo
+B-06,14,49,283,R,AG-618,401,2026-01-15 10:01:59,Morona Santiago,Centro,Alta,Inactivo
+B-02,13,55,149,R,AG-006,901,2026-01-15 10:01:23,Imbabura,Centro,Media,Pendiente
+B-04,17,39,256,G,AG-747,501,2026-01-15 10:00:50,El Oro,Oeste,Crítica,Verificado
+B-04,12,46,229,G,AG-249,201,2026-01-15 09:58:21,Pichincha,Norte,Media,Pendiente
+B-01,6,36,246,R,AG-322,101,2026-01-15 10:01:19,Imbabura,Centro,Alta,Verificado
+B-02,12,49,178,R,AG-498,701,2026-01-15 10:02:50,Sucumbíos,Norte,Media,Verificado
+B-02,14,45,159,B,AG-490,501,2026-01-15 10:00:02,Imbabura,Oeste,Baja,Verificado
+B-03,18,70,128,G,AG-010,201,2026-01-15 10:01:00,Imbabura,Norte,Baja,Pendiente
+B-05,8,58,200,B,AG-194,701,2026-01-15 10:00:48,Pichincha,Oeste,Alta,Verificado
+B-06,11,52,279,G,AG-020,301,2026-01-15 10:02:30,Morona Santiago,Sur,Crítica,Verificado
+B-03,14,53,137,G,AG-011,201,2026-01-15 10:00:22,Carchi,Oeste,Crítica,Activo
+B-05,9,50,223,B,AG-148,101,2026-01-15 10:01:00,Pichincha,Este,Baja,Activo
+B-04,14,45,246,R,AG-864,101,2026-01-15 10:00:22,Pichincha,Este,Media,Verificado
+B-01,6,50,219,R,AG-240,101,2026-01-15 09:59:57,Pichincha,Norte,Baja,Verificado
+B-05,9,63,123,G,AG-018,601,2026-01-15 10:03:18,Tungurahua,Oeste,Media,Pendiente
+B-06,11,54,243,R,AG-020,201,2026-01-15 10:01:45,Cotopaxi,Oeste,Baja,Activo
+B-02,16,30,203,R,AG-142,901,2026-01-15 09:59:44,Santa Elena,Sur,Alta,Pendiente
+B-05,12,62,131,G,AG-130,501,2026-01-15 10:00:15,Tungurahua,Sur,Crítica,Activo
+B-06,6,60,282,G,AG-639,101,2026-01-15 09:59:27,Pichincha,Centro,Baja,Verificado
+B-02,12,52,155,R,AG-006,701,2026-01-15 10:01:24,Sucumbíos,Sur,Crítica,Activo
+B-02,11,61,144,R,AG-315,101,2026-01-15 10:01:03,Santa Elena,Sur,Media,Activo
+B-03,12,52,218,G,AG-010,301,2026-01-15 09:59:57,Cañar,Sur,Alta,Pendiente
+B-04,18,38,291,B,AG-226,401,2026-01-15 10:02:15,Chimborazo,Este,Crítica,Activo
+B-03,18,58,210,R,AG-009,201,2026-01-15 10:00:04,Imbabura,Sur,Alta,Inactivo
+B-04,18,34,262,G,AG-416,201,2026-01-15 10:00:30,Pichincha,Centro,Alta,Activo
+B-07,10,40,178,R,AG-515,601,2026-01-15 09:59:04,Santa Elena,Sur,Baja,Verificado
+B-02,16,48,172,R,AG-801,901,2026-01-15 10:01:25,Orellana,Norte,Media,Verificado
+B-04,15,51,265,B,AG-013,101,2026-01-15 10:03:24,El Oro,Este,Alta,Activo
+B-03,16,53,158,R,AG-009,101,2026-01-15 09:59:09,Cañar,Sur,Baja,Inactivo
+B-01,15,59,150,G,AG-002,301,2026-01-15 10:00:42,Pichincha,Este,Baja,Verificado
+B-01,11,52,203,G,AG-002,101,2026-01-15 10:00:13,Cotopaxi,Sur,Media,Activo
+B-01,15,65,181,G,AG-001,101,2026-01-15 09:58:40,Imbabura,Oeste,Crítica,Activo
+B-05,11,63,202,G,AG-522,501,2026-01-15 10:00:11,Guayas,Norte,Crítica,Inactivo
+B-02,14,47,201,R,AG-314,701,2026-01-15 10:01:04,Santa Elena,Sur,Baja,Inactivo
+B-02,16,50,163,R,AG-916,501,2026-01-15 09:59:45,Orellana,Oeste,Crítica,Verificado
+B-06,14,47,246,B,AG-135,501,2026-01-15 10:00:19,Morona Santiago,Oeste,Media,Activo
+B-05,12,63,118,G,AG-018,501,2026-01-15 10:01:33,Azuay,Centro,Crítica,Pendiente
+B-03,10,50,192,B,AG-106,401,2026-01-15 10:00:22,Imbabura,Norte,Baja,Activo
+B-01,14,64,159,G,AG-002,601,2026-01-15 09:59:32,Imbabura,Este,Media,Inactivo
+B-01,13,62,225,G,AG-003,201,2026-01-15 10:00:27,Manabí,Sur,Crítica,Pendiente
+B-07,12,43,183,R,AG-522,501,2026-01-15 10:00:04,Zamora Chinchipe,Norte,Baja,Activo
+B-01,10,62,161,G,AG-004,801,2026-01-15 09:58:41,Pichincha,Sur,Alta,Verificado
+B-04,15,46,199,G,AG-116,701,2026-01-15 09:58:37,Chimborazo,Sur,Crítica,Activo
+B-03,11,51,190,B,AG-010,801,2026-01-15 09:58:29,Imbabura,Oeste,Crítica,Inactivo
+B-04,14,41,258,G,AG-151,201,2026-01-15 09:57:04,Pichincha,Este,Alta,Pendiente
+B-04,20,34,238,G,AG-276,801,2026-01-15 10:01:22,Pichincha,Este,Media,Inactivo
+B-04,13,51,250,B,AG-015,401,2026-01-15 10:01:44,Pichincha,Norte,Baja,Inactivo
+B-06,7,58,278,R,AG-019,801,2026-01-15 09:59:48,Pichincha,Centro,Alta,Inactivo
+B-03,11,48,161,G,AG-590,201,2026-01-15 09:59:47,Carchi,Este,Crítica,Verificado
+B-01,10,56,210,R,AG-164,101,2026-01-15 09:58:15,Pichincha,Norte,Crítica,Verificado
+B-04,7,70,258,B,AG-891,701,2026-01-15 09:58:54,Pichincha,Este,Media,Verificado
+B-01,14,62,213,G,AG-001,301,2026-01-15 10:00:36,Cotopaxi,Norte,Media,Inactivo
+B-01,15,60,206,R,AG-001,801,2026-01-15 09:59:51,Pichincha,Centro,Media,Pendiente
+B-06,12,59,233,R,AG-020,701,2026-01-15 10:02:03,Morona Santiago,Centro,Alta,Verificado
+B-06,10,56,274,R,AG-019,501,2026-01-15 10:00:43,Pichincha,Sur,Baja,Activo
+B-03,19,70,175,B,AG-009,601,2026-01-15 09:59:33,Imbabura,Sur,Baja,Verificado
+B-07,12,43,142,G,AG-575,201,2026-01-15 09:59:37,Santa Elena,Centro,Crítica,Inactivo
+B-02,19,32,223,R,AG-124,101,2026-01-15 10:01:14,Santa Elena,Centro,Alta,Inactivo
+B-02,14,48,131,R,AG-172,301,2026-01-15 09:59:28,Santa Elena,Este,Alta,Activo
+B-04,17,40,207,G,AG-760,201,2026-01-15 09:59:40,Pichincha,Este,Alta,Verificado
+B-04,16,34,253,R,AG-481,201,2026-01-15 09:59:55,Pichincha,Este,Baja,Inactivo
+B-03,11,35,166,R,AG-631,101,2026-01-15 09:59:49,Imbabura,Centro,Baja,Activo
+B-04,11,55,300,G,AG-014,701,2026-01-15 10:01:45,El Oro,Oeste,Alta,Activo
+B-07,5,64,178,B,AG-022,801,2026-01-15 09:59:05,Santa Elena,Norte,Media,Inactivo
+B-06,13,38,256,R,AG-865,801,2026-01-15 09:59:31,Pichincha,Este,Baja,Inactivo
+B-01,16,63,185,B,AG-003,101,2026-01-15 10:01:47,Pichincha,Sur,Alta,Pendiente
+B-05,11,55,186,G,AG-016,301,2026-01-15 09:59:02,Azuay,Centro,Alta,Activo
+B-02,16,35,162,G,AG-301,501,2026-01-15 10:00:17,Imbabura,Norte,Alta,Pendiente
+B-03,12,51,148,G,AG-009,201,2026-01-15 09:58:39,Imbabura,Norte,Media,Inactivo
+B-05,14,62,206,G,AG-018,501,2026-01-15 10:00:33,Pichincha,Norte,Media,Activo
+B-05,9,48,170,R,AG-221,501,2026-01-15 10:00:18,Pichincha,Norte,Media,Activo
+B-01,12,58,221,G,AG-001,501,2026-01-15 10:00:21,Pichincha,Oeste,Media,Inactivo
+B-06,12,53,243,R,AG-020,201,2026-01-15 10:02:19,Bolívar,Este,Baja,Inactivo
+B-02,14,44,170,G,AG-140,501,2026-01-15 09:59:01,Orellana,Este,Baja,Activo
+B-05,11,51,211,G,AG-018,801,2026-01-15 10:00:08,Pichincha,Este,Crítica,Verificado
+B-01,13,56,198,G,AG-003,401,2026-01-15 09:58:53,Manabí,Centro,Baja,Inactivo
+B-03,11,46,177,G,AG-920,201,2026-01-15 10:01:35,Imbabura,Sur,Alta,Verificado
+B-04,15,42,265,R,AG-177,401,2026-01-15 09:58:37,Pichincha,Centro,Media,Pendiente
+B-05,10,56,174,B,AG-810,901,2026-01-15 09:59:05,Tungurahua,Norte,Alta,Pendiente
+B-02,12,52,184,R,AG-007,501,2026-01-15 10:00:03,Sucumbíos,Centro,Crítica,Inactivo
+B-03,15,46,217,B,AG-916,401,2026-01-15 09:59:14,Imbabura,Sur,Media,Activo
+B-02,14,51,186,R,AG-008,501,2026-01-15 09:59:35,Imbabura,Este,Baja,Verificado
+B-06,7,65,286,R,AG-019,301,2026-01-15 10:01:47,Bolívar,Este,Crítica,Verificado
+B-04,18,32,222,R,AG-787,401,2026-01-15 10:02:03,Esmeraldas,Centro,Baja,Verificado
+B-04,16,48,260,G,AG-780,201,2026-01-15 09:59:20,El Oro,Centro,Alta,Pendiente
+B-02,14,43,153,G,AG-248,701,2026-01-15 10:01:24,Imbabura,Oeste,Alta,Verificado
+B-07,7,46,168,G,AG-181,101,2026-01-15 10:00:44,Santa Elena,Oeste,Media,Inactivo
+B-03,13,52,148,R,AG-460,201,2026-01-15 10:00:51,Loja,Oeste,Alta,Activo
+B-06,10,48,297,B,AG-115,301,2026-01-15 09:59:47,Pichincha,Sur,Crítica,Verificado
+B-02,12,49,172,G,AG-584,801,2026-01-15 09:59:06,Sucumbíos,Sur,Media,Verificado
+B-07,9,50,151,B,AG-590,601,2026-01-15 09:57:28,Santa Elena,Norte,Baja,Inactivo
+B-04,15,55,264,G,AG-778,301,2026-01-15 09:59:56,Esmeraldas,Sur,Baja,Verificado
+B-03,16,52,195,R,AG-011,901,2026-01-15 10:01:18,Cañar,Este,Media,Verificado
+B-04,15,53,244,B,AG-013,501,2026-01-15 09:58:46,Pichincha,Este,Crítica,Activo
+B-05,7,55,110,R,AG-016,901,2026-01-15 09:59:50,Tungurahua,Sur,Crítica,Verificado
+B-04,15,43,246,G,AG-749,201,2026-01-15 09:58:52,Pichincha,Oeste,Media,Pendiente
+B-05,13,60,183,G,AG-017,201,2026-01-15 10:01:09,Pichincha,Este,Crítica,Pendiente
+B-01,14,60,168,G,AG-002,101,2026-01-15 09:59:56,Pichincha,Este,Alta,Pendiente
+B-02,9,62,164,B,AG-007,901,2026-01-15 09:59:03,Orellana,Norte,Crítica,Activo
+B-03,12,34,210,G,AG-867,801,2026-01-15 09:59:40,Loja,Este,Alta,Verificado
+B-04,17,44,279,G,AG-141,501,2026-01-15 10:00:32,El Oro,Norte,Alta,Activo
+B-02,13,53,178,R,AG-008,801,2026-01-15 10:02:28,Imbabura,Centro,Baja,Activo
+B-03,15,54,151,R,AG-009,201,2026-01-15 10:00:17,Imbabura,Centro,Crítica,Pendiente
+B-05,14,59,254,G,AG-017,901,2026-01-15 09:57:13,Azuay,Norte,Baja,Verificado
+B-06,15,52,291,R,AG-019,301,2026-01-15 10:00:37,Cotopaxi,Oeste,Alta,Inactivo
+B-06,14,47,257,R,AG-596,201,2026-01-15 10:00:37,Pichincha,Oeste,Baja,Inactivo
+B-05,11,62,164,G,AG-016,401,2026-01-15 10:00:01,Pichincha,Centro,Crítica,Pendiente
+B-07,12,44,143,B,AG-913,701,2026-01-15 09:58:30,Santa Elena,Centro,Media,Activo
+B-05,8,51,164,R,AG-018,501,2026-01-15 09:59:30,Pichincha,Centro,Baja,Pendiente
+B-07,10,38,144,G,AG-202,201,2026-01-15 09:59:56,Santa Elena,Centro,Crítica,Verificado
+B-06,12,49,263,R,AG-409,101,2026-01-15 09:59:13,Pichincha,Centro,Crítica,Activo
+B-04,11,58,232,R,AG-012,401,2026-01-15 09:58:41,El Oro,Este,Alta,Verificado
+B-04,7,70,272,B,AG-014,301,2026-01-15 09:59:12,Chimborazo,Norte,Media,Inactivo
+B-05,8,54,262,G,AG-676,501,2026-01-15 10:00:19,Guayas,Norte,Alta,Activo
+B-06,13,46,225,B,AG-561,201,2026-01-15 10:00:00,Pichincha,Este,Baja,Verificado
+B-07,10,45,130,B,AG-306,401,2026-01-15 09:57:44,Los Ríos,Centro,Crítica,Activo
+B-02,17,46,161,B,AG-916,301,2026-01-15 10:01:02,Imbabura,Centro,Crítica,Inactivo
+B-02,14,46,195,G,AG-914,701,2026-01-15 10:00:44,Imbabura,Sur,Media,Activo
+B-04,17,42,220,G,AG-573,801,2026-01-15 10:00:21,El Oro,Norte,Alta,Activo
+B-06,12,41,218,R,AG-680,201,2026-01-15 10:02:16,Pichincha,Este,Crítica,Pendiente
+B-02,19,36,215,B,AG-871,301,2026-01-15 09:59:35,Imbabura,Norte,Crítica,Verificado
+B-06,11,47,295,G,AG-779,201,2026-01-15 09:59:14,Morona Santiago,Centro,Baja,Inactivo
+B-01,14,54,221,G,AG-001,501,2026-01-15 09:58:41,Cotopaxi,Sur,Crítica,Inactivo
+B-01,7,41,199,G,AG-728,501,2026-01-15 10:02:13,Cotopaxi,Este,Alta,Activo
+B-03,10,45,170,R,AG-457,901,2026-01-15 09:59:15,Imbabura,Centro,Crítica,Pendiente
+B-03,16,58,224,R,AG-944,601,2026-01-15 09:59:35,Cañar,Este,Media,Inactivo
+B-04,13,48,254,G,AG-128,101,2026-01-15 10:02:26,Pichincha,Norte,Media,Inactivo
+B-04,18,33,239,B,AG-545,801,2026-01-15 10:00:42,Pichincha,Norte,Crítica,Inactivo
+B-06,16,58,232,B,AG-019,201,2026-01-15 09:59:44,Pichincha,Norte,Crítica,Activo
+B-01,12,52,249,B,AG-001,301,2026-01-15 10:00:13,Pichincha,Centro,Media,Activo
+B-04,14,53,200,B,AG-015,101,2026-01-15 09:59:36,Esmeraldas,Centro,Crítica,Verificado
+B-01,7,46,243,G,AG-869,101,2026-01-15 09:58:19,Cotopaxi,Este,Media,Inactivo
+B-04,18,31,263,G,AG-765,201,2026-01-15 09:59:39,El Oro,Sur,Media,Activo
+B-03,5,40,194,G,AG-482,201,2026-01-15 09:58:12,Imbabura,Sur,Media,Activo
+B-04,15,43,284,R,AG-266,101,2026-01-15 09:55:59,Pichincha,Este,Alta,Pendiente
+B-05,12,53,179,B,AG-016,801,2026-01-15 09:58:34,Guayas,Norte,Baja,Inactivo
+B-04,12,52,251,R,AG-012,901,2026-01-15 09:58:24,Pichincha,Este,Crítica,Pendiente
+B-06,14,56,300,R,AG-907,601,2026-01-15 09:57:27,Bolívar,Centro,Crítica,Inactivo
+B-06,10,60,253,G,AG-526,401,2026-01-15 10:01:33,Cotopaxi,Centro,Crítica,Verificado
+B-01,13,56,219,G,AG-003,601,2026-01-15 10:01:31,Manabí,Centro,Media,Verificado
+B-06,15,47,256,B,AG-995,501,2026-01-15 09:58:39,Morona Santiago,Oeste,Baja,Pendiente
+B-03,9,49,148,R,AG-217,301,2026-01-15 09:59:24,Carchi,Centro,Media,Pendiente
+B-03,18,58,199,R,AG-009,901,2026-01-15 09:59:31,Imbabura,Sur,Media,Activo
+B-06,16,45,274,R,AG-501,201,2026-01-15 09:59:33,Morona Santiago,Norte,Crítica,Activo
+B-04,16,46,300,B,AG-961,301,2026-01-15 09:56:49,Esmeraldas,Sur,Crítica,Verificado
+B-03,13,47,135,B,AG-256,201,2026-01-15 10:00:07,Imbabura,Sur,Baja,Activo
+B-07,10,46,150,B,AG-334,501,2026-01-15 10:01:18,Santa Elena,Norte,Crítica,Verificado
+B-07,14,33,121,R,AG-286,201,2026-01-15 09:57:47,Santa Elena,Centro,Media,Inactivo
+B-06,14,46,276,G,AG-975,201,2026-01-15 10:01:15,Bolívar,Norte,Alta,Verificado
+B-02,13,47,198,G,AG-692,601,2026-01-15 09:59:27,Orellana,Este,Alta,Pendiente
+B-01,18,70,135,R,AG-004,301,2026-01-15 10:01:46,Imbabura,Este,Alta,Inactivo
+B-05,9,47,180,R,AG-443,401,2026-01-15 09:58:15,Pichincha,Oeste,Media,Pendiente
+B-04,17,36,247,G,AG-540,201,2026-01-15 09:59:35,El Oro,Este,Baja,Inactivo
+B-04,10,53,267,G,AG-012,201,2026-01-15 09:59:03,Esmeraldas,Sur,Baja,Pendiente
+B-07,5,61,215,R,AG-022,801,2026-01-15 10:00:29,Orellana,Sur,Crítica,Inactivo
+B-01,9,47,216,B,AG-418,401,2026-01-15 09:58:29,Cotopaxi,Norte,Baja,Verificado
+B-07,16,33,114,B,AG-267,401,2026-01-15 10:01:00,Santa Elena,Sur,Baja,Verificado
+B-02,14,49,234,R,AG-494,401,2026-01-15 10:00:26,Imbabura,Centro,Crítica,Inactivo
+B-03,14,53,137,R,AG-009,101,2026-01-15 10:00:11,Carchi,Oeste,Media,Pendiente
+B-02,11,47,194,R,AG-643,601,2026-01-15 10:00:41,Imbabura,Sur,Alta,Inactivo
+B-06,12,47,236,R,AG-626,201,2026-01-15 09:59:21,Cotopaxi,Oeste,Crítica,Pendiente
+B-07,8,56,170,G,AG-022,401,2026-01-15 09:59:16,Santa Elena,Sur,Crítica,Verificado
+B-01,11,54,164,R,AG-001,701,2026-01-15 10:00:16,Pichincha,Sur,Alta,Activo
+B-02,15,50,167,R,AG-633,501,2026-01-15 09:59:22,Sucumbíos,Centro,Crítica,Verificado
+B-01,11,56,222,G,AG-159,201,2026-01-15 09:59:18,Pichincha,Oeste,Media,Activo
+B-03,8,45,208,R,AG-610,201,2026-01-15 09:59:08,Imbabura,Centro,Media,Activo
+B-05,9,52,174,G,AG-018,501,2026-01-15 09:59:11,Pichincha,Centro,Alta,Inactivo
+B-03,13,53,216,B,AG-011,201,2026-01-15 10:01:38,Carchi,Centro,Alta,Inactivo
+B-01,7,51,234,R,AG-002,601,2026-01-15 09:58:00,Manabí,Norte,Baja,Pendiente
+B-07,5,54,158,G,AG-024,801,2026-01-15 10:00:33,Santa Elena,Sur,Baja,Inactivo
+B-07,16,30,176,B,AG-702,401,2026-01-15 10:00:17,Santa Elena,Oeste,Crítica,Inactivo
+B-06,9,58,285,G,AG-020,301,2026-01-15 09:58:50,Cotopaxi,Sur,Baja,Verificado
+B-01,6,36,234,G,AG-927,101,2026-01-15 09:58:27,Manabí,Centro,Crítica,Inactivo
+B-07,6,54,140,G,AG-024,401,2026-01-15 10:01:10,Los Ríos,Norte,Alta,Inactivo
+B-05,14,67,138,G,AG-976,501,2026-01-15 10:01:11,Tungurahua,Norte,Crítica,Pendiente
+B-02,14,54,152,G,AG-007,501,2026-01-15 09:59:38,Sucumbíos,Este,Alta,Verificado
+B-01,9,47,191,B,AG-552,301,2026-01-15 09:59:24,Imbabura,Oeste,Alta,Inactivo
+B-05,10,70,148,B,AG-017,501,2026-01-15 10:01:41,Tungurahua,Este,Crítica,Activo
+B-02,14,48,224,G,AG-186,701,2026-01-15 10:00:45,Imbabura,Norte,Alta,Verificado
+B-07,11,47,130,R,AG-468,401,2026-01-15 10:00:08,Santa Elena,Este,Baja,Inactivo
+B-06,13,51,245,R,AG-020,201,2026-01-15 09:57:43,Cotopaxi,Norte,Baja,Inactivo
+B-03,15,58,202,G,AG-011,501,2026-01-15 10:00:12,Imbabura,Sur,Alta,Inactivo
+B-07,17,30,177,G,AG-713,101,2026-01-15 09:58:31,Zamora Chinchipe,Centro,Baja,Verificado
+B-02,15,42,178,R,AG-828,401,2026-01-15 10:00:18,Imbabura,Oeste,Crítica,Pendiente
+B-04,15,40,240,G,AG-173,401,2026-01-15 10:00:50,Pichincha,Oeste,Alta,Pendiente
+B-01,14,59,207,B,AG-003,101,2026-01-15 10:00:00,Imbabura,Este,Media,Verificado
+B-02,14,57,177,R,AG-006,101,2026-01-15 09:58:58,Orellana,Este,Alta,Pendiente
+B-01,15,65,174,B,AG-002,101,2026-01-15 09:59:42,Pichincha,Centro,Baja,Verificado
+B-06,12,54,251,R,AG-021,901,2026-01-15 10:01:31,Bolívar,Oeste,Crítica,Pendiente
+B-04,11,50,255,G,AG-498,101,2026-01-15 10:01:23,Pichincha,Oeste,Media,Verificado
+B-07,11,46,176,G,AG-491,401,2026-01-15 10:01:40,Los Ríos,Norte,Media,Inactivo
+B-06,13,53,294,R,AG-020,601,2026-01-15 09:59:15,Bolívar,Centro,Media,Activo
+B-01,15,50,176,G,AG-427,101,2026-01-15 09:59:23,Manabí,Este,Alta,Verificado
+B-05,16,62,118,G,AG-018,501,2026-01-15 09:59:33,Azuay,Este,Alta,Inactivo
+B-04,8,62,265,G,AG-012,401,2026-01-15 09:59:56,Esmeraldas,Norte,Crítica,Activo
+B-02,17,36,188,R,AG-795,201,2026-01-15 09:58:59,Sucumbíos,Centro,Alta,Inactivo
+B-01,9,53,216,G,AG-004,801,2026-01-15 09:59:05,Pichincha,Centro,Crítica,Verificado
+B-06,12,54,251,R,AG-019,301,2026-01-15 10:00:45,Pichincha,Oeste,Media,Pendiente
+B-02,13,46,160,R,AG-125,301,2026-01-15 09:59:16,Sucumbíos,Centro,Alta,Verificado
+B-02,14,50,211,R,AG-570,401,2026-01-15 10:03:26,Imbabura,Sur,Media,Verificado
+B-02,14,53,222,G,AG-007,501,2026-01-15 10:01:38,Sucumbíos,Este,Baja,Inactivo
+B-05,10,55,137,G,AG-018,801,2026-01-15 09:59:16,Azuay,Norte,Baja,Verificado
+B-01,8,45,215,G,AG-760,101,2026-01-15 09:59:39,Pichincha,Este,Crítica,Pendiente
+B-07,13,46,171,G,AG-426,401,2026-01-15 10:03:01,Santa Elena,Norte,Alta,Verificado
+B-07,5,66,145,G,AG-023,901,2026-01-15 09:59:41,Orellana,Norte,Media,Pendiente
+B-05,11,46,115,G,AG-397,601,2026-01-15 10:00:43,Pichincha,Centro,Baja,Pendiente
+B-03,13,49,171,R,AG-523,201,2026-01-15 09:58:31,Loja,Norte,Media,Verificado
+B-02,10,56,210,B,AG-650,401,2026-01-15 09:58:22,Orellana,Este,Alta,Inactivo
+B-01,13,61,222,G,AG-341,601,2026-01-15 10:01:28,Pichincha,Norte,Media,Activo
+B-06,15,44,281,G,AG-990,601,2026-01-15 10:01:02,Cotopaxi,Sur,Media,Inactivo
+B-01,8,45,253,B,AG-205,101,2026-01-15 10:00:38,Pichincha,Este,Alta,Pendiente
+B-05,8,53,178,G,AG-017,501,2026-01-15 10:00:47,Pichincha,Este,Media,Verificado
+B-01,10,45,208,R,AG-658,701,2026-01-15 09:57:16,Pichincha,Centro,Media,Pendiente
+B-04,9,51,272,G,AG-015,101,2026-01-15 10:00:30,El Oro,Este,Media,Inactivo
+B-06,15,45,290,R,AG-433,701,2026-01-15 10:01:07,Morona Santiago,Norte,Media,Verificado
+B-06,7,63,287,R,AG-020,201,2026-01-15 09:59:42,Bolívar,Este,Media,Verificado
+B-04,15,52,253,G,AG-014,801,2026-01-15 10:02:08,El Oro,Sur,Media,Inactivo
+B-07,7,52,139,G,AG-023,301,2026-01-15 09:58:55,Los Ríos,Centro,Alta,Pendiente
+B-03,14,54,205,R,AG-011,201,2026-01-15 10:01:34,Imbabura,Sur,Crítica,Inactivo
+B-01,8,53,204,G,AG-003,101,2026-01-15 10:00:08,Pichincha,Norte,Crítica,Activo
+B-04,9,55,271,G,AG-807,801,2026-01-15 09:58:12,Pichincha,Este,Crítica,Activo
+B-04,15,61,276,R,AG-012,601,2026-01-15 09:58:32,Chimborazo,Centro,Crítica,Pendiente
+B-07,10,59,139,G,AG-022,701,2026-01-15 10:02:33,Santa Elena,Norte,Media,Inactivo
+B-05,13,55,184,R,AG-016,701,2026-01-15 09:58:59,Pichincha,Centro,Media,Inactivo
+B-07,14,41,222,B,AG-285,501,2026-01-15 09:58:43,Santa Elena,Este,Alta,Pendiente
+B-07,5,60,209,R,AG-022,801,2026-01-15 09:54:56,Santa Elena,Centro,Crítica,Pendiente
+B-03,12,43,136,R,AG-813,801,2026-01-15 09:59:20,Imbabura,Oeste,Crítica,Pendiente
+B-01,17,66,212,G,AG-004,101,2026-01-15 09:59:13,Pichincha,Este,Baja,Pendiente
+B-03,9,37,205,B,AG-527,101,2026-01-15 09:59:38,Imbabura,Este,Media,Verificado
+B-06,17,31,274,G,AG-747,501,2026-01-15 09:59:55,Pichincha,Sur,Baja,Pendiente
+B-07,8,46,164,R,AG-377,101,2026-01-15 10:00:40,Zamora Chinchipe,Oeste,Baja,Inactivo
+B-05,10,63,235,R,AG-018,501,2026-01-15 09:59:32,Pichincha,Este,Alta,Verificado
+B-07,10,48,119,B,AG-473,401,2026-01-15 09:59:21,Santa Elena,Sur,Baja,Activo
+B-02,13,51,229,R,AG-005,501,2026-01-15 10:00:54,Santa Elena,Oeste,Baja,Activo
+B-05,12,49,143,G,AG-489,501,2026-01-15 09:59:37,Pichincha,Norte,Alta,Activo
+B-06,14,45,262,R,AG-475,501,2026-01-15 10:01:07,Pichincha,Oeste,Crítica,Verificado
+B-05,9,53,110,G,AG-016,501,2026-01-15 10:01:00,Azuay,Norte,Crítica,Verificado
+B-03,14,55,196,B,AG-011,301,2026-01-15 10:01:48,Carchi,Oeste,Alta,Verificado
+B-03,13,57,156,G,AG-010,501,2026-01-15 10:00:49,Imbabura,Centro,Baja,Activo
+B-04,11,60,280,G,AG-013,301,2026-01-15 10:01:25,Esmeraldas,Norte,Baja,Pendiente
+B-02,15,45,174,R,AG-535,301,2026-01-15 10:03:59,Imbabura,Este,Alta,Pendiente
+B-01,12,54,160,G,AG-003,201,2026-01-15 09:59:59,Manabí,Este,Media,Pendiente
+B-07,6,47,124,G,AG-865,801,2026-01-15 09:58:40,Santa Elena,Centro,Crítica,Inactivo
+B-04,11,57,254,G,AG-012,801,2026-01-15 09:57:32,Pichincha,Oeste,Baja,Inactivo
+B-05,10,46,180,B,AG-767,801,2026-01-15 10:02:24,Pichincha,Este,Baja,Activo
+B-04,16,45,211,R,AG-578,201,2026-01-15 10:00:21,Chimborazo,Sur,Alta,Activo
+B-03,8,33,136,G,AG-675,301,2026-01-15 09:58:32,Imbabura,Norte,Media,Pendiente
+B-01,8,51,147,R,AG-116,801,2026-01-15 10:01:08,Cotopaxi,Este,Crítica,Pendiente
+B-01,7,45,192,G,AG-715,101,2026-01-15 10:00:49,Cotopaxi,Este,Baja,Pendiente
+B-04,15,37,261,R,AG-450,201,2026-01-15 10:01:26,Pichincha,Sur,Alta,Verificado
+B-02,10,64,165,R,AG-007,201,2026-01-15 09:59:58,Imbabura,Centro,Crítica,Activo
+B-02,15,52,199,R,AG-008,501,2026-01-15 09:58:35,Imbabura,Norte,Crítica,Verificado
+B-03,19,59,155,R,AG-011,501,2026-01-15 10:01:13,Loja,Oeste,Alta,Pendiente
+B-03,13,56,190,R,AG-010,201,2026-01-15 10:03:06,Cañar,Oeste,Media,Verificado
+B-07,5,53,103,B,AG-837,401,2026-01-15 10:00:56,Zamora Chinchipe,Norte,Baja,Inactivo
+B-02,13,47,157,B,AG-683,101,2026-01-15 09:59:08,Imbabura,Norte,Baja,Pendiente
+B-03,14,54,187,R,AG-010,101,2026-01-15 09:58:43,Imbabura,Centro,Crítica,Inactivo
+B-05,10,48,177,G,AG-118,501,2026-01-15 09:59:58,Pichincha,Centro,Media,Verificado
+B-05,5,45,216,R,AG-689,501,2026-01-15 10:01:37,Pichincha,Centro,Baja,Verificado
+B-04,9,55,248,R,AG-012,501,2026-01-15 10:00:09,Pichincha,Este,Alta,Pendiente
+B-05,9,60,138,R,AG-016,401,2026-01-15 10:01:43,Pichincha,Sur,Media,Pendiente
+B-07,11,48,174,G,AG-496,401,2026-01-15 10:01:08,Santa Elena,Norte,Media,Pendiente
+B-04,15,47,241,B,AG-513,701,2026-01-15 09:57:24,Pichincha,Oeste,Crítica,Verificado
+B-03,8,37,209,G,AG-360,301,2026-01-15 09:57:55,Loja,Centro,Crítica,Inactivo
+B-05,16,69,158,G,AG-016,501,2026-01-15 09:57:26,Pichincha,Oeste,Alta,Inactivo
+B-05,7,55,195,G,AG-018,201,2026-01-15 09:59:17,Pichincha,Centro,Crítica,Inactivo
+B-03,18,63,227,R,AG-011,501,2026-01-15 10:00:37,Imbabura,Este,Baja,Activo
+B-03,15,53,220,R,AG-009,201,2026-01-15 09:59:28,Carchi,Este,Media,Pendiente
+B-01,10,49,224,B,AG-590,501,2026-01-15 09:59:04,Imbabura,Sur,Baja,Inactivo
+B-07,5,57,148,G,AG-022,101,2026-01-15 10:00:15,Zamora Chinchipe,Oeste,Baja,Activo
+B-04,12,52,273,B,AG-015,101,2026-01-15 09:59:12,Chimborazo,Oeste,Media,Verificado
+B-05,12,63,192,G,AG-442,601,2026-01-15 10:00:04,Pichincha,Centro,Crítica,Activo
+B-01,11,57,219,B,AG-001,601,2026-01-15 09:58:26,Manabí,Sur,Crítica,Verificado
+B-03,18,62,213,R,AG-010,701,2026-01-15 10:01:24,Imbabura,Sur,Alta,Pendiente
+B-01,10,49,159,G,AG-392,101,2026-01-15 09:59:05,Pichincha,Norte,Baja,Activo
+B-07,6,53,164,G,AG-024,701,2026-01-15 10:00:49,Santa Elena,Centro,Crítica,Inactivo
+B-07,10,49,105,G,AG-939,101,2026-01-15 10:01:37,Orellana,Este,Alta,Inactivo
+B-06,9,57,300,G,AG-020,801,2026-01-15 09:59:45,Bolívar,Norte,Media,Verificado
+B-05,10,61,150,G,AG-309,201,2026-01-15 10:00:37,Azuay,Centro,Alta,Activo
+B-01,5,42,188,G,AG-926,101,2026-01-15 09:59:43,Imbabura,Oeste,Alta,Inactivo
+B-03,17,56,212,B,AG-009,201,2026-01-15 10:01:08,Cañar,Oeste,Media,Pendiente
+B-04,19,35,249,B,AG-930,601,2026-01-15 10:02:03,Esmeraldas,Norte,Media,Inactivo
+B-01,13,56,241,G,AG-788,301,2026-01-15 09:59:20,Pichincha,Norte,Alta,Verificado
+B-02,12,45,137,R,AG-803,701,2026-01-15 09:56:30,Orellana,Sur,Baja,Activo
+B-03,10,41,164,R,AG-689,901,2026-01-15 09:58:25,Cañar,Sur,Alta,Activo
+B-07,5,61,130,G,AG-801,401,2026-01-15 10:00:52,Zamora Chinchipe,Norte,Alta,Activo
+B-03,12,52,124,B,AG-009,901,2026-01-15 09:59:50,Imbabura,Este,Alta,Pendiente
+B-04,11,52,252,R,AG-014,201,2026-01-15 09:58:40,Chimborazo,Oeste,Media,Activo
+B-07,13,44,169,G,AG-567,401,2026-01-15 10:00:43,Los Ríos,Oeste,Crítica,Pendiente
+B-07,12,48,107,G,AG-570,401,2026-01-15 10:01:45,Santa Elena,Oeste,Crítica,Pendiente
+B-07,7,43,162,G,AG-335,601,2026-01-15 10:02:45,Zamora Chinchipe,Este,Media,Verificado
+B-05,11,57,178,G,AG-017,301,2026-01-15 09:58:35,Pichincha,Oeste,Media,Verificado
+B-02,14,48,160,R,AG-111,501,2026-01-15 09:59:23,Imbabura,Este,Crítica,Activo
+B-03,10,44,183,B,AG-522,401,2026-01-15 09:59:55,Carchi,Centro,Media,Inactivo
+B-01,13,44,214,G,AG-250,301,2026-01-15 10:00:55,Pichincha,Oeste,Crítica,Inactivo
+B-05,12,61,168,G,AG-017,501,2026-01-15 09:59:40,Pichincha,Norte,Crítica,Verificado
+B-03,13,46,181,G,AG-190,501,2026-01-15 10:00:46,Carchi,Este,Crítica,Inactivo
+B-06,13,42,271,B,AG-264,801,2026-01-15 10:02:12,Pichincha,Sur,Alta,Inactivo
+B-02,14,47,174,G,AG-773,501,2026-01-15 10:00:11,Sucumbíos,Este,Alta,Pendiente
+B-02,12,56,154,B,AG-005,601,2026-01-15 10:01:25,Imbabura,Oeste,Media,Inactivo
+B-01,15,53,205,R,AG-001,201,2026-01-15 10:00:24,Imbabura,Sur,Crítica,Pendiente
+B-04,5,65,233,G,AG-013,201,2026-01-15 10:00:32,Pichincha,Sur,Baja,Activo
+B-01,8,53,174,G,AG-492,901,2026-01-15 09:58:59,Cotopaxi,Sur,Baja,Inactivo
+B-03,9,42,173,G,AG-436,701,2026-01-15 09:59:56,Imbabura,Oeste,Alta,Activo
+B-05,13,66,177,B,AG-018,501,2026-01-15 10:00:05,Pichincha,Norte,Baja,Inactivo
+B-07,7,49,188,G,AG-194,401,2026-01-15 10:00:49,Santa Elena,Norte,Baja,Pendiente
+B-06,11,62,228,R,AG-019,501,2026-01-15 09:59:39,Pichincha,Oeste,Baja,Inactivo
+B-03,11,43,188,B,AG-313,801,2026-01-15 09:59:56,Imbabura,Sur,Crítica,Activo
+B-03,10,46,220,G,AG-150,201,2026-01-15 09:59:25,Carchi,Oeste,Baja,Activo
+B-04,16,38,215,R,AG-688,601,2026-01-15 09:58:28,Esmeraldas,Sur,Crítica,Pendiente
+B-06,10,63,251,B,AG-021,201,2026-01-15 10:02:40,Morona Santiago,Sur,Media,Inactivo
+B-02,16,35,210,R,AG-539,501,2026-01-15 10:01:24,Santa Elena,Norte,Alta,Pendiente
+B-06,15,34,268,R,AG-795,701,2026-01-15 10:01:32,Cotopaxi,Centro,Alta,Verificado
+B-01,10,54,206,G,AG-002,901,2026-01-15 09:58:30,Pichincha,Oeste,Alta,Activo
+B-05,10,53,164,G,AG-017,601,2026-01-15 10:01:54,Pichincha,Este,Alta,Pendiente
+B-01,9,50,231,B,AG-309,401,2026-01-15 09:59:46,Pichincha,Este,Baja,Verificado
+B-07,8,40,199,B,AG-801,401,2026-01-15 09:58:41,Los Ríos,Norte,Baja,Inactivo
+B-02,14,48,177,R,AG-305,501,2026-01-15 09:59:18,Imbabura,Oeste,Baja,Verificado
+B-06,13,57,226,R,AG-021,201,2026-01-15 09:58:52,Morona Santiago,Oeste,Alta,Verificado
+B-03,10,47,199,G,AG-615,201,2026-01-15 09:57:58,Loja,Norte,Crítica,Inactivo
+B-02,12,55,173,B,AG-007,601,2026-01-15 09:59:52,Imbabura,Este,Crítica,Inactivo
+B-01,6,51,162,G,AG-004,601,2026-01-15 09:59:12,Pichincha,Norte,Media,Activo
+B-06,9,54,231,B,AG-019,601,2026-01-15 10:00:11,Pichincha,Este,Baja,Verificado
+B-04,11,59,231,G,AG-015,201,2026-01-15 10:01:17,Pichincha,Norte,Alta,Activo
+B-03,9,41,185,R,AG-125,801,2026-01-15 10:01:45,Imbabura,Centro,Alta,Activo
+B-02,12,56,191,R,AG-008,401,2026-01-15 10:02:17,Imbabura,Este,Alta,Pendiente
+B-02,20,35,191,R,AG-162,501,2026-01-15 09:59:25,Imbabura,Norte,Alta,Verificado
+B-02,13,53,129,G,AG-006,601,2026-01-15 09:59:07,Orellana,Sur,Media,Inactivo
+B-04,19,43,300,G,AG-493,901,2026-01-15 10:01:10,Chimborazo,Centro,Media,Pendiente
+B-04,18,39,268,R,AG-800,701,2026-01-15 09:59:37,Chimborazo,Oeste,Crítica,Verificado
+B-01,9,51,265,B,AG-002,101,2026-01-15 09:58:45,Pichincha,Centro,Baja,Activo
+B-06,16,52,205,R,AG-021,701,2026-01-15 09:58:19,Bolívar,Centro,Media,Verificado
+B-04,17,40,230,G,AG-731,801,2026-01-15 10:02:21,Pichincha,Norte,Baja,Pendiente
+B-04,14,53,254,G,AG-369,701,2026-01-15 10:03:01,Pichincha,Sur,Media,Verificado
+B-05,6,54,190,B,AG-927,401,2026-01-15 09:58:15,Pichincha,Este,Media,Activo
+B-01,7,45,127,G,AG-913,401,2026-01-15 09:59:29,Imbabura,Este,Baja,Verificado
+B-01,8,52,185,B,AG-003,701,2026-01-15 10:00:20,Pichincha,Sur,Alta,Inactivo
+B-04,14,46,286,G,AG-466,201,2026-01-15 09:58:29,Esmeraldas,Oeste,Crítica,Activo
+B-07,9,54,187,G,AG-024,401,2026-01-15 09:59:36,Santa Elena,Centro,Media,Inactivo
+B-01,11,55,148,G,AG-002,601,2026-01-15 10:01:14,Imbabura,Centro,Alta,Activo
+B-05,10,58,195,B,AG-017,701,2026-01-15 10:01:18,Pichincha,Este,Baja,Verificado
+B-07,14,46,144,B,AG-230,401,2026-01-15 10:01:00,Santa Elena,Norte,Baja,Verificado
+B-03,13,49,160,R,AG-277,401,2026-01-15 10:00:44,Imbabura,Este,Crítica,Inactivo
+B-02,13,46,200,G,AG-437,501,2026-01-15 10:01:51,Imbabura,Sur,Media,Pendiente
+B-01,15,52,164,B,AG-002,801,2026-01-15 09:57:58,Pichincha,Sur,Baja,Activo
+B-03,5,32,224,R,AG-344,901,2026-01-15 10:00:13,Carchi,Centro,Crítica,Pendiente
+B-02,15,57,188,R,AG-005,701,2026-01-15 10:00:21,Imbabura,Norte,Alta,Verificado
+B-01,11,47,196,G,AG-873,601,2026-01-15 10:00:37,Imbabura,Sur,Crítica,Inactivo
+B-06,10,49,260,G,AG-241,201,2026-01-15 09:59:29,Pichincha,Este,Baja,Verificado
+B-05,10,53,229,G,AG-018,501,2026-01-15 10:02:08,Pichincha,Sur,Media,Pendiente
+B-06,11,49,213,R,AG-984,901,2026-01-15 10:00:33,Morona Santiago,Sur,Baja,Activo
+B-02,10,66,205,R,AG-006,101,2026-01-15 10:02:12,Imbabura,Norte,Media,Activo
+B-03,12,46,196,G,AG-112,201,2026-01-15 10:00:49,Imbabura,Este,Media,Inactivo
+B-06,13,42,297,R,AG-390,901,2026-01-15 10:02:16,Morona Santiago,Sur,Baja,Verificado
+B-03,13,53,175,G,AG-010,601,2026-01-15 09:59:42,Imbabura,Sur,Crítica,Verificado
+B-03,10,45,192,R,AG-286,701,2026-01-15 09:59:27,Carchi,Sur,Crítica,Verificado
+B-07,11,57,155,G,AG-545,401,2026-01-15 10:00:10,Santa Elena,Sur,Media,Pendiente
+B-03,12,54,237,R,AG-010,701,2026-01-15 09:59:47,Cañar,Centro,Media,Inactivo
+B-01,9,37,208,B,AG-116,201,2026-01-15 10:00:12,Imbabura,Norte,Media,Inactivo
+B-01,14,62,238,R,AG-001,101,2026-01-15 09:59:45,Cotopaxi,Centro,Baja,Verificado
+B-06,15,41,270,B,AG-717,501,2026-01-15 10:00:23,Cotopaxi,Norte,Alta,Verificado
+B-06,10,55,229,R,AG-019,701,2026-01-15 10:00:27,Pichincha,Este,Baja,Verificado
+B-01,9,50,196,B,AG-724,501,2026-01-15 09:59:47,Pichincha,Sur,Crítica,Pendiente
+B-03,17,62,188,G,AG-010,201,2026-01-15 10:01:19,Cañar,Sur,Alta,Pendiente
+B-07,8,60,156,G,AG-615,401,2026-01-15 10:00:53,Santa Elena,Centro,Crítica,Pendiente
+B-01,12,58,140,G,AG-004,601,2026-01-15 09:59:47,Pichincha,Este,Alta,Inactivo
+B-04,14,43,228,B,AG-237,201,2026-01-15 09:58:51,Pichincha,Este,Alta,Verificado
+B-03,16,55,178,B,AG-645,201,2026-01-15 10:00:46,Cañar,Centro,Media,Activo
+B-07,13,47,186,B,AG-594,201,2026-01-15 09:56:53,Santa Elena,Este,Crítica,Verificado
+B-03,15,55,199,R,AG-636,401,2026-01-15 09:58:46,Imbabura,Sur,Alta,Inactivo
+B-01,13,49,199,B,AG-126,701,2026-01-15 10:00:24,Manabí,Norte,Alta,Verificado
+B-07,14,46,120,G,AG-465,701,2026-01-15 09:59:58,Santa Elena,Este,Baja,Verificado
+B-06,15,49,262,R,AG-460,201,2026-01-15 10:00:36,Pichincha,Este,Crítica,Activo
+B-06,8,50,216,B,AG-796,201,2026-01-15 10:01:08,Pichincha,Sur,Baja,Pendiente
+B-03,13,54,164,G,AG-011,201,2026-01-15 10:01:11,Imbabura,Centro,Media,Activo
+B-04,15,49,275,B,AG-478,201,2026-01-15 09:58:55,Pichincha,Sur,Media,Activo
+B-05,12,63,120,G,AG-018,401,2026-01-15 09:58:48,Pichincha,Este,Alta,Activo
+B-01,10,53,202,B,AG-003,201,2026-01-15 10:00:59,Imbabura,Norte,Media,Pendiente
+B-02,15,50,150,R,AG-480,201,2026-01-15 10:00:34,Santa Elena,Sur,Alta,Verificado
+B-02,12,45,174,B,AG-973,201,2026-01-15 10:01:09,Imbabura,Centro,Crítica,Activo
+B-06,9,59,267,R,AG-020,301,2026-01-15 09:58:39,Morona Santiago,Norte,Baja,Activo
+B-05,7,56,154,G,AG-017,501,2026-01-15 09:59:18,Tungurahua,Oeste,Alta,Inactivo
+B-07,5,59,181,G,AG-023,701,2026-01-15 09:59:50,Los Ríos,Sur,Crítica,Inactivo
+B-07,9,54,150,G,AG-024,201,2026-01-15 10:00:29,Orellana,Este,Media,Verificado
+B-02,16,52,202,R,AG-007,501,2026-01-15 10:00:44,Santa Elena,Norte,Crítica,Pendiente
+B-05,10,50,249,G,AG-870,801,2026-01-15 10:00:09,Pichincha,Sur,Crítica,Pendiente
+B-02,14,47,190,B,AG-998,201,2026-01-15 10:00:16,Santa Elena,Centro,Media,Inactivo
+B-05,12,61,181,B,AG-405,301,2026-01-15 09:59:31,Pichincha,Norte,Crítica,Verificado
+B-05,12,59,206,R,AG-016,501,2026-01-15 10:00:00,Pichincha,Este,Media,Pendiente
+B-04,15,53,212,G,AG-849,501,2026-01-15 09:59:45,Pichincha,Este,Alta,Pendiente
+B-06,16,39,286,G,AG-334,101,2026-01-15 10:00:09,Cotopaxi,Este,Crítica,Inactivo
+B-01,13,63,206,R,AG-003,301,2026-01-15 10:00:50,Pichincha,Sur,Media,Inactivo
+B-01,14,60,203,R,AG-569,101,2026-01-15 09:59:57,Pichincha,Oeste,Crítica,Activo
+B-03,16,53,178,G,AG-011,201,2026-01-15 10:01:02,Imbabura,Sur,Media,Pendiente
+B-02,15,40,185,B,AG-438,601,2026-01-15 10:01:38,Orellana,Centro,Crítica,Verificado
+B-06,11,51,276,R,AG-624,201,2026-01-15 09:58:41,Cotopaxi,Oeste,Crítica,Pendiente
+B-07,9,45,198,B,AG-302,701,2026-01-15 10:00:17,Zamora Chinchipe,Este,Media,Pendiente
+B-02,12,43,205,G,AG-760,501,2026-01-15 09:59:09,Sucumbíos,Oeste,Alta,Activo
+B-01,12,53,150,B,AG-004,501,2026-01-15 09:59:57,Cotopaxi,Norte,Baja,Activo
+B-05,10,52,160,B,AG-018,501,2026-01-15 10:02:08,Tungurahua,Centro,Alta,Inactivo
+B-05,13,57,122,B,AG-017,501,2026-01-15 09:58:39,Pichincha,Sur,Alta,Pendiente
+B-02,11,52,180,R,AG-006,501,2026-01-15 09:59:40,Imbabura,Este,Alta,Verificado
+B-03,14,54,225,R,AG-011,501,2026-01-15 09:59:53,Cañar,Centro,Baja,Inactivo
+B-06,10,52,248,R,AG-020,201,2026-01-15 09:59:57,Morona Santiago,Centro,Baja,Verificado
+B-07,5,51,168,G,AG-795,701,2026-01-15 10:01:47,Zamora Chinchipe,Sur,Alta,Inactivo
+B-06,12,55,246,R,AG-021,201,2026-01-15 10:00:53,Bolívar,Norte,Alta,Activo
+B-05,15,66,194,G,AG-016,501,2026-01-15 09:59:47,Pichincha,Norte,Baja,Pendiente
+B-05,9,51,142,G,AG-017,201,2026-01-15 09:57:55,Guayas,Oeste,Baja,Pendiente
+B-04,13,51,262,G,AG-710,301,2026-01-15 10:00:30,Chimborazo,Centro,Baja,Verificado
+B-03,15,51,186,G,AG-009,201,2026-01-15 09:59:28,Cañar,Centro,Crítica,Inactivo
+B-01,12,60,230,G,AG-003,601,2026-01-15 10:00:09,Cotopaxi,Este,Baja,Pendiente
+B-07,12,50,153,G,AG-889,301,2026-01-15 10:01:50,Orellana,Norte,Alta,Activo
+B-02,14,44,164,G,AG-187,501,2026-01-15 10:00:43,Imbabura,Centro,Alta,Activo
+B-06,12,64,259,R,AG-214,201,2026-01-15 10:00:21,Pichincha,Norte,Baja,Pendiente
+B-02,10,53,203,R,AG-007,501,2026-01-15 09:58:26,Santa Elena,Centro,Alta,Activo
+B-01,12,56,201,B,AG-001,101,2026-01-15 10:00:30,Manabí,Oeste,Crítica,Inactivo
+B-04,17,51,240,R,AG-012,201,2026-01-15 09:58:41,Pichincha,Norte,Baja,Verificado
+B-01,19,63,248,G,AG-001,401,2026-01-15 09:59:12,Cotopaxi,Centro,Media,Pendiente
+B-02,15,48,185,G,AG-530,501,2026-01-15 10:01:15,Orellana,Norte,Baja,Inactivo
+B-07,5,49,178,R,AG-129,401,2026-01-15 10:01:50,Los Ríos,Sur,Crítica,Activo
+B-04,11,58,241,B,AG-015,101,2026-01-15 10:01:30,Pichincha,Sur,Media,Activo
+B-05,11,58,163,G,AG-017,501,2026-01-15 09:59:04,Pichincha,Oeste,Alta,Verificado
+B-05,14,60,169,G,AG-018,501,2026-01-15 10:00:02,Pichincha,Sur,Crítica,Activo
+B-04,17,40,240,B,AG-664,301,2026-01-15 09:58:37,El Oro,Norte,Crítica,Activo
+B-02,12,48,179,R,AG-971,401,2026-01-15 09:59:16,Santa Elena,Centro,Media,Inactivo
+B-06,14,54,236,R,AG-021,601,2026-01-15 09:59:08,Cotopaxi,Oeste,Media,Verificado
+B-05,13,59,188,G,AG-739,501,2026-01-15 09:59:54,Azuay,Centro,Crítica,Verificado
+B-02,9,57,177,R,AG-007,501,2026-01-15 10:01:23,Imbabura,Norte,Alta,Inactivo
+B-01,16,60,178,R,AG-004,301,2026-01-15 09:59:26,Manabí,Sur,Crítica,Inactivo
+B-06,13,42,249,R,AG-641,501,2026-01-15 10:00:00,Cotopaxi,Centro,Baja,Pendiente
+B-03,5,39,128,G,AG-345,701,2026-01-15 10:00:01,Imbabura,Sur,Media,Activo
+B-07,18,30,114,G,AG-252,101,2026-01-15 10:01:23,Santa Elena,Centro,Baja,Verificado
+B-03,18,55,149,G,AG-011,601,2026-01-15 09:59:51,Imbabura,Norte,Alta,Activo
+B-02,13,45,103,G,AG-281,501,2026-01-15 09:59:46,Santa Elena,Oeste,Media,Verificado
+B-01,16,53,225,B,AG-003,701,2026-01-15 10:00:46,Pichincha,Oeste,Alta,Activo
+B-05,10,45,156,B,AG-774,501,2026-01-15 10:00:54,Pichincha,Este,Alta,Activo
+B-07,13,37,141,R,AG-643,401,2026-01-15 10:00:50,Zamora Chinchipe,Este,Media,Verificado
+B-03,12,54,181,R,AG-679,201,2026-01-15 09:58:26,Imbabura,Sur,Alta,Verificado
+B-04,19,40,265,R,AG-789,901,2026-01-15 09:59:24,Pichincha,Sur,Baja,Pendiente
+B-07,5,60,173,G,AG-556,701,2026-01-15 09:59:00,Orellana,Oeste,Media,Pendiente
+B-05,10,59,161,G,AG-296,501,2026-01-15 09:59:57,Guayas,Centro,Baja,Activo
+B-07,11,45,174,G,AG-456,501,2026-01-15 10:00:23,Santa Elena,Sur,Crítica,Inactivo
+B-06,17,43,232,G,AG-133,201,2026-01-15 09:59:03,Pichincha,Este,Media,Inactivo
+B-06,12,50,277,B,AG-425,201,2026-01-15 09:59:45,Bolívar,Sur,Alta,Verificado
+B-02,15,47,174,R,AG-720,901,2026-01-15 09:58:01,Imbabura,Centro,Crítica,Verificado
+B-07,10,47,164,G,AG-316,401,2026-01-15 10:00:38,Santa Elena,Este,Alta,Activo
+B-07,11,51,202,R,AG-538,301,2026-01-15 10:00:53,Santa Elena,Centro,Crítica,Verificado
+B-04,17,44,225,G,AG-205,901,2026-01-15 09:58:30,El Oro,Norte,Media,Activo
+B-07,12,43,176,G,AG-150,401,2026-01-15 10:01:42,Zamora Chinchipe,Sur,Crítica,Inactivo
+B-06,13,56,265,B,AG-019,301,2026-01-15 10:01:26,Pichincha,Oeste,Baja,Inactivo
+B-04,7,64,281,G,AG-013,201,2026-01-15 09:58:22,Esmeraldas,Sur,Crítica,Inactivo
+B-02,17,55,186,G,AG-005,101,2026-01-15 10:00:17,Sucumbíos,Este,Alta,Inactivo
+B-05,13,61,167,G,AG-708,501,2026-01-15 10:02:11,Pichincha,Centro,Baja,Verificado
+B-02,16,41,185,R,AG-625,601,2026-01-15 09:58:58,Sucumbíos,Oeste,Crítica,Verificado
+B-05,10,53,207,G,AG-018,301,2026-01-15 09:59:10,Pichincha,Sur,Alta,Activo
+B-06,11,58,253,R,AG-020,601,2026-01-15 09:58:24,Pichincha,Sur,Alta,Verificado
+B-02,15,51,166,R,AG-008,501,2026-01-15 09:59:28,Imbabura,Oeste,Alta,Pendiente
+B-06,16,43,300,R,AG-381,701,2026-01-15 10:00:02,Pichincha,Este,Crítica,Verificado
+B-06,11,55,241,R,AG-019,601,2026-01-15 10:01:01,Pichincha,Norte,Alta,Pendiente
+B-06,12,60,192,R,AG-020,201,2026-01-15 10:00:15,Pichincha,Este,Crítica,Activo
+B-01,11,55,215,G,AG-002,101,2026-01-15 09:59:26,Imbabura,Norte,Baja,Pendiente
+B-02,9,64,155,B,AG-006,501,2026-01-15 10:01:46,Santa Elena,Centro,Media,Activo
+B-06,14,48,188,R,AG-545,401,2026-01-15 09:59:06,Pichincha,Centro,Media,Activo
+B-01,9,45,202,G,AG-370,401,2026-01-15 09:59:47,Cotopaxi,Norte,Alta,Activo
+B-03,12,43,121,G,AG-112,201,2026-01-15 09:59:27,Cañar,Sur,Alta,Pendiente
+B-03,11,46,198,B,AG-716,201,2026-01-15 10:00:56,Imbabura,Sur,Baja,Inactivo
+B-06,10,63,233,R,AG-021,801,2026-01-15 09:55:58,Pichincha,Sur,Alta,Inactivo
+B-04,19,44,300,G,AG-856,301,2026-01-15 10:02:19,Pichincha,Centro,Crítica,Verificado
+B-07,11,48,162,G,AG-964,401,2026-01-15 09:59:23,Los Ríos,Sur,Alta,Verificado
+B-05,9,52,179,B,AG-018,501,2026-01-15 09:59:21,Pichincha,Este,Crítica,Inactivo
+B-01,8,50,205,G,AG-375,901,2026-01-15 09:59:07,Cotopaxi,Sur,Alta,Inactivo
+B-01,11,63,246,G,AG-004,101,2026-01-15 10:00:33,Pichincha,Oeste,Media,Verificado
+B-02,18,40,169,R,AG-763,501,2026-01-15 10:00:13,Orellana,Oeste,Baja,Verificado
+B-03,12,40,167,G,AG-416,201,2026-01-15 09:57:25,Carchi,Sur,Media,Inactivo
+B-07,14,34,217,B,AG-816,601,2026-01-15 09:57:33,Orellana,Oeste,Media,Pendiente
+B-02,14,44,179,G,AG-464,301,2026-01-15 10:00:29,Sucumbíos,Sur,Media,Verificado
+B-05,11,52,165,R,AG-016,401,2026-01-15 09:59:31,Pichincha,Oeste,Media,Verificado
+B-07,20,34,117,G,AG-573,701,2026-01-15 09:58:53,Santa Elena,Oeste,Alta,Verificado
+B-07,12,39,189,G,AG-145,501,2026-01-15 09:59:51,Santa Elena,Oeste,Media,Inactivo
+B-01,10,50,157,G,AG-833,101,2026-01-15 10:01:02,Manabí,Este,Alta,Verificado
+B-06,5,64,257,R,AG-021,201,2026-01-15 09:58:02,Pichincha,Norte,Alta,Pendiente
+B-01,15,58,180,R,AG-002,301,2026-01-15 10:01:21,Manabí,Este,Alta,Activo
+B-04,12,43,226,B,AG-955,301,2026-01-15 10:00:28,Esmeraldas,Norte,Media,Inactivo
+B-05,10,63,122,B,AG-018,201,2026-01-15 09:59:43,Azuay,Centro,Alta,Activo
+B-02,13,47,151,R,AG-660,801,2026-01-15 10:00:34,Imbabura,Norte,Alta,Pendiente
+B-03,11,45,152,R,AG-749,201,2026-01-15 10:00:38,Imbabura,Centro,Alta,Verificado
+B-07,8,57,164,G,AG-023,401,2026-01-15 10:00:19,Santa Elena,Este,Crítica,Pendiente
+B-04,16,46,232,G,AG-576,901,2026-01-15 09:59:31,Chimborazo,Oeste,Crítica,Pendiente
+B-05,14,66,158,B,AG-172,101,2026-01-15 09:59:08,Guayas,Este,Crítica,Activo
+B-06,16,51,231,R,AG-349,201,2026-01-15 10:00:58,Pichincha,Sur,Baja,Pendiente
+B-07,5,53,179,G,AG-023,201,2026-01-15 10:00:06,Santa Elena,Este,Media,Inactivo
+B-02,13,50,185,R,AG-466,601,2026-01-15 09:59:00,Imbabura,Este,Media,Pendiente
+B-05,6,54,160,G,AG-016,501,2026-01-15 09:59:59,Tungurahua,Sur,Media,Pendiente
+B-02,14,51,184,B,AG-006,501,2026-01-15 09:59:24,Santa Elena,Oeste,Media,Inactivo
+B-03,16,60,196,R,AG-010,601,2026-01-15 10:00:28,Imbabura,Centro,Alta,Inactivo
+B-02,18,36,202,G,AG-178,801,2026-01-15 10:00:22,Sucumbíos,Centro,Crítica,Verificado
+B-06,8,65,238,G,AG-020,601,2026-01-15 10:00:51,Pichincha,Oeste,Media,Pendiente
+B-05,8,50,141,G,AG-690,501,2026-01-15 10:00:28,Pichincha,Sur,Crítica,Pendiente
+B-07,8,56,199,G,AG-024,701,2026-01-15 09:59:48,Orellana,Sur,Media,Pendiente
+B-04,16,40,191,B,AG-453,801,2026-01-15 09:57:14,Pichincha,Norte,Crítica,Verificado
+B-06,12,54,294,R,AG-020,701,2026-01-15 10:02:28,Pichincha,Sur,Media,Inactivo
+B-04,18,40,288,G,AG-172,201,2026-01-15 10:00:24,Chimborazo,Sur,Alta,Pendiente
+B-05,8,58,161,G,AG-017,501,2026-01-15 10:00:07,Azuay,Sur,Crítica,Verificado
+B-01,10,38,183,G,AG-164,101,2026-01-15 10:00:23,Imbabura,Centro,Alta,Inactivo
+B-01,5,45,158,G,AG-191,801,2026-01-15 09:59:47,Cotopaxi,Centro,Media,Pendiente
+B-06,10,51,248,R,AG-020,601,2026-01-15 10:00:03,Cotopaxi,Centro,Media,Inactivo
+B-07,12,45,168,G,AG-290,901,2026-01-15 09:59:51,Santa Elena,Sur,Crítica,Activo
+B-06,16,47,279,B,AG-821,201,2026-01-15 09:57:37,Pichincha,Sur,Media,Activo
+B-07,12,43,180,B,AG-564,401,2026-01-15 09:59:00,Zamora Chinchipe,Centro,Baja,Inactivo
+B-05,12,64,198,G,AG-018,801,2026-01-15 10:01:25,Azuay,Norte,Media,Activo
+B-03,8,42,176,B,AG-952,401,2026-01-15 09:58:53,Cañar,Este,Crítica,Inactivo
+B-04,14,46,240,R,AG-822,101,2026-01-15 09:59:09,El Oro,Este,Baja,Activo
+B-03,15,56,184,G,AG-009,901,2026-01-15 09:59:41,Imbabura,Centro,Alta,Activo
+B-02,15,55,176,R,AG-939,501,2026-01-15 09:58:47,Imbabura,Este,Crítica,Activo
+B-01,7,49,189,G,AG-423,701,2026-01-15 10:00:12,Pichincha,Este,Media,Inactivo
+B-07,6,53,124,G,AG-023,401,2026-01-15 09:59:19,Santa Elena,Este,Media,Verificado
+B-05,12,53,203,B,AG-328,101,2026-01-15 09:59:51,Azuay,Este,Crítica,Activo
+B-01,10,46,215,G,AG-752,501,2026-01-15 10:00:03,Pichincha,Oeste,Baja,Inactivo
+B-06,14,42,225,B,AG-555,901,2026-01-15 09:59:41,Pichincha,Oeste,Media,Activo
+B-07,5,67,190,R,AG-024,401,2026-01-15 09:58:58,Orellana,Oeste,Media,Inactivo
+B-02,16,40,190,R,AG-544,501,2026-01-15 10:00:57,Sucumbíos,Oeste,Media,Activo
+B-05,13,58,201,G,AG-378,501,2026-01-15 09:59:58,Pichincha,Norte,Media,Inactivo
+B-02,16,49,180,R,AG-857,601,2026-01-15 09:58:23,Santa Elena,Norte,Alta,Verificado
+B-02,15,50,198,R,AG-958,501,2026-01-15 10:01:18,Imbabura,Centro,Alta,Activo
+B-06,12,45,210,B,AG-137,201,2026-01-15 10:01:17,Bolívar,Sur,Crítica,Activo
+B-03,13,49,167,R,AG-383,701,2026-01-15 09:59:09,Imbabura,Este,Media,Verificado
+B-01,12,60,233,G,AG-001,201,2026-01-15 10:01:11,Pichincha,Oeste,Media,Inactivo
+B-02,12,55,145,R,AG-008,801,2026-01-15 10:02:31,Imbabura,Norte,Crítica,Activo
+B-02,11,58,210,R,AG-007,401,2026-01-15 09:59:10,Sucumbíos,Este,Crítica,Verificado
+B-03,10,46,225,R,AG-169,701,2026-01-15 09:58:43,Imbabura,Norte,Baja,Inactivo
+B-02,15,37,182,R,AG-989,601,2026-01-15 09:59:37,Imbabura,Este,Crítica,Pendiente
+B-03,15,53,197,R,AG-009,901,2026-01-15 09:59:45,Loja,Este,Baja,Pendiente
+B-06,10,65,257,R,AG-021,201,2026-01-15 09:58:27,Morona Santiago,Centro,Alta,Inactivo
+B-06,16,39,238,G,AG-908,201,2026-01-15 09:58:49,Pichincha,Sur,Media,Verificado
+B-07,13,48,177,R,AG-777,701,2026-01-15 09:59:18,Orellana,Norte,Alta,Verificado
+B-06,5,61,273,B,AG-020,101,2026-01-15 09:59:57,Cotopaxi,Este,Crítica,Activo
+B-07,6,46,158,B,AG-435,101,2026-01-15 10:00:04,Santa Elena,Centro,Crítica,Activo
+B-01,8,47,209,R,AG-411,601,2026-01-15 10:00:23,Pichincha,Oeste,Crítica,Verificado
+B-05,14,59,117,R,AG-018,501,2026-01-15 10:00:20,Azuay,Sur,Alta,Pendiente
+B-03,7,45,188,R,AG-222,601,2026-01-15 09:59:58,Carchi,Oeste,Alta,Activo
+B-06,15,54,195,R,AG-020,701,2026-01-15 09:59:10,Pichincha,Este,Alta,Verificado
+B-06,14,38,278,R,AG-216,801,2026-01-15 10:00:01,Bolívar,Sur,Baja,Inactivo
+B-05,12,66,163,B,AG-017,801,2026-01-15 10:00:13,Pichincha,Oeste,Alta,Verificado
+B-07,14,37,158,B,AG-396,401,2026-01-15 10:02:53,Santa Elena,Oeste,Media,Verificado
+B-02,12,53,180,R,AG-008,401,2026-01-15 10:01:15,Orellana,Sur,Crítica,Inactivo
+B-05,10,47,152,R,AG-742,301,2026-01-15 09:59:19,Pichincha,Norte,Crítica,Activo
+B-07,10,50,151,R,AG-551,601,2026-01-15 10:01:20,Santa Elena,Oeste,Crítica,Verificado
+B-06,16,47,265,R,AG-411,801,2026-01-15 09:59:44,Pichincha,Centro,Media,Activo
+B-06,16,39,246,R,AG-180,401,2026-01-15 10:01:56,Pichincha,Oeste,Crítica,Verificado
+B-07,8,45,133,B,AG-896,601,2026-01-15 09:57:54,Santa Elena,Sur,Alta,Verificado
+B-05,9,53,109,G,AG-018,501,2026-01-15 10:00:38,Guayas,Oeste,Media,Verificado
+B-07,19,32,139,B,AG-827,701,2026-01-15 10:01:25,Zamora Chinchipe,Norte,Media,Activo
+B-06,14,48,243,R,AG-303,301,2026-01-15 10:00:17,Cotopaxi,Sur,Baja,Inactivo
+B-03,12,44,149,G,AG-974,701,2026-01-15 09:58:55,Cañar,Norte,Alta,Activo
+B-07,9,49,205,G,AG-635,401,2026-01-15 10:02:40,Santa Elena,Este,Alta,Activo
+B-06,14,50,300,R,AG-978,201,2026-01-15 10:00:32,Bolívar,Sur,Crítica,Pendiente
+B-04,13,49,241,B,AG-816,301,2026-01-15 10:00:11,Pichincha,Norte,Media,Inactivo
+B-02,15,41,190,R,AG-674,501,2026-01-15 10:00:42,Imbabura,Este,Crítica,Inactivo
+B-06,11,57,216,R,AG-020,101,2026-01-15 10:00:18,Pichincha,Centro,Baja,Activo
+B-03,7,46,216,R,AG-442,401,2026-01-15 10:00:17,Cañar,Oeste,Alta,Pendiente
+B-04,17,40,286,B,AG-200,201,2026-01-15 10:00:21,Pichincha,Este,Alta,Pendiente
+B-01,11,49,187,R,AG-431,101,2026-01-15 09:58:36,Cotopaxi,Centro,Crítica,Verificado
+B-05,14,62,188,R,AG-018,501,2026-01-15 10:00:37,Pichincha,Centro,Media,Pendiente
+B-02,16,44,195,B,AG-828,501,2026-01-15 10:02:25,Imbabura,Este,Crítica,Verificado
+B-07,9,55,138,G,AG-023,301,2026-01-15 10:01:02,Santa Elena,Este,Crítica,Inactivo
+B-05,14,67,162,G,AG-018,901,2026-01-15 10:00:23,Pichincha,Este,Crítica,Inactivo
+B-05,8,53,226,G,AG-017,101,2026-01-15 09:58:59,Pichincha,Norte,Crítica,Pendiente
+B-03,6,43,200,R,AG-869,601,2026-01-15 09:58:25,Imbabura,Sur,Baja,Pendiente
+B-05,11,55,199,G,AG-017,801,2026-01-15 10:00:45,Pichincha,Centro,Media,Pendiente
+B-07,6,55,152,B,AG-024,401,2026-01-15 10:01:00,Los Ríos,Centro,Alta,Activo
+B-02,13,41,174,R,AG-701,801,2026-01-15 10:02:04,Orellana,Este,Baja,Verificado
+B-07,17,30,197,R,AG-205,601,2026-01-15 09:59:54,Santa Elena,Norte,Crítica,Inactivo
+B-06,13,54,210,R,AG-019,701,2026-01-15 09:58:21,Pichincha,Centro,Alta,Verificado
+B-05,13,56,149,G,AG-018,501,2026-01-15 10:01:07,Pichincha,Este,Baja,Inactivo
+B-03,11,55,182,R,AG-009,801,2026-01-15 09:59:30,Imbabura,Oeste,Baja,Activo
+B-05,9,50,186,B,AG-181,401,2026-01-15 10:00:00,Azuay,Sur,Alta,Pendiente
+B-03,18,59,169,R,AG-011,701,2026-01-15 09:57:53,Imbabura,Sur,Media,Inactivo
+B-07,15,34,160,G,AG-784,701,2026-01-15 10:00:59,Santa Elena,Sur,Baja,Activo
+B-05,10,51,180,R,AG-018,201,2026-01-15 09:59:45,Guayas,Centro,Media,Inactivo
+B-03,17,60,192,R,AG-009,201,2026-01-15 10:00:36,Loja,Oeste,Baja,Activo
+B-02,13,53,187,R,AG-006,301,2026-01-15 10:01:11,Sucumbíos,Sur,Media,Pendiente
+B-05,10,58,165,G,AG-573,501,2026-01-15 09:58:52,Tungurahua,Este,Media,Pendiente
+B-05,12,59,176,G,AG-016,701,2026-01-15 09:59:21,Pichincha,Centro,Baja,Verificado
+B-05,11,56,170,G,AG-018,401,2026-01-15 10:00:48,Tungurahua,Este,Crítica,Verificado
+B-02,13,56,212,R,AG-006,801,2026-01-15 09:59:14,Imbabura,Centro,Media,Inactivo
+B-03,7,41,194,B,AG-579,401,2026-01-15 09:59:21,Carchi,Centro,Baja,Pendiente
+B-03,10,53,226,G,AG-276,401,2026-01-15 10:00:18,Imbabura,Este,Crítica,Verificado
+B-02,12,47,191,B,AG-812,501,2026-01-15 09:59:00,Santa Elena,Sur,Alta,Activo
+B-07,7,62,204,G,AG-023,701,2026-01-15 09:59:17,Santa Elena,Este,Alta,Activo
+B-06,5,62,300,R,AG-135,201,2026-01-15 09:58:15,Pichincha,Centro,Media,Activo
+B-04,19,37,253,G,AG-884,201,2026-01-15 10:00:08,Pichincha,Norte,Alta,Inactivo
+B-03,9,44,193,G,AG-377,601,2026-01-15 09:59:36,Loja,Sur,Alta,Inactivo
+B-04,20,30,215,R,AG-715,201,2026-01-15 10:02:35,Chimborazo,Este,Media,Inactivo
+B-05,11,46,202,B,AG-166,501,2026-01-15 09:58:42,Pichincha,Sur,Crítica,Verificado
+B-07,5,64,178,G,AG-022,401,2026-01-15 10:01:32,Santa Elena,Norte,Media,Pendiente
+B-06,9,54,293,R,AG-019,901,2026-01-15 10:01:01,Bolívar,Oeste,Media,Verificado
+B-07,8,56,146,G,AG-022,501,2026-01-15 10:01:27,Santa Elena,Centro,Media,Activo
+B-07,12,46,139,G,AG-715,201,2026-01-15 10:00:28,Santa Elena,Centro,Alta,Activo
+B-05,13,59,147,B,AG-017,501,2026-01-15 09:59:41,Azuay,Oeste,Crítica,Activo
+B-07,9,43,93,G,AG-472,201,2026-01-15 10:00:09,Santa Elena,Norte,Alta,Pendiente
+B-06,12,51,283,B,AG-021,901,2026-01-15 10:00:23,Pichincha,Sur,Alta,Inactivo
+B-05,12,62,174,R,AG-017,301,2026-01-15 09:58:42,Pichincha,Centro,Alta,Inactivo
+B-07,5,56,183,B,AG-023,801,2026-01-15 09:58:37,Zamora Chinchipe,Centro,Baja,Pendiente
+B-04,11,50,192,B,AG-501,701,2026-01-15 09:58:14,El Oro,Oeste,Baja,Inactivo
+B-05,10,54,196,R,AG-795,301,2026-01-15 09:59:19,Pichincha,Norte,Alta,Verificado
+B-04,13,55,230,R,AG-503,201,2026-01-15 10:01:23,Pichincha,Norte,Crítica,Inactivo
+B-06,11,49,297,R,AG-378,201,2026-01-15 10:00:10,Pichincha,Este,Media,Verificado
+B-01,6,41,210,R,AG-939,801,2026-01-15 09:59:25,Manabí,Oeste,Baja,Pendiente
+B-02,15,44,179,G,AG-426,501,2026-01-15 10:00:46,Imbabura,Centro,Media,Pendiente
+B-05,6,46,144,B,AG-921,201,2026-01-15 10:01:17,Azuay,Este,Baja,Activo
+B-07,5,54,154,G,AG-319,501,2026-01-15 10:01:49,Santa Elena,Sur,Alta,Inactivo
+B-02,13,53,187,R,AG-005,801,2026-01-15 09:59:46,Orellana,Norte,Crítica,Activo
+B-04,14,40,208,G,AG-257,801,2026-01-15 09:58:06,Pichincha,Sur,Baja,Inactivo
+B-01,12,63,226,B,AG-273,301,2026-01-15 10:00:29,Pichincha,Este,Media,Inactivo
+B-04,11,43,298,R,AG-389,301,2026-01-15 09:58:31,El Oro,Sur,Alta,Verificado
+B-02,14,42,127,B,AG-771,401,2026-01-15 09:58:44,Imbabura,Centro,Media,Inactivo
+B-05,9,62,229,G,AG-018,401,2026-01-15 10:00:27,Pichincha,Centro,Baja,Verificado
+B-07,11,40,173,R,AG-669,201,2026-01-15 10:01:01,Santa Elena,Oeste,Media,Pendiente
+B-07,6,62,142,G,AG-022,401,2026-01-15 09:57:18,Zamora Chinchipe,Este,Media,Activo
+B-07,10,46,203,G,AG-127,901,2026-01-15 10:00:30,Zamora Chinchipe,Oeste,Media,Pendiente
+B-07,13,34,170,G,AG-958,401,2026-01-15 10:01:08,Santa Elena,Oeste,Media,Pendiente
+B-05,13,61,103,G,AG-017,901,2026-01-15 09:58:23,Pichincha,Oeste,Alta,Pendiente
+B-01,14,53,95,G,AG-667,901,2026-01-15 09:59:08,Imbabura,Norte,Media,Verificado
+B-04,13,52,248,R,AG-014,201,2026-01-15 09:58:50,Chimborazo,Este,Media,Activo
+B-02,13,52,192,R,AG-007,301,2026-01-15 10:00:39,Orellana,Centro,Media,Verificado
+B-05,11,56,181,B,AG-018,801,2026-01-15 10:00:02,Guayas,Este,Crítica,Activo
+B-06,16,40,261,B,AG-420,201,2026-01-15 10:01:28,Bolívar,Este,Media,Verificado
+B-04,14,44,237,B,AG-898,301,2026-01-15 10:02:16,Chimborazo,Centro,Alta,Inactivo
+B-05,6,50,198,G,AG-591,201,2026-01-15 09:59:17,Pichincha,Oeste,Media,Activo
+B-04,15,39,220,G,AG-292,301,2026-01-15 09:58:38,Chimborazo,Este,Alta,Pendiente
+B-04,20,31,298,G,AG-697,201,2026-01-15 10:00:32,Pichincha,Este,Alta,Inactivo
+B-06,14,50,189,R,AG-994,501,2026-01-15 09:59:10,Bolívar,Oeste,Media,Pendiente
+B-07,11,52,140,G,AG-898,401,2026-01-15 09:58:00,Orellana,Centro,Baja,Pendiente
+B-02,13,44,181,R,AG-223,501,2026-01-15 09:59:57,Orellana,Oeste,Alta,Activo
+B-03,20,59,192,R,AG-009,801,2026-01-15 09:58:36,Imbabura,Norte,Alta,Activo
+B-06,12,51,259,R,AG-019,801,2026-01-15 09:58:45,Cotopaxi,Sur,Baja,Verificado
+B-06,8,63,295,B,AG-575,201,2026-01-15 10:01:04,Pichincha,Este,Baja,Pendiente
+B-03,5,36,246,G,AG-825,401,2026-01-15 09:58:59,Cañar,Norte,Crítica,Pendiente
+B-06,15,43,259,R,AG-620,901,2026-01-15 10:00:31,Bolívar,Centro,Baja,Verificado
+B-07,10,42,162,G,AG-953,901,2026-01-15 09:59:37,Santa Elena,Centro,Crítica,Activo
+B-02,12,53,165,R,AG-006,801,2026-01-15 10:00:47,Imbabura,Sur,Baja,Pendiente
+B-01,20,70,206,B,AG-003,701,2026-01-15 10:00:52,Pichincha,Centro,Media,Pendiente
+B-06,12,53,262,G,AG-019,201,2026-01-15 10:00:26,Cotopaxi,Este,Alta,Inactivo
+B-05,11,58,217,B,AG-018,801,2026-01-15 09:59:39,Pichincha,Centro,Baja,Pendiente
+B-07,11,41,154,B,AG-212,601,2026-01-15 10:00:09,Santa Elena,Este,Alta,Activo
+B-05,7,54,176,R,AG-018,501,2026-01-15 10:00:35,Tungurahua,Norte,Media,Verificado
+B-05,8,56,154,G,AG-018,801,2026-01-15 09:59:30,Pichincha,Sur,Alta,Activo
+B-04,16,31,234,G,AG-407,601,2026-01-15 10:01:36,Pichincha,Oeste,Alta,Activo
+B-05,12,56,154,G,AG-553,501,2026-01-15 09:57:19,Pichincha,Este,Baja,Activo
+B-07,6,40,156,B,AG-896,401,2026-01-15 09:59:57,Santa Elena,Norte,Alta,Verificado
+B-05,9,55,146,R,AG-018,901,2026-01-15 10:00:17,Pichincha,Norte,Baja,Pendiente
+B-01,12,55,222,G,AG-002,101,2026-01-15 09:58:39,Pichincha,Norte,Crítica,Inactivo
+B-06,8,56,288,R,AG-021,201,2026-01-15 10:00:20,Pichincha,Norte,Media,Verificado
+B-05,12,52,137,G,AG-276,801,2026-01-15 09:59:05,Tungurahua,Norte,Media,Pendiente
+B-04,12,54,250,G,AG-012,401,2026-01-15 09:56:42,Esmeraldas,Oeste,Media,Verificado
+B-03,13,49,143,R,AG-856,601,2026-01-15 10:01:53,Cañar,Norte,Baja,Activo
+B-04,15,45,214,B,AG-410,201,2026-01-15 09:59:35,Pichincha,Norte,Crítica,Verificado
+B-01,11,56,191,B,AG-001,101,2026-01-15 09:58:21,Manabí,Este,Baja,Activo
+B-01,14,62,175,G,AG-788,501,2026-01-15 09:59:27,Pichincha,Centro,Crítica,Activo
+B-06,15,37,238,R,AG-906,901,2026-01-15 09:59:05,Bolívar,Sur,Media,Activo
+B-06,12,47,238,R,AG-557,201,2026-01-15 10:00:56,Pichincha,Norte,Alta,Activo
+B-02,14,42,186,B,AG-449,501,2026-01-15 10:02:06,Imbabura,Oeste,Baja,Pendiente
+B-01,17,62,211,G,AG-720,101,2026-01-15 10:01:12,Pichincha,Norte,Crítica,Pendiente
+B-01,12,57,264,G,AG-003,101,2026-01-15 10:00:13,Pichincha,Centro,Media,Activo
+B-07,5,61,191,G,AG-023,201,2026-01-15 10:00:24,Santa Elena,Sur,Alta,Pendiente
+B-02,16,41,129,R,AG-703,301,2026-01-15 09:59:36,Orellana,Este,Baja,Inactivo
+B-04,17,38,279,B,AG-141,201,2026-01-15 10:01:36,Pichincha,Sur,Alta,Activo
+B-06,18,43,300,G,AG-974,501,2026-01-15 10:00:47,Cotopaxi,Centro,Crítica,Activo
+B-03,10,46,193,G,AG-595,201,2026-01-15 09:59:13,Imbabura,Centro,Alta,Pendiente
+B-02,13,43,150,R,AG-158,501,2026-01-15 10:01:09,Orellana,Oeste,Media,Verificado
+B-03,16,63,191,G,AG-010,201,2026-01-15 10:02:02,Cañar,Este,Baja,Pendiente
+B-05,11,66,162,G,AG-017,701,2026-01-15 09:58:29,Tungurahua,Norte,Baja,Activo
+B-03,14,60,159,R,AG-011,201,2026-01-15 09:59:04,Imbabura,Centro,Media,Activo
+B-04,14,52,263,G,AG-013,601,2026-01-15 09:59:45,Pichincha,Oeste,Alta,Inactivo
+B-04,9,54,261,G,AG-012,201,2026-01-15 10:00:49,Pichincha,Sur,Media,Activo
+B-01,5,38,177,G,AG-183,301,2026-01-15 10:00:47,Imbabura,Centro,Crítica,Verificado
+B-01,9,46,215,G,AG-330,601,2026-01-15 10:01:14,Pichincha,Norte,Alta,Activo
+B-04,12,54,210,B,AG-358,601,2026-01-15 09:57:45,Pichincha,Este,Baja,Verificado
+B-05,10,58,185,B,AG-016,201,2026-01-15 10:02:19,Tungurahua,Sur,Alta,Activo
+B-01,9,43,205,G,AG-519,301,2026-01-15 10:01:23,Pichincha,Oeste,Media,Activo
+B-07,13,47,119,B,AG-235,801,2026-01-15 09:59:16,Los Ríos,Norte,Baja,Activo
+B-04,11,54,250,R,AG-012,201,2026-01-15 10:00:47,Pichincha,Oeste,Alta,Verificado
+B-06,17,46,226,G,AG-281,801,2026-01-15 10:01:10,Pichincha,Oeste,Alta,Inactivo
+B-07,8,54,159,G,AG-022,201,2026-01-15 10:00:31,Orellana,Norte,Baja,Inactivo
+B-01,15,58,187,G,AG-003,501,2026-01-15 09:59:27,Manabí,Este,Alta,Verificado
+B-06,12,50,193,G,AG-378,601,2026-01-15 09:58:53,Pichincha,Norte,Crítica,Inactivo
+B-01,13,67,170,R,AG-003,101,2026-01-15 09:59:27,Manabí,Este,Crítica,Verificado
+B-02,18,43,191,R,AG-835,501,2026-01-15 10:01:59,Sucumbíos,Norte,Media,Verificado
+B-01,13,51,159,G,AG-004,701,2026-01-15 09:59:27,Pichincha,Norte,Alta,Activo
+B-04,13,48,229,G,AG-342,201,2026-01-15 09:59:06,Pichincha,Norte,Media,Pendiente
+B-03,13,45,177,B,AG-721,101,2026-01-15 10:00:08,Imbabura,Oeste,Alta,Activo
+B-02,13,52,166,B,AG-005,601,2026-01-15 10:00:56,Sucumbíos,Norte,Baja,Verificado
+B-06,12,47,279,B,AG-607,201,2026-01-15 09:59:21,Bolívar,Este,Crítica,Activo
+B-02,12,53,155,R,AG-006,501,2026-01-15 09:59:59,Orellana,Oeste,Alta,Activo
+B-07,17,39,226,R,AG-530,401,2026-01-15 10:00:35,Los Ríos,Sur,Alta,Inactivo
+B-06,15,55,257,R,AG-021,701,2026-01-15 10:00:51,Morona Santiago,Este,Baja,Verificado
+B-01,12,52,207,B,AG-002,101,2026-01-15 09:58:43,Imbabura,Oeste,Media,Pendiente
+B-06,14,47,285,G,AG-352,801,2026-01-15 10:01:46,Bolívar,Sur,Media,Activo
+B-03,17,65,156,R,AG-603,701,2026-01-15 09:59:12,Imbabura,Este,Alta,Pendiente
+B-05,11,56,183,G,AG-018,101,2026-01-15 10:00:07,Guayas,Norte,Alta,Inactivo
+B-05,11,63,151,G,AG-017,101,2026-01-15 09:58:50,Azuay,Oeste,Crítica,Inactivo
+B-05,6,48,180,G,AG-826,201,2026-01-15 09:59:58,Pichincha,Oeste,Crítica,Verificado
+B-02,14,48,169,G,AG-764,501,2026-01-15 10:01:57,Sucumbíos,Sur,Baja,Verificado
+B-05,10,52,152,R,AG-018,901,2026-01-15 10:01:26,Tungurahua,Sur,Media,Verificado
+B-02,13,61,194,R,AG-005,501,2026-01-15 09:59:50,Santa Elena,Este,Crítica,Activo
+B-05,5,45,152,G,AG-823,701,2026-01-15 09:58:47,Azuay,Norte,Crítica,Activo
+B-04,13,48,247,G,AG-297,201,2026-01-15 10:01:32,El Oro,Norte,Alta,Activo
+B-04,12,50,184,B,AG-514,201,2026-01-15 10:01:52,Pichincha,Oeste,Baja,Pendiente
+B-02,12,45,189,B,AG-952,201,2026-01-15 10:00:54,Imbabura,Oeste,Media,Inactivo
+B-06,11,52,249,R,AG-262,201,2026-01-15 09:59:10,Pichincha,Oeste,Crítica,Activo
+B-06,9,62,219,R,AG-021,601,2026-01-15 10:00:28,Morona Santiago,Oeste,Baja,Pendiente
+B-02,11,55,222,G,AG-007,101,2026-01-15 10:00:51,Orellana,Este,Alta,Pendiente
+B-07,11,48,215,G,AG-687,801,2026-01-15 09:59:09,Santa Elena,Oeste,Alta,Activo
+B-02,19,35,121,G,AG-604,501,2026-01-15 10:00:54,Imbabura,Este,Media,Verificado
+B-02,12,41,197,G,AG-904,701,2026-01-15 10:00:25,Santa Elena,Sur,Media,Inactivo
+B-04,15,46,236,G,AG-960,301,2026-01-15 10:00:01,Pichincha,Oeste,Crítica,Pendiente
+B-05,12,65,215,G,AG-016,501,2026-01-15 10:00:08,Tungurahua,Oeste,Alta,Pendiente
+B-03,17,53,211,B,AG-011,601,2026-01-15 10:00:38,Carchi,Oeste,Baja,Pendiente
+B-05,11,54,147,G,AG-016,501,2026-01-15 10:03:06,Pichincha,Este,Media,Pendiente
+B-04,15,38,215,G,AG-810,201,2026-01-15 09:58:49,Pichincha,Centro,Baja,Pendiente
+B-06,11,43,237,R,AG-185,501,2026-01-15 09:59:36,Bolívar,Norte,Baja,Pendiente
+B-06,15,49,217,R,AG-601,201,2026-01-15 10:00:24,Cotopaxi,Este,Media,Activo
+B-01,16,70,210,G,AG-002,601,2026-01-15 09:58:26,Manabí,Centro,Alta,Verificado
+B-04,13,51,281,G,AG-672,201,2026-01-15 09:59:26,El Oro,Este,Alta,Pendiente
+B-03,16,57,180,R,AG-011,201,2026-01-15 09:59:48,Imbabura,Este,Media,Verificado
+B-01,10,53,186,G,AG-004,101,2026-01-15 09:59:33,Manabí,Sur,Crítica,Verificado
+B-07,5,62,190,R,AG-022,401,2026-01-15 09:58:24,Santa Elena,Centro,Crítica,Pendiente
+B-07,6,56,128,G,AG-024,201,2026-01-15 10:02:47,Orellana,Norte,Crítica,Inactivo
+B-04,15,49,252,R,AG-886,601,2026-01-15 09:58:33,El Oro,Sur,Crítica,Verificado
+B-07,9,35,176,G,AG-551,401,2026-01-15 09:59:05,Santa Elena,Centro,Baja,Inactivo
+B-01,10,51,156,G,AG-004,401,2026-01-15 10:00:34,Pichincha,Este,Media,Inactivo
+B-02,12,52,146,R,AG-007,501,2026-01-15 10:00:07,Imbabura,Sur,Media,Pendiente
+B-01,12,54,202,G,AG-003,501,2026-01-15 10:00:35,Imbabura,Norte,Baja,Activo
+B-07,14,37,132,G,AG-549,401,2026-01-15 10:02:02,Los Ríos,Sur,Media,Inactivo
+B-06,13,54,245,R,AG-019,101,2026-01-15 10:02:14,Pichincha,Norte,Media,Verificado
+B-04,14,47,235,G,AG-984,301,2026-01-15 09:58:30,El Oro,Centro,Crítica,Activo
+B-03,14,60,206,R,AG-009,201,2026-01-15 09:57:49,Imbabura,Sur,Crítica,Activo
+B-04,14,52,266,G,AG-015,501,2026-01-15 09:56:57,Pichincha,Este,Media,Activo
+B-07,10,47,160,R,AG-876,501,2026-01-15 09:59:08,Los Ríos,Sur,Crítica,Activo
+B-03,13,47,187,R,AG-566,201,2026-01-15 10:00:21,Imbabura,Este,Media,Verificado
+B-01,11,49,185,B,AG-465,101,2026-01-15 10:00:35,Pichincha,Sur,Alta,Activo
+B-03,8,40,180,B,AG-817,701,2026-01-15 09:58:42,Imbabura,Norte,Alta,Inactivo
+B-06,14,46,239,R,AG-903,201,2026-01-15 10:01:57,Morona Santiago,Este,Crítica,Inactivo
+B-04,16,45,202,B,AG-997,201,2026-01-15 10:00:04,Esmeraldas,Oeste,Baja,Activo
+B-03,18,63,171,R,AG-010,901,2026-01-15 10:00:29,Imbabura,Oeste,Media,Activo
+B-06,10,54,222,B,AG-021,101,2026-01-15 10:01:10,Morona Santiago,Centro,Baja,Inactivo
+B-02,15,44,198,R,AG-863,501,2026-01-15 09:58:25,Sucumbíos,Centro,Baja,Activo
+B-01,16,68,125,G,AG-003,401,2026-01-15 10:01:28,Pichincha,Centro,Crítica,Inactivo
+B-03,15,59,170,R,AG-009,901,2026-01-15 09:58:47,Loja,Este,Crítica,Inactivo
+B-05,11,56,174,G,AG-016,901,2026-01-15 10:01:12,Guayas,Centro,Baja,Verificado
+B-03,10,40,173,R,AG-531,701,2026-01-15 10:00:46,Imbabura,Centro,Alta,Activo
+B-02,15,47,197,R,AG-168,501,2026-01-15 10:01:12,Sucumbíos,Sur,Baja,Activo
+B-02,14,41,201,G,AG-809,601,2026-01-15 10:02:05,Sucumbíos,Sur,Baja,Inactivo
+B-06,12,53,298,B,AG-020,301,2026-01-15 10:00:53,Pichincha,Este,Crítica,Pendiente
+B-01,9,53,201,R,AG-576,101,2026-01-15 09:59:52,Imbabura,Centro,Crítica,Activo
+B-05,12,59,207,R,AG-016,501,2026-01-15 10:00:28,Pichincha,Centro,Baja,Activo
+B-06,11,54,287,R,AG-019,101,2026-01-15 09:59:16,Pichincha,Oeste,Media,Activo
+B-04,13,37,291,G,AG-329,201,2026-01-15 09:58:28,Pichincha,Centro,Media,Pendiente
+B-07,9,50,233,G,AG-621,401,2026-01-15 09:59:05,Los Ríos,Este,Baja,Inactivo
+B-04,11,53,199,R,AG-015,401,2026-01-15 10:00:59,Pichincha,Norte,Media,Verificado
+B-06,11,46,249,G,AG-596,601,2026-01-15 10:01:12,Pichincha,Norte,Crítica,Inactivo
+B-02,13,46,203,B,AG-960,301,2026-01-15 09:58:13,Imbabura,Norte,Media,Activo
+B-04,20,30,265,B,AG-703,101,2026-01-15 09:59:16,Pichincha,Norte,Baja,Inactivo
+B-06,12,57,182,B,AG-021,901,2026-01-15 09:58:54,Pichincha,Sur,Baja,Verificado
+B-04,14,48,241,G,AG-922,201,2026-01-15 09:59:48,Chimborazo,Oeste,Crítica,Pendiente
+B-07,6,52,173,G,AG-024,901,2026-01-15 09:59:25,Orellana,Norte,Crítica,Verificado
+B-05,10,50,157,G,AG-769,301,2026-01-15 10:00:05,Tungurahua,Este,Alta,Inactivo
+B-07,5,64,154,R,AG-023,401,2026-01-15 10:00:20,Los Ríos,Norte,Crítica,Pendiente
+B-02,15,41,160,B,AG-613,701,2026-01-15 10:00:11,Imbabura,Centro,Media,Activo
+B-07,5,60,173,G,AG-023,301,2026-01-15 09:59:41,Santa Elena,Norte,Baja,Pendiente
+B-05,10,55,160,B,AG-017,201,2026-01-15 09:59:25,Guayas,Centro,Crítica,Verificado
+B-04,20,33,242,R,AG-858,201,2026-01-15 10:03:44,Pichincha,Sur,Baja,Verificado
+B-04,17,35,272,R,AG-139,901,2026-01-15 10:00:16,Pichincha,Este,Crítica,Activo
+B-06,14,49,278,R,AG-936,201,2026-01-15 10:02:00,Bolívar,Sur,Baja,Pendiente
+B-05,10,60,146,G,AG-018,501,2026-01-15 10:02:00,Pichincha,Norte,Crítica,Inactivo
+B-02,16,48,204,G,AG-266,101,2026-01-15 09:59:55,Imbabura,Este,Alta,Activo
+B-01,13,56,174,B,AG-004,101,2026-01-15 09:58:30,Pichincha,Sur,Baja,Verificado
+B-04,15,36,251,G,AG-191,901,2026-01-15 10:00:07,Esmeraldas,Norte,Crítica,Activo
+B-02,12,41,173,R,AG-338,601,2026-01-15 09:59:58,Sucumbíos,Centro,Alta,Pendiente
+B-07,11,42,184,B,AG-987,801,2026-01-15 09:59:50,Santa Elena,Centro,Crítica,Pendiente
+B-03,17,67,169,R,AG-009,201,2026-01-15 10:00:06,Imbabura,Centro,Media,Verificado
+B-06,13,59,222,G,AG-021,701,2026-01-15 10:00:26,Bolívar,Sur,Baja,Inactivo
+B-03,14,56,168,G,AG-819,201,2026-01-15 09:59:14,Imbabura,Oeste,Alta,Inactivo
+B-06,9,59,219,R,AG-020,901,2026-01-15 09:59:18,Pichincha,Norte,Media,Verificado
+B-01,13,45,207,G,AG-125,101,2026-01-15 10:02:15,Cotopaxi,Norte,Alta,Inactivo
+B-06,12,58,269,R,AG-283,501,2026-01-15 10:01:27,Pichincha,Oeste,Crítica,Activo
+B-01,12,61,236,G,AG-004,101,2026-01-15 10:00:50,Pichincha,Sur,Media,Inactivo
+B-03,12,46,209,R,AG-489,201,2026-01-15 10:00:09,Cañar,Oeste,Alta,Activo
+B-04,14,42,279,R,AG-354,301,2026-01-15 09:59:36,Pichincha,Oeste,Media,Verificado
+B-01,12,51,232,R,AG-003,401,2026-01-15 09:59:51,Cotopaxi,Sur,Alta,Inactivo
+B-07,8,37,177,G,AG-895,401,2026-01-15 09:58:57,Santa Elena,Sur,Media,Inactivo
+B-06,13,48,283,B,AG-231,701,2026-01-15 10:01:02,Pichincha,Este,Baja,Pendiente
